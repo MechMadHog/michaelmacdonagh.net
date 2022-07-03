@@ -1,2 +1,3 @@
 # MySiteDotNet
-Using Github Pages to put a static site onto one of my domains.
+Using Github Pages to put build a "static site";
+for my .net domain.
