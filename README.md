@@ -1,17 +1,19 @@
-### Website Coming Soon!!!
+# Website Coming Soon!!!
+
+## michaelmacdonagh.net
 
 
 Please Feel Free to Contact Me On...
 
-# Twitter:
+### Twitter:
 https://twitter.com/MechMadHog
 
-#LinkedIn:
+### LinkedIn:
 https://www.linkedin.com/in/michael-macdonagh-b8363b35/
 
-# GitHub
+### GitHub
 https://github.com/MechMadHog
 
 
-© michaelmacdonagh.net | All rights reserved.
+© Michael MacDonagh | All rights reserved.
 
