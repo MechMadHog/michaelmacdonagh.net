@@ -1,24 +1,14 @@
 # michaelmacdonagh.net
 
-> Website Coming Soon...
+> Website Coming Soon... EVENTUALLY
 
-**Mike MacDonagh**
+...want to put something up on here first
 
-- [My GitHub Profile](https://github.com/MechMadHog "Mike MacDonagh")
+- [mechmadhog.com](https://mechmadhog.com "Visit My Other Test Sites")
 - [Send Me an Email](mailto:michael@mechmadhog.com?subject=Hi% "Hi Mike!")
-- [Visit my Dot NET site](https://mechmadhog.com "Visit My Other Test Sites")
-- [Visit my Dot IE site](https://michaelmacdonagh.ie "Visit My Other Test Sites")
-
-> Please Feel Free to Contact Me On Any Of The Following Platforms:
-
-### Twitter:
-https://twitter.com/MechMadHog
-
-### LinkedIn:
-https://linkedin.com/in/michael-macdonagh-b8363b35/
-
-### GitHub:
-https://github.com/MechMadHog
+  
+- [GitHub](https://github.com/MechMadHog "Mike MacDonagh")
+- [Twitter](https://twitter.com/MechMadHog)
 
 
-© Michael MacDonagh | All rights reserved.
+
