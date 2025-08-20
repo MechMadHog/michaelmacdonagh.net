@@ -1,21 +1,21 @@
-# My Personal Site
+# My Professional Site
 
-This is the source code for my personal website, [mechmadhog.com](https://mechmadhog.com), built using:
+This is the source code for my professional website, [michaelmacdonagh.net](https://michaelmacdonagh.net), built using:
 
 - **Jekyll** (a static site generator)
-- **GitHub Pages** (for free hosting)
-- **Markdown** (for writing all content)
-- **custom** theme (clean, minimal styling)
+- **GitHub Pages** (for hosting)
+- **Markdown** (for writing content)
+- **custom** theme (minimal, CV-friendly design)
 
 ---
 
 ## 🧠 What’s Here
 
-- Personal blog / About Me
-- Possible Portfolio of projects
-- Contact and social media links
-- Logo and favicon
-- Fully static, no JavaScript frameworks
+- Professional portfolio of projects
+- CV / Resume
+- Skills and services overview
+- Contact information
+- Clean, minimal styling — built for recruiters and clients
 
 ---
 
@@ -25,8 +25,8 @@ To view or edit this site locally:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/MechMadHog/MechMadHog.github.io.git
-cd MechMadHog.github.io
+git clone https://github.com/MechMadHog/MichaelMacDonagh.net.git
+cd MichaelMacDonagh.net
 
 # 2. Install Jekyll (if you haven’t already)
 gem install bundler jekyll
