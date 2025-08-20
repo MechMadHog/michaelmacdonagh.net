@@ -1,0 +1,83 @@
+/* style.css */
+/* intentionally left blank — Bootstrap handles everything now */
+main > .container {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* Custom Bootstrap Overrides and Glow Theme */
+
+:root {
+  --bs-primary: #4e215d;         /* Logo color */
+  --bs-secondary: #944bbb;       /* Brighter purple */
+  --bs-body-bg: #f8f6fa;         /* Light lavender grey */
+  --bs-body-color: #1e1e1e;      /* Standard dark text */
+  --bs-dark: #1e1e1e;
+  --bs-light: #f1e7f5;
+  --bs-warning: #ffc107;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+main > .container {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+a {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--bs-secondary);
+  text-decoration: underline;
+}
+
+.navbar, footer {
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+}
+
+.navbar a, footer a {
+  color: var(--bs-light);
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+}
+
+/* Glow effect for accents */
+.glow {
+  color: #00e0ff;
+  text-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+}
+
+/* Glow-themed button */
+.btn-glow {
+  background-color: #4e215d;
+  border: 1px solid #00e0ff;
+  color: #00e0ff;
+  box-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff inset;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-glow:hover {
+  background-color: #944bbb;
+  box-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff inset;
+}
+
+/* Glow headings */
+h1.glow, h2.glow, h3.glow {
+  color: #00e0ff;
+  text-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff, 0 0 15px #00e0ff;
+}
