@@ -447,3 +447,16 @@ section[style*="var(--bg-elev)"] .text-muted { color: #6b7078 !important; }
 
 .site-footer .social-icons i { font-size: 1.1rem; line-height:1; }
 
+/* Footer copyright should be purple + readable on dark */
+.site-footer .footer-cell.left small {
+  color: var(--purple) !important;
+  font-weight: 600;
+  text-shadow: 0 1px 0 rgba(0,0,0,.25); /* subtle lift on dark bg */
+}
+
+.site-footer .footer-cell.left small a {
+  color: var(--purple) !important;
+}
+.site-footer .footer-cell.left small a:hover {
+  color: var(--purple-700) !important;
+}
