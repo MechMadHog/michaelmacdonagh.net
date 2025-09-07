@@ -325,3 +325,34 @@ footer.bg-light, footer.fixed-bottom {
   background: var(--paper) !important;
   border-top: 1px solid var(--line);
 }
+
+/* --- Hero & Snapshot (light) --- */
+.hero {
+  background: var(--paper) !important;   /* white */
+  color: var(--ink);
+}
+.hero .lead { color: #4b4f55; }          /* legible grey on white */
+.hero .btn-outline-secondary:hover {
+  background-color: #f3f8ff;
+  border-color: var(--ice);
+}
+
+.snapshot {
+  background: var(--panel) !important;   /* light grey panel */
+  color: var(--ink);
+  border-color: var(--line) !important;  /* keep the subtle dividers */
+}
+.snapshot .text-muted { color: #6b7078 !important; }  /* ensure readability */
+
+/* HOTFIX: force light hero & snapshot even if inline styles exist */
+section[style*="var(--bg)"] {
+  background: #fff !important;
+  color: var(--ink) !important;
+}
+section[style*="var(--bg)"] .lead { color: #4b4f55 !important; }
+
+section[style*="var(--bg-elev)"] {
+  background: #f6f8fb !important;
+  color: var(--ink) !important;
+}
+section[style*="var(--bg-elev)"] .text-muted { color: #6b7078 !important; }
