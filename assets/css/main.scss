@@ -1,7 +1,5 @@
 ---
-# assets/css/main.scss
-# Ensure `sass:` is enabled in your Jekyll config (it is on GitHub Pages).
+# Jekyll front matter so this file is compiled
 ---
-@import "theme";
 
-/* Project-specific overrides can go below */
+@import "theme"; // pulls in _sass/_theme.scss
