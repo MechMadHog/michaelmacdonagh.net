@@ -2,9 +2,36 @@
 layout: default
 ---
 
-<article class="container my-5">
-  <h1>{{ page.title }}</h1>
-  <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
-  <hr>
-  {{ content }}
+<article class="py-5">
+  <div class="container" style="max-width: 860px;">
+    <header class="mb-4">
+      <h1 class="mb-1">{{ page.title }}</h1>
+      <div class="text-muted small">
+        {{ page.date | date: "%B %d, %Y" }}
+        {% if page.categories and page.categories.size > 0 %}
+          · in
+          {% for c in page.categories %}
+            <a href="{{ '/categories/' | relative_url }}#{{ c | slugify }}">{{ c }}</a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        {% endif %}
+      </div>
+      {% if page.image %}
+        <img class="mt-3 img-fluid rounded" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+      {% endif %}
+    </header>
+
+    <div class="content">
+      {{ content }}
+    </div>
+
+    {% if page.tags and page.tags.size > 0 %}
+      <footer class="mt-4">
+        <div class="d-flex flex-wrap gap-2">
+          {% for t in page.tags %}
+            <a class="btn btn-sm btn-outline-secondary" href="{{ '/tags/' | relative_url }}#tag-{{ t | slugify }}">{{ t }}</a>
+          {% endfor %}
+        </div>
+      </footer>
+    {% endif %}
+  </div>
 </article>

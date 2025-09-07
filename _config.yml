@@ -3,3 +3,21 @@ description: "Mike Mac Donagh's Blog and Portfolio of various Side Projects"
 baseurl: "" # leave empty for GitHub Pages with custom domain
 url: "https://michaelmacdonagh.net/"
 
+# Required for pagination (works on GitHub Pages)
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Pagination (blog index)
+paginate: 5
+paginate_path: "/blog/page:num"
+
+# Nice defaults for posts
+defaults:
+  - scope: { path: "", type: "posts" }
+    values:
+      layout: post
+      author: "Mike MacDonagh"
+      image: ""         # social preview per-post (optional)
+      featured: false   # toggle to feature

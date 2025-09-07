@@ -1,0 +1,60 @@
+---
+layout: default
+title: Blog
+description: Notes on support ops, documentation, and building lightweight tools.
+---
+
+<section class="py-5">
+  <div class="container">
+    <h1 class="h3 mb-4">Blog</h1>
+
+    {% assign featured_posts = site.posts | where_exp: "p", "p.featured == true" | slice: 3 %}
+
+    {% if featured_posts and featured_posts.size > 0 %}
+      <h2 class="h5 text-uppercase text-muted mb-3">Featured</h2>
+      <div class="row g-4 mb-4">
+        {% for post in featured_posts %}
+          <div class="col-12 col-md-4">
+            {% include post_card.html post=post %}
+          </div>
+        {% endfor %}
+      </div>
+      <hr class="mb-4">
+    {% endif %}
+
+    <h2 class="h5 text-uppercase text-muted mb-3">All posts</h2>
+    <div class="row g-4">
+      {% for post in paginator.posts %}
+        <div class="col-12 col-md-6">
+          {% include post_card.html post=post %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Pagination -->
+    {% if paginator.total_pages > 1 %}
+      <nav class="mt-4 d-flex justify-content-center" aria-label="Blog pagination">
+        <ul class="pagination">
+          {% if paginator.previous_page %}
+            <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Newer</a></li>
+          {% else %}
+            <li class="page-item disabled"><span class="page-link">&laquo; Newer</span></li>
+          {% endif %}
+
+          {% for page in (1..paginator.total_pages) %}
+            {% assign url = paginator.page_path | replace: ':num', page %}
+            <li class="page-item {% if page == paginator.page %}active{% endif %}">
+              <a class="page-link" href="{{ url | relative_url }}">{{ page }}</a>
+            </li>
+          {% endfor %}
+
+          {% if paginator.next_page %}
+            <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Older &raquo;</a></li>
+          {% else %}
+            <li class="page-item disabled"><span class="page-link">Older &raquo;</span></li>
+          {% endif %}
+        </ul>
+      </nav>
+    {% endif %}
+  </div>
+</section>

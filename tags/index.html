@@ -1,0 +1,27 @@
+---
+layout: default
+title: Tags
+---
+
+<section class="py-5">
+  <div class="container">
+    <h1 class="h3 mb-4">Tags</h1>
+    {% assign all_tags = site.tags | sort %}
+    <div class="d-flex flex-wrap gap-2 mb-4">
+      {% for tag in all_tags %}
+        {% assign name = tag[0] %}
+        <a class="btn btn-sm btn-outline-secondary" href="#tag-{{ name | slugify }}">{{ name }} ({{ tag[1] | size }})</a>
+      {% endfor %}
+    </div>
+
+    {% for tag in all_tags %}
+      {% assign name = tag[0] %}
+      <h2 id="tag-{{ name | slugify }}" class="h5 mt-4">{{ name }}</h2>
+      <ul>
+        {% for post in tag[1] %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="small text-muted">— {{ post.date | date: "%b %d, %Y" }}</span></li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+</section>

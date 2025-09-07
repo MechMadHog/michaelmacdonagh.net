@@ -1,0 +1,33 @@
+---
+layout: default
+title: Categories
+---
+
+<section class="py-5">
+  <div class="container">
+    <h1 class="h3 mb-4">Categories</h1>
+    <div class="row g-3">
+      {% assign cats = site.categories | sort %}
+      {% for cat in cats %}
+        {% assign name = cat[0] %}
+        {% assign posts = cat[1] %}
+        <div class="col-12 col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="h5 mb-2">{{ name }}</h2>
+              <div class="small text-muted mb-2">{{ posts | size }} post{% if posts.size != 1 %}s{% endif %}</div>
+              <ul class="mb-0">
+                {% for post in posts limit:5 %}
+                  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+              {% if posts.size > 5 %}
+                <div class="mt-2"><em>…and more in the blog.</em></div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
