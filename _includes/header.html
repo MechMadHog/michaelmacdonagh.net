@@ -1,18 +1,15 @@
 <header class="site-header">
   <nav class="container d-flex align-items-center justify-content-between">
-    <!-- Brand -->
     <a class="brand d-flex align-items-center gap-2 text-decoration-none" href="{{ '/' | relative_url }}">
-      <span class="brand-dot" aria-hidden="true"></span>
-      <span class="brand-text fw-bold">{{ site.title }}</span>
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo" class="brand-logo" height="36">
+      <span class="brand-text fw-semibold">{{ site.title }}</span>
     </a>
 
-    <!-- Mobile toggler (Bootstrap collapse still works) -->
     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
       aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Nav -->
     <div id="navMenu" class="collapse d-lg-flex">
       <ul class="nav-list d-lg-flex align-items-center mb-0">
         <li><a class="nav-link" href="{{ '/' | relative_url }}">Home</a></li>
