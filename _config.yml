@@ -8,10 +8,12 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Pagination (blog index)
 paginate: 5
 paginate_path: "/blog/page:num"
+permalink: /blog/:title/
 
 # Nice defaults for posts
 defaults:
