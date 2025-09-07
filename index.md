@@ -104,19 +104,20 @@ title: Home
   <div class="container">
     <h2 class="h3 text-center mb-3">Projects</h2>
 
-    <!-- Tag filters -->
-    <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" aria-label="Project filters">
-      <button class="btn btn-sm btn-outline-secondary is-active" data-tag="all">All</button>
-      <button class="btn btn-sm btn-outline-secondary" data-tag="html">HTML</button>
-      <button class="btn btn-sm btn-outline-secondary" data-tag="css">CSS</button>
-      <button class="btn btn-sm btn-outline-secondary" data-tag="js">JS</button>
-      <button class="btn btn-sm btn-outline-secondary" data-tag="design">Design</button>
-      <button class="btn btn-sm btn-outline-secondary" data-tag="fcc">FreeCodeCamp</button>
-      <button class="btn btn-sm btn-outline-secondary" data-tag="codepen">CodePen</button>
-    </div>
+      <!-- Tag filters -->
+      <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" aria-label="Project filters">
+        <button class="btn btn-sm btn-outline-secondary is-active" data-tag="all">All</button>
+        <button class="btn btn-sm btn-outline-secondary" data-tag="html">HTML</button>
+        <button class="btn btn-sm btn-outline-secondary" data-tag="css">CSS</button>
+        <button class="btn btn-sm btn-outline-secondary" data-tag="js">JS</button>
+        <button class="btn btn-sm btn-outline-secondary" data-tag="design">Design</button>
+        <button class="btn btn-sm btn-outline-secondary" data-tag="fcc">FreeCodeCamp</button>
+        <button class="btn btn-sm btn-outline-secondary" data-tag="codepen">CodePen</button>
+      </div>
 
-    <!-- Cards injected by /assets/js/main.js -->
-    <div id="projects" class="row g-4"></div>
+      <!-- Cards injected by /assets/js/main.js -->
+      <div id="projects" class="row g-4"></div>
+
   </div>
 </section>
 

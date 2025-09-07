@@ -1,24 +1,21 @@
-<footer class="bg-dark text-white py-3 fixed-bottom">
-  <div class="container">
-    <div class="row align-items-center text-center text-lg-start">
-      
-      <!-- Empty column on the left to balance layout -->
-      <div class="col-12 col-lg-4 mb-2 mb-lg-0"></div>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-cell left">
+      <a href="{{ '/' | relative_url }}" class="brand mini d-inline-flex align-items-center gap-2 text-decoration-none">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-text fw-semibold">Mike MacDonagh</span>
+      </a>
+    </div>
 
-      <!-- Centered copyright -->
-      <div class="col-12 col-lg-4 mb-2 mb-lg-0 text-center">
-        <small>&copy; {{ site.time | date: "%Y" }} Mike MacDonagh. All rights reserved.</small>
-      </div>
+    <div class="footer-cell center">
+      <small>© <span id="year"></span> Mike MacDonagh. All rights reserved.</small>
+    </div>
 
-      <!-- Right-aligned social links -->
-      <div class="col-12 col-lg-4 text-center text-lg-end">
-        <a href="https://linkedin.com/in/michaelmacdonagh/" class="text-white me-2"><i class="fab fa-linkedin" target="_blank" rel="noopener"></i></a>
-        <a href="https://github.com/MechMadHog" class="text-white me-2"><i class="fab fa-github" target="_blank" rel="noopener"></i></a>
-        <a href="https://codepen.io/Mike-MacDonagh" class="text-white me-2"><i class="fab fa-codepen" target="_blank" rel="noopener"></i></a>
-        <a href="https://www.behance.net/mikemacdonagh" class="text-white me-2"><i class="fab fa-behance" target="_blank" rel="noopener"></i></a>
-      </div>
-
+    <div class="footer-cell right">
+      <a href="https://linkedin.com/in/michaelmacdonagh/" class="footer-link">LinkedIn</a>
+      <a href="https://github.com/MechMadHog" class="footer-link">GitHub</a>
+      <a href="https://codepen.io/Mike-MacDonagh" class="footer-link">CodePen</a>
+      <a href="https://www.behance.net/mikemacdonagh" class="footer-link">Behance</a>
     </div>
   </div>
 </footer>
-

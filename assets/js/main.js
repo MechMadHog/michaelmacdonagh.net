@@ -182,3 +182,11 @@ tagButtons.forEach((btn) => {
     }
   });
 });
+
+
+// Tiny scroll helper
+  document.addEventListener('scroll', () => {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
+    header.classList.toggle('is-scrolled', window.scrollY > 6);
+  }, { passive: true });
