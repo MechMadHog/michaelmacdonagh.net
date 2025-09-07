@@ -1,83 +1,210 @@
-/* style.css */
-/* intentionally left blank — Bootstrap handles everything now */
-main > .container {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-}
+/* main.css — Bootstrap on, custom theme + components */
 
-/* Custom Bootstrap Overrides and Glow Theme */
-
+/* =========================
+   Core Theme Variables
+   ========================= */
 :root {
-  --bs-primary: #4e215d;         /* Logo color */
-  --bs-secondary: #944bbb;       /* Brighter purple */
-  --bs-body-bg: #f8f6fa;         /* Light lavender grey */
-  --bs-body-color: #1e1e1e;      /* Standard dark text */
-  --bs-dark: #1e1e1e;
-  --bs-light: #f1e7f5;
-  --bs-warning: #ffc107;
+  /* Brand / Accent */
+  --accent: #35ffa1;         /* Neon mint */
+  --accent-2: #7aa2ff;       /* Secondary hover */
+
+  /* Dark surfaces for hero/blocks used in index.md */
+  --bg: #0f0f10;             /* Hero / full-bleed dark */
+  --bg-elev: #151517;        /* Elevated dark panel */
+  --line: #232327;
+
+  /* Text */
+  --paper: #e6e6e7;          /* Light text on dark */
+  --muted: #b5b5b9;
+
+  /* Shadows / radii */
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0,0,0,.25);
+
+  /* Bootstrap overrides (light page body, dark header/footer) */
+  --bs-primary: var(--accent);
+  --bs-secondary: var(--accent-2);
+  --bs-body-bg: #f7f7f9;     /* Subtle light bg for most of the page */
+  --bs-body-color: #1c1c1f;
+  --bs-dark: #0f0f10;
+  --bs-light: #f2f2f4;
 }
 
+/* Respect system dark if you ever flip to a full dark site later */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bs-body-bg: #0d0d10;
+    --bs-body-color: #e9e9ec;
+  }
+}
+
+/* =========================
+   Base
+   ========================= */
+html, body { height: 100%; }
 body {
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-main > .container {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-}
+main > .container { padding-top: 2rem; padding-bottom: 4rem; }
 
+/* Make room for fixed-bottom footer */
+body { padding-bottom: 70px; }
+
+/* Links */
 a {
   color: var(--bs-primary);
   text-decoration: none;
+  transition: color .15s ease, opacity .15s ease, text-shadow .15s ease;
 }
-
 a:hover {
-  color: var(--bs-secondary);
+  color: var(--accent-2);
   text-decoration: underline;
 }
 
-.navbar, footer {
-  background-color: var(--bs-primary);
+/* =========================
+   Navbar / Footer
+   ========================= */
+.navbar,
+footer.footer,
+footer.bg-dark {
+  background-color: var(--bs-dark) !important;
   color: var(--bs-light);
+  border-bottom: 1px solid #0a0a0c;
 }
 
-.navbar a, footer a {
-  color: var(--bs-light);
-}
+.navbar .navbar-brand,
+.navbar .nav-link { color: var(--bs-light); }
+.navbar .nav-link:hover,
+.navbar .nav-link:focus { color: #ffffff; opacity: .9; }
 
+/* Footer */
+footer a { color: var(--bs-light); }
+footer a:hover { color: #ffffff; opacity: .9; }
+
+/* =========================
+   Buttons
+   ========================= */
 .btn-primary {
-  background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #0b0b0c;
+  font-weight: 600;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #2fe894;
+  border-color: #2fe894;
+  color: #070708;
 }
 
-.btn-primary:hover {
-  background-color: var(--bs-secondary);
-  border-color: var(--bs-secondary);
+/* Outline buttons used for filters and secondary CTAs */
+.btn-outline-secondary {
+  color: #34343a;
+  border-color: #cfcfd6;
+  background-color: #ffffff;
+}
+.btn-outline-secondary:hover {
+  color: #0e0e10;
+  border-color: var(--accent-2);
+  background-color: #f7f9ff;
 }
 
-/* Glow effect for accents */
+/* Tag filter active state (uses .is-active class from index.md) */
+.btn-outline-secondary.is-active,
+.btn-outline-secondary.is-active:hover {
+  color: #0b0b0c;
+  background-color: var(--accent);
+  border-color: var(--accent);
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+/* =========================
+   Sections used in index.md
+   ========================= */
+section[style*="var(--bg)"] {
+  color: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+section[style*="var(--bg-elev)"] {
+  color: var(--paper);
+  background: radial-gradient(900px 700px at 15% -10%, #1a1a1e 0, var(--bg-elev) 60%);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+/* =========================
+   Cards / Projects / Badges
+   ========================= */
+.card {
+  border: 1px solid rgba(12,12,14,.07);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0,0,0,.22);
+  border-color: rgba(12,12,14,.16);
+}
+
+/* Project badges (generic) */
+.badge {
+  border-radius: 999px;
+  font-weight: 600;
+}
+.badge.text-bg-light {
+  background: #f2f4f8 !important;
+  color: #343a40 !important;
+  border: 1px solid #e5e8ef;
+}
+.badge-accent {
+  background: rgba(53,255,161,.15);
+  color: #0c2a1c;
+  border: 1px solid rgba(53,255,161,.45);
+}
+
+/* Utility spacing in cards */
+.card .small { color: #6a6a73; }
+
+/* =========================
+   Headings & Type
+   ========================= */
+h1, h2, h3, h4, h5, h6 { letter-spacing: .2px; }
+.display-5, .h1, .h2, .h3 { text-wrap: balance; }
+
+/* Optional “glow” utilities (retuned to accent) */
 .glow {
-  color: #00e0ff;
-  text-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+  color: var(--accent);
+  text-shadow:
+    0 0 4px rgba(53,255,161,.9),
+    0 0 10px rgba(53,255,161,.6),
+    0 0 18px rgba(53,255,161,.4);
 }
-
-/* Glow-themed button */
-.btn-glow {
-  background-color: #4e215d;
-  border: 1px solid #00e0ff;
-  color: #00e0ff;
-  box-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff inset;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-glow:hover {
-  background-color: #944bbb;
-  box-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff inset;
-}
-
-/* Glow headings */
 h1.glow, h2.glow, h3.glow {
-  color: #00e0ff;
-  text-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff, 0 0 15px #00e0ff;
+  text-shadow:
+    0 0 6px rgba(53,255,161,.9),
+    0 0 14px rgba(53,255,161,.6),
+    0 0 24px rgba(53,255,161,.4);
+}
+
+/* =========================
+   Helpers
+   ========================= */
+/* Smooth transitions only if user allows */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* Optional: subtle underline lift on links */
+a.text-decoration-none:hover {
+  text-decoration: underline;
+}
+
+/* Ensure fixed-bottom footer doesn’t overlap content on small screens */
+@media (max-width: 576px) {
+  body { padding-bottom: 84px; }
 }

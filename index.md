@@ -6,7 +6,7 @@ title: Home
 <!-- HERO -->
 <section class="py-5 text-center" style="background: var(--bg);">
   <div class="container">
-    <img src="/assets/images/logo.png" alt="Logo" class="mb-3" style="height: 80px;">
+    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo" class="mb-3" style="height: 80px;">
     <h1 class="display-5 fw-bold mb-3">Mike MacDonagh</h1>
     <p class="lead mx-auto" style="max-width: 760px;">
       Support-focused developer who turns chaos into clean, documented systems.
@@ -14,7 +14,7 @@ title: Home
     </p>
     <div class="d-flex gap-2 justify-content-center mt-3">
       <a href="mailto:michael@mechmadhog.com" class="btn btn-primary">Contact Me</a>
-      <a href="/assets/docs/Michael MacDonagh CV  [August 2025].pdf" class="btn btn-outline-secondary">Download CV</a>
+      <a href="{{ '/assets/docs/michael-macdonagh-cv-aug-2025.pdf' | relative_url }}" class="btn btn-outline-secondary">Download CV</a>
     </div>
   </div>
 </section>
@@ -99,55 +99,24 @@ title: Home
   </div>
 </section>
 
-<!-- COMPETENCIES -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="h3 text-center mb-4">Core Competencies</h2>
-    <div class="d-flex flex-wrap gap-2 justify-content-center">
-      <span class="badge rounded-pill text-bg-primary">Support & Operations</span>
-      <span class="badge rounded-pill text-bg-primary">Backlog Grooming</span>
-      <span class="badge rounded-pill text-bg-primary">Client Liaison</span>
-      <span class="badge rounded-pill text-bg-primary">Documentation & SOPs</span>
-      <span class="badge rounded-pill text-bg-primary">Test Scripts</span>
-      <span class="badge rounded-pill text-bg-primary">SharePoint (Classic/Modern)</span>
-      <span class="badge rounded-pill text-bg-primary">DevOps · Autotask</span>
-      <span class="badge rounded-pill text-bg-primary">HTML · CSS · JS · Git</span>
-      <span class="badge rounded-pill text-bg-primary">Bootstrap</span>
-      <span class="badge rounded-pill text-bg-primary">Shell Scripting</span>
-      <span class="badge rounded-pill text-bg-primary">CoPilot Studio</span>
-      <span class="badge rounded-pill text-bg-primary">Flows · n8n (MCP)</span>
-      <span class="badge rounded-pill text-bg-primary">Regex</span>
-      <span class="badge rounded-pill text-bg-primary">VS Code · Docker</span>
-      <span class="badge rounded-pill text-bg-primary">Remote Support</span>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURED PROJECTS PREVIEW -->
+<!-- PROJECTS GALLERY (dynamic with tag filters) -->
 <section class="py-5">
   <div class="container">
-    <h2 class="h3 text-center mb-4">Selected Work</h2>
-    <div class="row g-4 justify-content-center">
-      <!-- Example card — replace with real content or collection -->
-      <div class="col-md-5">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h3 class="h5 mb-2">Portfolio & Knowledge Hub</h3>
-            <p class="mb-3">Jekyll-based, fast, and fully documented. Built to be simple for non-devs to update.</p>
-            <a href="/projects" class="btn btn-sm btn-primary">See Projects</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h3 class="h5 mb-2">SharePoint Site Revamps</h3>
-            <p class="mb-3">Cleaned IA, standardized content types, and wrote user guides to reduce tickets.</p>
-            <a href="/projects" class="btn btn-sm btn-outline-secondary">Case Notes</a>
-          </div>
-        </div>
-      </div>
+    <h2 class="h3 text-center mb-3">Projects</h2>
+
+    <!-- Tag filters -->
+    <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" aria-label="Project filters">
+      <button class="btn btn-sm btn-outline-secondary is-active" data-tag="all">All</button>
+      <button class="btn btn-sm btn-outline-secondary" data-tag="html">HTML</button>
+      <button class="btn btn-sm btn-outline-secondary" data-tag="css">CSS</button>
+      <button class="btn btn-sm btn-outline-secondary" data-tag="js">JS</button>
+      <button class="btn btn-sm btn-outline-secondary" data-tag="design">Design</button>
+      <button class="btn btn-sm btn-outline-secondary" data-tag="fcc">FreeCodeCamp</button>
+      <button class="btn btn-sm btn-outline-secondary" data-tag="codepen">CodePen</button>
     </div>
+
+    <!-- Cards injected by /assets/js/main.js -->
+    <div id="projects" class="row g-4"></div>
   </div>
 </section>
 
@@ -157,13 +126,13 @@ title: Home
     <h2 class="h3 text-center mb-4">Latest Writing</h2>
     {% for post in site.posts limit:3 %}
       <div class="mb-4 mx-auto" style="max-width: 880px;">
-        <h4 class="mb-1"><a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a></h4>
+        <h4 class="mb-1"><a href="{{ post.url | relative_url }}" class="text-decoration-none">{{ post.title }}</a></h4>
         <div class="text-muted small mb-2">{{ post.date | date: "%B %d, %Y" }}</div>
         <p class="mb-0">{{ post.excerpt }}</p>
       </div>
     {% endfor %}
     <div class="text-center mt-3">
-      <a href="/blog" class="btn btn-outline-secondary">Read the Blog</a>
+      <a href="{{ '/blog' | relative_url }}" class="btn btn-outline-secondary">Read the Blog</a>
     </div>
   </div>
 </section>
