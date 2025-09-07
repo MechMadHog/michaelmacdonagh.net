@@ -1,48 +1,51 @@
 /* =========================================================
-   _theme.scss — Signature theme for michaelmacdonagh.net
-   Uses Bootstrap for layout; custom visuals everywhere else.
+   _theme.scss — Light formal theme (Purple + Icy Blue)
    ========================================================= */
 
 /* -------------------------
    Core Theme Variables
    ------------------------- */
 :root {
-  /* Brand / Accent */
-  --accent: #35ffa1;         /* neon mint */
-  --accent-2: #7aa2ff;       /* secondary hover */
-  --ink: #0f0f10;            /* deep background */
-  --panel: #151517;          /* glass base for header/footer */
-  --line: #232327;
+  /* Brand */
+  --purple: #6b4ad8;         /* primary */
+  --purple-700: #5435c7;
+  --purple-300: #a697f1;
+  --ice: #9fd4ff;            /* accent */
+  --ice-200: #cfeaff;
 
-  /* Text */
-  --text: #e7e7ea;           /* light text on dark */
-  --muted: #a7a7ae;
-  --body: #1c1c1f;           /* body text on light */
-  --paper: #f7f7f9;          /* page background (light) */
+  /* Greys */
+  --ink: #1e1f22;            /* main text */
+  --muted: #63666d;          /* secondary text */
+  --line: #e6e8ee;           /* dividers */
+  --panel: #f6f8fb;          /* elevated light panel */
+  --paper: #ffffff;          /* page white */
 
-  /* Radii / Shadows / FX */
+  /* Effects */
   --radius: 14px;
-  --shadow: 0 10px 30px rgba(0,0,0,.25);
+  --shadow: 0 10px 24px rgba(21,27,38,.06);
   --blur: 10px;
 
   /* Section helpers used in index.md */
-  --bg: #0f0f10;             /* dark hero */
-  --bg-elev: #151517;        /* elevated dark */
+  --bg: var(--paper);        /* HERO */
+  --bg-elev: var(--panel);   /* SNAPSHOT */
 
-  /* Bootstrap tune (we’re overriding via CSS since Bootstrap comes via CDN) */
-  --bs-primary: var(--accent);
-  --bs-secondary: var(--accent-2);
+  /* Bootstrap tune */
+  --bs-primary: var(--purple);
+  --bs-secondary: var(--ice);
   --bs-body-bg: var(--paper);
-  --bs-body-color: var(--body);
-  --bs-dark: var(--ink);
-  --bs-light: #f2f2f4;
+  --bs-body-color: var(--ink);
+  --bs-dark: #0f1115;
+  --bs-light: #f8f9fb;
 }
 
-/* Respect system dark if desired later */
+/* Optional dark respect */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bs-body-bg: #0d0d10;
-    --bs-body-color: #e9e9ec;
+    --bs-body-bg: #0f1115;
+    --bs-body-color: #e8eaf0;
+    --line: #1f2430;
+    --panel: #12151b;
+    --paper: #0f1115;
   }
 }
 
@@ -56,30 +59,26 @@ body {
   color: var(--bs-body-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-bottom: 70px; /* room for footer if fixed later */
+  padding-bottom: 70px; /* room if footer is fixed later */
 }
 
-main > .container {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-}
+main > .container { padding-top: 2rem; padding-bottom: 4rem; }
 
 h1, h2, h3, h4, h5, h6 { letter-spacing: .2px; }
 .display-5, .h1, .h2, .h3 { text-wrap: balance; }
 
+/* Legible secondary text on white */
+.text-muted { color: var(--muted) !important; }
+
 /* Links */
 a {
-  color: var(--bs-primary);
+  color: var(--purple);
   text-decoration: none;
   transition: color .15s ease, opacity .15s ease, text-shadow .15s ease;
 
-  &:hover {
-    color: var(--accent-2);
-    text-decoration: underline;
-  }
-
+  &:hover { color: var(--purple-700); text-decoration: underline; }
   &:focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--ice);
     outline-offset: 2px;
     border-radius: 6px;
     text-decoration: none;
@@ -92,34 +91,34 @@ a {
 }
 
 /* -------------------------
-   Signature Header
+   Signature Header (sticky)
    ------------------------- */
 .site-header {
   position: sticky; top: 0; z-index: 1000;
-  background: rgba(15,15,16,.55);
+  background: rgba(255,255,255,.75);
   backdrop-filter: saturate(130%) blur(var(--blur));
-  border-bottom: 1px solid rgba(255,255,255,.05);
-  box-shadow: 0 6px 30px rgba(0,0,0,.25);
-  transition: all .2s ease;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(21,27,38,.04);
+  transition: background .2s ease, box-shadow .2s ease, border-color .2s ease;
 
   &.is-scrolled {
-    background: rgba(15,15,16,.75);
-    border-bottom-color: rgba(255,255,255,.07);
+    background: rgba(255,255,255,.92);
+    box-shadow: 0 10px 28px rgba(21,27,38,.06);
   }
 }
 
 /* Brand */
 .brand {
-  .brand-dot {
-    width: 10px; height: 10px; border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 16px var(--accent);
-    display: inline-block;
+  .brand-logo {
+    display: block;
+    height: 36px;
+    width: auto;
+    filter: drop-shadow(0 4px 12px rgba(21,27,38,.08));
   }
-  .brand-text { color: #fff; letter-spacing: .2px; }
+  .brand-text { color: var(--ink); letter-spacing: .2px; }
 }
 
-/* Nav (custom, not Bootstrap default look) */
+/* Nav (custom look, not Bootstrap skin) */
 .nav-list {
   list-style: none;
   display: flex;
@@ -128,65 +127,60 @@ a {
   margin: 0;
 
   .nav-link {
-    --pad: .6rem .9rem;
+    --pad: .55rem .8rem;
     position: relative;
     display: inline-flex;
     align-items: center;
     padding: var(--pad);
-    color: #dfe0e4;
+    color: #3d3f44;
     text-decoration: none;
     border-radius: 999px;
-    transition: color .15s ease, background .15s ease, transform .15s ease;
+    transition: color .15s ease, background .15s ease;
 
     &:hover {
-      color: #fff;
-      background: rgba(122,162,255,.07);
+      color: var(--ink);
+      background: #f3f6ff; /* subtle icy hover */
       text-decoration: none;
     }
-
     &:focus-visible {
-      outline: 2px solid var(--accent);
+      outline: 2px solid var(--ice);
       outline-offset: 2px;
     }
 
-    /* Active/hover underline “rail” */
+    /* Active/hover underline rail (icy → purple) */
     &::after {
       content: "";
-      position: absolute; left: 12px; right: 12px; bottom: 8px; height: 2px;
-      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      position: absolute; left: 12px; right: 12px; bottom: 6px; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--ice), var(--purple), transparent);
       transform: scaleX(0);
       transform-origin: center;
       transition: transform .2s ease;
       border-radius: 2px;
     }
-
     &:hover::after,
-    &[aria-current="page"]::after {
-      transform: scaleX(1);
-    }
+    &[aria-current="page"]::after { transform: scaleX(1); }
   }
 }
 
-/* Mobile toggler harmony (when not using navbar-dark) */
-.navbar-toggler { border: 1px solid rgba(255,255,255,.25); }
-.navbar-toggler-icon { filter: invert(1); }
+/* Mobile toggler (dark icon on light header) */
+.navbar-toggler { border: 1px solid #d7dbe6; }
+.navbar-toggler-icon { background-image: var(--bs-navbar-toggler-icon-bg, none); }
 
 /* -------------------------
-   Signature Footer
+   Signature Footer (light)
    ------------------------- */
 .site-footer {
   margin-top: 3rem;
   background:
-    linear-gradient(180deg, rgba(53,255,161,.06), rgba(122,162,255,.05)),
-    radial-gradient(700px 400px at 10% -20%, rgba(122,162,255,.08), transparent 60%),
-    var(--ink);
-  color: var(--text);
+    linear-gradient(180deg, rgba(159,212,255,.12), rgba(107,74,216,.06)),
+    var(--paper);
+  color: var(--ink);
   border-top: 1px solid var(--line);
-  box-shadow: 0 -12px 40px rgba(0,0,0,.35) inset;
+  box-shadow: 0 -8px 24px rgba(21,27,38,.05) inset;
 
   .footer-grid {
     display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem;
-    align-items: center; padding: 18px 0;
+    align-items: center; padding: 16px 0;
   }
 
   .footer-cell {
@@ -196,35 +190,29 @@ a {
   }
 
   .footer-link {
-    color: #cfd1d7; text-decoration: none; border-bottom: 1px dashed transparent;
+    color: #4a4d54; text-decoration: none; border-bottom: 1px dashed transparent;
     transition: color .15s ease, border-color .15s ease;
 
-    &:hover { color: #fff; border-color: rgba(255,255,255,.35); }
+    &:hover { color: var(--ink); border-color: #b9c0d0; }
     &:focus-visible {
-      outline: 2px solid var(--accent);
+      outline: 2px solid var(--ice);
       outline-offset: 3px;
       border-radius: 6px;
     }
   }
-
-  /* If you decide to fix footer to bottom, uncomment:
-  position: fixed; left: 0; right: 0; bottom: 0;
-  and bump body bottom padding.
-  */
 }
 
 /* -------------------------
    Sections (used in index.md)
    ------------------------- */
 section[style*="var(--bg)"] {
-  color: var(--text);
+  color: var(--ink);
   background: var(--bg);
   border-bottom: 1px solid var(--line);
 }
-
 section[style*="var(--bg-elev)"] {
-  color: var(--text);
-  background: radial-gradient(900px 700px at 15% -10%, #1a1a1e 0, var(--bg-elev) 60%);
+  color: var(--ink);
+  background: var(--bg-elev);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -233,165 +221,107 @@ section[style*="var(--bg-elev)"] {
    Buttons & Tag Filters
    ------------------------- */
 .btn-primary {
-  background-color: var(--accent);
-  border-color: var(--accent);
-  color: #0b0b0c; font-weight: 600;
+  background-color: var(--purple);
+  border-color: var(--purple);
+  color: #fff; font-weight: 600;
 
-  &:hover, &:focus {
-    background-color: #2fe894;
-    border-color: #2fe894;
-    color: #070708;
-  }
-
-  &:focus-visible {
-    box-shadow: 0 0 0 0.2rem rgba(53,255,161,.35);
-  }
+  &:hover, &:focus { background-color: var(--purple-700); border-color: var(--purple-700); }
+  &:focus-visible { box-shadow: 0 0 0 0.2rem rgba(159,212,255,.45); }
 }
 
 .btn-outline-secondary {
-  color: #34343a;
-  border-color: #cfcfd6;
+  color: #3d3f44;
+  border-color: #d4d8e2;
   background-color: #ffffff;
 
   &:hover {
-    color: #0e0e10;
-    border-color: var(--accent-2);
-    background-color: #f7f9ff;
+    color: #1f2024;
+    border-color: var(--ice);
+    background-color: #f3f8ff;
   }
 
   &.is-active,
   &.is-active:hover {
-    color: #0b0b0c;
-    background-color: var(--accent);
-    border-color: var(--accent);
+    color: #ffffff;
+    background-color: var(--purple);
+    border-color: var(--purple);
     text-shadow: 0 1px 0 rgba(0,0,0,.1);
   }
 
-  &:focus-visible {
-    box-shadow: 0 0 0 0.2rem rgba(122,162,255,.35);
-  }
+  &:focus-visible { box-shadow: 0 0 0 0.2rem rgba(159,212,255,.45); }
 }
 
 /* -------------------------
    Cards / Badges / Lists
    ------------------------- */
 .card {
-  border: 1px solid rgba(12,12,14,.07);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  background: var(--paper);
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 14px 40px rgba(0,0,0,.22);
-    border-color: rgba(12,12,14,.16);
+    box-shadow: 0 14px 36px rgba(21,27,38,.08);
+    border-color: #d9dce5;
   }
 
-  .small { color: #6a6a73; }
-
-  ul {
-    padding-left: 1.1rem;
-    li { margin-bottom: .35rem; }
-  }
+  .small { color: var(--muted); }
+  ul { padding-left: 1.1rem; li { margin-bottom: .35rem; } }
 }
 
-.badge {
-  border-radius: 999px; font-weight: 600;
-
-  &.text-bg-light {
-    background: #f2f4f8 !important;
-    color: #343a40 !important;
-    border: 1px solid #e5e8ef;
-  }
+/* Project tag badges */
+.badge { border-radius: 999px; font-weight: 600; }
+.badge.text-bg-light {
+  background: #f1f3f8 !important; color: #3f434a !important; border: 1px solid #e1e5ee;
+}
+.badge-accent { /* e.g., mark JS projects */
+  background: #efe9ff; color: var(--purple-700); border: 1px solid #e0d6ff;
 }
 
-.badge-accent {
-  background: rgba(53,255,161,.15);
-  color: #0c2a1c;
-  border: 1px solid rgba(53,255,161,.45);
-}
+/* Subtitle helper if not using .text-muted */
+.subtitle { color: var(--muted); }
 
 /* -------------------------
    Hero image polish
    ------------------------- */
-img[alt="Logo"] {
-  filter: drop-shadow(0 6px 16px rgba(0,0,0,.25));
-}
+img[alt="Logo"], .brand-logo { filter: drop-shadow(0 4px 12px rgba(21,27,38,.08)); }
 
 /* -------------------------
    Utilities
    ------------------------- */
-.glow {
-  color: var(--accent);
-  text-shadow:
-    0 0 4px rgba(53,255,161,.9),
-    0 0 10px rgba(53,255,161,.6),
-    0 0 18px rgba(53,255,161,.4);
-}
-
-h1.glow, h2.glow, h3.glow {
-  text-shadow:
-    0 0 6px rgba(53,255,161,.9),
-    0 0 14px rgba(53,255,161,.6),
-    0 0 24px rgba(53,255,161,.4);
-}
-
-/* Subtle underline lift on no-decoration links */
 a.text-decoration-none:hover { text-decoration: underline; }
-
-/* Improved focus ring for any button/link with .focus-ring helper */
 .focus-ring:focus-visible {
-  outline: 2px solid var(--accent-2);
+  outline: 2px solid var(--ice);
   outline-offset: 3px;
   border-radius: 8px;
 }
 
 /* -------------------------
-   Responsive
+   Responsive tweaks
    ------------------------- */
 @media (max-width: 991px) {
-  .nav-list {
-    padding: .75rem 0;
-    flex-direction: column;
-
-    .nav-link {
-      padding: .5rem .8rem;
-      width: 100%;
-    }
+  .nav-list { padding: .6rem 0; flex-direction: column;
+    .nav-link { padding: .5rem .8rem; width: 100%; }
   }
-
-  .site-footer .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-
-    .footer-cell.left,
-    .footer-cell.right { justify-self: center; }
+  .site-footer .footer-grid { grid-template-columns: 1fr; text-align: center;
+    .footer-cell.left, .footer-cell.right { justify-self: center; }
   }
 }
-
-@media (max-width: 576px) {
-  body { padding-bottom: 84px; }
-}
+@media (max-width: 576px) { body { padding-bottom: 84px; } }
 
 /* -------------------------
-   Optional: Compat Skin (bridge old markup)
-   Remove once you switch to .site-header / .site-footer markup
+   Optional: Compat skin (bridge old Bootstrap markup)
+   Remove once you use .site-header/.site-footer
    ------------------------- */
-header.bg-dark,
-.navbar.bg-dark {
-  background: rgba(15,15,16,.55) !important;
+header.bg-light, .navbar.bg-light {
+  background: rgba(255,255,255,.85) !important;
   backdrop-filter: saturate(130%) blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,.05);
-  box-shadow: 0 6px 30px rgba(0,0,0,.25);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(21,27,38,.05);
 }
-
-footer.bg-dark,
-footer.fixed-bottom {
-  background:
-    linear-gradient(180deg, rgba(53,255,161,.06), rgba(122,162,255,.05)),
-    radial-gradient(700px 400px at 10% -20%, rgba(122,162,255,.08), transparent 60%),
-    #0f0f10 !important;
-  color: #e7e7ea !important;
-  border-top: 1px solid #232327;
-  box-shadow: 0 -12px 40px rgba(0,0,0,.35) inset;
+footer.bg-light, footer.fixed-bottom {
+  background: var(--paper) !important;
+  border-top: 1px solid var(--line);
 }
