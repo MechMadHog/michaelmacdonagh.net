@@ -4,29 +4,33 @@ title: Projects
 permalink: /projects/
 ---
 
-# Projects
+<section class="py-5 page-min">
+  <div class="container">
 
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col">
-    <div class="card h-100 shadow-sm">
-      <img src="/assets/images/logo.png" class="card-img-top" alt="Screenshot">
-      <div class="card-body">
-        <h5 class="card-title">Site Generator</h5>
-        <p class="card-text">A static site generator using Markdown and Bootstrap.</p>
-        <a href="#" class="btn btn-outline-primary btn-sm">View on GitHub</a>
-      </div>
+    <!-- Header -->
+    <header class="mb-4 text-center">
+      <h1 class="mb-2">Projects</h1>
+      <p class="text-muted mb-0">Selected work and learning pieces. Filter by tag.</p>
+    </header>
+
+    <!-- Filters (wired to /assets/js/main.js) -->
+    <div class="filters d-flex flex-wrap gap-2 justify-content-center mb-4" aria-label="Project filters">
+      <button class="btn btn-sm btn-outline-secondary is-active tag" data-tag="all">All</button>
+      <button class="btn btn-sm btn-outline-secondary tag" data-tag="html">HTML</button>
+      <button class="btn btn-sm btn-outline-secondary tag" data-tag="css">CSS</button>
+      <button class="btn btn-sm btn-outline-secondary tag" data-tag="js">JS</button>
+      <button class="btn btn-sm btn-outline-secondary tag" data-tag="design">Design</button>
+      <button class="btn btn-sm btn-outline-secondary tag" data-tag="fcc">FreeCodeCamp</button>
+      <button class="btn btn-sm btn-outline-secondary tag" data-tag="codepen">CodePen</button>
     </div>
-  </div>
 
-  <div class="col">
-    <div class="card h-100 shadow-sm">
-      <img src="/assets/images/logo.png" class="card-img-top" alt="Screenshot">
-      <div class="card-body">
-        <h5 class="card-title">Markdown Portfolio</h5>
-        <p class="card-text">The personal website you're viewing right now.</p>
-        <a href="#" class="btn btn-outline-primary btn-sm">View Live</a>
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- Grid populated by main.js -->
+    <div id="projects" class="row g-4"></div>
 
+    <!-- (Optional) tiny fallback if JS is off -->
+    <noscript>
+      <div class="alert alert-secondary">Enable JavaScript to see the projects grid.</div>
+    </noscript>
+
+  </div>
+</section>
