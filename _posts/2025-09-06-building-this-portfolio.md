@@ -5,7 +5,7 @@ description: "Why I moved off WordPress, my two-site strategy, the light theme w
 categories: [Meta, Portfolio]
 tags: [jekyll, design, workflow, css, javascript]
 featured: true
-image: /assets/images/blog/building-portfolio-hero.jpg
+image: /assets/images/blog/building-portfolio-hero.png
 ---
 
 > tl;dr... Jekyll + a light formal theme, dark project cards for contrast, and simple data-driven JS for a filterable projects grid.

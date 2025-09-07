@@ -1,16 +1,32 @@
 <footer class="site-footer">
   <div class="container footer-grid">
+    <!-- Left: copyright only -->
     <div class="footer-cell left">
-      <small>© <span id="year"></span> Mike MacDonagh. All rights reserved.</small>
+      <small>© <span id="year"></span> Michael MacDonagh. All rights reserved.</small>
     </div>
-    <div class="footer-cell center">
-    </div>
+
+    <!-- Center: (keep empty or add anything later) -->
+    <div class="footer-cell center"></div>
+
+    <!-- Right: social icons (RSS at the end) -->
     <div class="footer-cell right">
-      <a href="https://linkedin.com/in/michaelmacdonagh/" class="footer-link">LinkedIn</a>
-      <a href="https://github.com/MechMadHog" class="footer-link">GitHub</a>
-      <a href="https://codepen.io/Mike-MacDonagh" class="footer-link">CodePen</a>
-      <a href="https://www.behance.net/mikemacdonagh" class="footer-link">Behance</a>
-      <a class="footer-link" href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      <nav class="social-icons" aria-label="Social links">
+        <a href="https://linkedin.com/in/michaelmacdonagh/" class="social" aria-label="LinkedIn" target="_blank" rel="me noopener">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/MechMadHog" class="social" aria-label="GitHub" target="_blank" rel="me noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://codepen.io/Mike-MacDonagh" class="social" aria-label="CodePen" target="_blank" rel="me noopener">
+          <i class="fa-brands fa-codepen"></i>
+        </a>
+        <a href="https://www.behance.net/mikemacdonagh" class="social" aria-label="Behance" target="_blank" rel="me noopener">
+          <i class="fa-brands fa-behance"></i>
+        </a>
+        <a href="{{ '/feed.xml' | relative_url }}" class="social" aria-label="RSS feed">
+          <i class="fa-solid fa-rss"></i>
+        </a>
+      </nav>
     </div>
   </div>
 </footer>
