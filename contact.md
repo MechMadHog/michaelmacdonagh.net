@@ -13,7 +13,7 @@ permalink: /contact/
     <div class="row g-4 align-items-start">
       <!-- Form -->
       <div class="col-12 col-lg-7">
-        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="needs-validation" novalidate>
+        <form action="https://formspree.io/f/xblzyjdn" method="POST" class="needs-validation" novalidate>
           <!-- name -->
           <div class="mb-3">
             <label for="name" class="form-label">Your name</label>
