@@ -14,7 +14,7 @@ title: Home
     </p>
     <div class="d-flex gap-2 justify-content-center mt-3">
       <a href="mailto:michael@mechmadhog.com" class="btn btn-primary">Contact Me</a>
-      <a href="{{ '/assets/docs/michael-macdonagh-cv-aug-2025.pdf' | relative_url }}" class="btn btn-outline-secondary">Download CV</a>
+      <a href="{{ '/assets/docs/michael-macdonagh-cv-sept-2025.pdf' | relative_url }}" class="btn btn-outline-secondary">Download CV</a>
     </div>
   </div>
 </section>
