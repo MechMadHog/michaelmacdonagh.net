@@ -4,6 +4,12 @@
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+/* ---- Thumb fallback + picker (FIX) */
+const DEFAULT_THUMB = "/assets/images/logo.png"; // fallback image
+function pickThumb(p) {
+  return (p && p.thumb && String(p.thumb).trim()) ? p.thumb : DEFAULT_THUMB;
+}
+
 /* ===== Tag labels (single source of truth) ===== */
 const TAG_LABELS = {
   js: "JS",
@@ -28,6 +34,8 @@ const TAG_LABELS = {
   health: "Health",
   food: "Food",
   cyberpunk: "Cyberpunk",
+  animation: "Animation",       // added so filter exists
+  accessibility: "Accessibility" // added so filter exists
 };
 
 /* TIP: add new items to the END; we reverse below to show latest first. */
