@@ -32,11 +32,61 @@ const TAG_LABELS = {
 
 /* ===========================================================
    Thumbnails
-   For now, use the site logo everywhere unless a project overrides it.
-   You can still set per-project images via THUMB_PROJECT or `thumb` on the item.
+   Using your numbered thumbs in /assets/img/thumbs/
+   Fallback stays your logo if something is missing.
    =========================================================== */
 const DEFAULT_THUMB = "https://michaelmacdonagh.net/assets/images/logo.png";
-const THUMB_PROJECT = {};
+
+/* Map: project-title-slug -> thumbnail path
+   Adjust any path on the right if a pairing isn't what you expect. */
+const THUMB_PROJECT = {
+  /* === FCC Responsive Web Design (fcc-rwd) === */
+  "stoic-philosophers-photo-app": "/assets/img/thumbs/fcc-rwd-1.1.png",
+  "macs-wrap-shack": "/assets/img/thumbs/fcc-rwd-1.2.png",
+  "colored-markers-set": "/assets/img/thumbs/fcc-rwd-1.3.png",
+  "what-kind-of-metal-head-are-you": "/assets/img/thumbs/fcc-rwd-1.4.png",
+  "rodney-mullen-the-godfather-of-skate": "/assets/img/thumbs/fcc-rwd-1.5.png",
+  "replicant-registration": "/assets/img/thumbs/fcc-rwd-1.6.png",
+  "hunters-diagnostic-checklist": "/assets/img/thumbs/fcc-rwd-1.7.png",
+
+  "mondrian-grid": "/assets/img/thumbs/fcc-rwd-2.1.png",
+  "skateboarding-photo-gallery": "/assets/img/thumbs/fcc-rwd-2.2.png",
+  "my-cv-in-htmlcss": "/assets/img/thumbs/fcc-rwd-2.3.png",
+  "calories-in-vs-out-guide": "/assets/img/thumbs/fcc-rwd-2.4.png",
+
+  "plumbus-landing-page": "/assets/img/thumbs/fcc-rwd-3.png",
+  "qotsa-magazine-spread": "/assets/img/thumbs/fcc-rwd-3.1.png",
+  "the-dented-helmet-boba-fett": "/assets/img/thumbs/fcc-rwd-3.2.png",
+  "yolked-bear-mode-docs": "/assets/img/thumbs/fcc-rwd-3.3.png",
+
+  "go-with-the-flow-desert-scene": "/assets/img/thumbs/fcc-rwd-4.png",
+  "star-wars-dejarik-holo-chess": "/assets/img/thumbs/fcc-rwd-4.1.png",
+  "qotsa-magazine-spread-alt": "/assets/img/thumbs/fcc-rwd-4.2.png", // keep/repurpose if you have 4.2 assigned differently
+
+  "vinyl-record-spinner": "/assets/img/thumbs/fcc-rwd-5.1.png",
+  "jack-o-lantern-flicker": "/assets/img/thumbs/fcc-rwd-5.2.png",
+  "personal-portfolio-webpage": "/assets/img/thumbs/fcc-rwd-5.png",
+
+  /* === JavaScript Algorithms & Data Structures (fcc-jsads) === */
+  "palindrome-checker": "/assets/img/thumbs/fcc-jsads-1.1.png",
+  "retro-crt-pyramid-console": "/assets/img/thumbs/fcc-jsads-1.2.png",
+  "handwritten-copybook-gradebook": "/assets/img/thumbs/fcc-jsads-1.3.png",
+  "lightbulb-switch": "/assets/img/thumbs/fcc-jsads-1.4.png",
+  "comment-moderation-terminal": "/assets/img/thumbs/fcc-jsads-1.5.png",
+  "health-app-tracker": "/assets/img/thumbs/fcc-jsads-1.6.png",
+  "rock-paper-scissors": "/assets/img/thumbs/fcc-jsads-1.7.png",
+  "jj-derek-mixtape-player": "/assets/img/thumbs/fcc-jsads-1.png",
+
+  "roman-numeral-converter": "/assets/img/thumbs/fcc-jsads-2.1.png",
+  "retro-date-utility": "/assets/img/thumbs/fcc-jsads-2.2.png",
+  "habs-roster-cards": "/assets/img/thumbs/fcc-jsads-2.3.png",
+  "mixtape-playlist-maker": "/assets/img/thumbs/fcc-jsads-2.4.png",
+
+  "decimal-binary-converter": "/assets/img/thumbs/fcc-jsads-3.1.png",
+  "mixtape-sorter": "/assets/img/thumbs/fcc-jsads-3.2.png",
+  "dd-dice-lab": "/assets/img/thumbs/fcc-jsads-3.3.png",
+  "budget-tracker": "/assets/img/thumbs/fcc-jsads-3.4.png",
+};
 
 const slugify = (s) =>
   s.toLowerCase().trim()
@@ -51,8 +101,8 @@ function pickThumb(project) {
   return DEFAULT_THUMB;
 }
 
-/* TIP: Keep adding new items to the end of this array.
-   We automatically show "latest" first via a reversed copy below. */
+/* ---- Project data (no 'codepen' or 'fcc' tags) */
+/* TIP: add new items to the END; we reverse below to show latest first. */
 const ALL_PROJECTS = [
   /* === Responsive Web Design (20) === */
   { title:"Personal Portfolio Webpage", subtitle:"Responsive Web Design - Final", blurb:"Pulled everything together: grid, responsive, sticky nav, glow effects.", href:"https://codepen.io/Mike-MacDonagh/pen/bNVOrxK", repo:null, tags:["html","css","ui"] },
@@ -99,9 +149,7 @@ const ALL_PROJECTS = [
 /* Safety net: strip any stray 'codepen' or 'fcc' tags if they ever appear */
 ALL_PROJECTS.forEach(p => p.tags = (p.tags || []).filter(t => t !== "codepen" && t !== "fcc"));
 
-/* === Latest-first ordering ===
-   We assume the newest projects are added last in ALL_PROJECTS.
-   To show latest first everywhere, we work on a reversed copy. */
+/* === Latest-first ordering === */
 const PROJECTS = [...ALL_PROJECTS].reverse();
 
 /* ====== Projects page: filters + show-more ====== */
