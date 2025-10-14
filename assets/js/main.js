@@ -61,18 +61,15 @@ const THUMB_PROJECT = {
 
   "go-with-the-flow-desert-scene": "/assets/img/thumbs/fcc-rwd-4.png",
   "star-wars-dejarik-holo-chess": "/assets/img/thumbs/fcc-rwd-4.1.png",
-  "qotsa-magazine-spread-alt": "/assets/img/thumbs/fcc-rwd-4.2.png", // keep/repurpose if you have 4.2 assigned differently
 
-  "vinyl-record-spinner": "/assets/img/thumbs/fcc-rwd-5.1.png",
-  "jack-o-lantern-flicker": "/assets/img/thumbs/fcc-rwd-5.2.png",
-  "personal-portfolio-webpage": "/assets/img/thumbs/fcc-rwd-5.png",
+
 
   /* === JavaScript Algorithms & Data Structures (fcc-jsads) === */
   "palindrome-checker": "/assets/img/thumbs/fcc-jsads-1.1.png",
   "retro-crt-pyramid-console": "/assets/img/thumbs/fcc-jsads-1.2.png",
   "handwritten-copybook-gradebook": "/assets/img/thumbs/fcc-jsads-1.3.png",
   "lightbulb-switch": "/assets/img/thumbs/fcc-jsads-1.4.png",
-  "comment-moderation-terminal": "/assets/img/thumbs/fcc-jsads-1.5.png",
+
   "health-app-tracker": "/assets/img/thumbs/fcc-jsads-1.6.png",
   "rock-paper-scissors": "/assets/img/thumbs/fcc-jsads-1.7.png",
   "jj-derek-mixtape-player": "/assets/img/thumbs/fcc-jsads-1.png",
@@ -80,12 +77,9 @@ const THUMB_PROJECT = {
   "roman-numeral-converter": "/assets/img/thumbs/fcc-jsads-2.1.png",
   "retro-date-utility": "/assets/img/thumbs/fcc-jsads-2.2.png",
   "habs-roster-cards": "/assets/img/thumbs/fcc-jsads-2.3.png",
-  "mixtape-playlist-maker": "/assets/img/thumbs/fcc-jsads-2.4.png",
 
-  "decimal-binary-converter": "/assets/img/thumbs/fcc-jsads-3.1.png",
-  "mixtape-sorter": "/assets/img/thumbs/fcc-jsads-3.2.png",
-  "dd-dice-lab": "/assets/img/thumbs/fcc-jsads-3.3.png",
-  "budget-tracker": "/assets/img/thumbs/fcc-jsads-3.4.png",
+
+
 };
 
 const slugify = (s) =>
@@ -105,7 +99,7 @@ function pickThumb(project) {
 /* TIP: add new items to the END; we reverse below to show latest first. */
 const ALL_PROJECTS = [
   /* === Responsive Web Design (20) === */
-  { title:"Personal Portfolio Webpage", subtitle:"Responsive Web Design - Final", blurb:"Pulled everything together: grid, responsive, sticky nav, glow effects.", href:"https://codepen.io/Mike-MacDonagh/pen/bNVOrxK", repo:null, tags:["html","css","ui"] },
+  { title:"Personal Portfolio Webpage", thumb: "/assets/img/thumbs/fcc-rwd-5.png", subtitle:"Responsive Web Design - Final", blurb:"Pulled everything together: grid, responsive, sticky nav, glow effects.", href:"https://codepen.io/Mike-MacDonagh/pen/bNVOrxK", repo:null, tags:["html","css","ui"] },
   { title:"What Kind of Metal Head Are You?", subtitle:"Survey Form", blurb:"Semantic form structure, accessible labels, validation.", href:"https://codepen.io/Mike-MacDonagh/pen/ByoZwao", repo:null, tags:["html","css","ui"] },
   { title:"Stoic Philosophers Photo App", subtitle:"Cat Photo App → themed", blurb:"Styled image app; groundwork for personal theming.", href:"https://codepen.io/Mike-MacDonagh/pen/yyYMrMM", repo:null, tags:["html","css","ui"] },
   { title:"Mac’s Wrap Shack", subtitle:"Café Menu → Burrito Bar", blurb:"Structured a realistic menu with clean CSS styling.", href:"https://codepen.io/Mike-MacDonagh/pen/raOybGY", repo:null, tags:["html","css","ui","food"] },
@@ -122,9 +116,9 @@ const ALL_PROJECTS = [
   { title:"Star Wars Dejarik Holo-Chess", subtitle:"Piano → themed CSS layout", blurb:"Advanced grid layout with creative theming.", href:"https://codepen.io/Mike-MacDonagh/pen/VYvxzeq", repo:null, tags:["html","css","ui","starwars"] },
   { title:"Plumbus Landing Page", subtitle:"Product Landing Page", blurb:"Hero, pricing, forms, embedded video.", href:"https://codepen.io/Mike-MacDonagh/pen/xbwayEj", repo:null, tags:["html","css","ui","parody"] },
   { title:"Go With The Flow (Desert Scene)", subtitle:"City Skyline → CSS scene", blurb:"Layering, backgrounds, gradients.", href:"https://codepen.io/Mike-MacDonagh/pen/KwdxVLM", repo:null, tags:["html","css","art"] },
-  { title:"QOTSA Magazine Spread", subtitle:"CSS Grid Magazine → album layout", blurb:"Magazine-style grid and typography.", href:"https://codepen.io/Mike-MacDonagh/pen/raOZZYL", repo:null, tags:["html","css","design","music"] },
-  { title:"Vinyl Record Spinner", subtitle:"Ferris Wheel → animation", blurb:"CSS animations, transforms, rotating vinyl.", href:"https://codepen.io/Mike-MacDonagh/pen/JoYmJmo", repo:null, tags:["html","css","art","animation","music"] },
-  { title:"Jack-o’-Lantern (Flicker)", subtitle:"Penguin → CSS art", blurb:"CSS transforms and glow effects.", href:"https://codepen.io/Mike-MacDonagh/pen/myeQwqe", repo:null, tags:["html","css","art","animation"] },
+  { title:"QOTSA Magazine Spread", thumb: "/assets/img/thumbs/fcc-rwd-4.2.png", subtitle:"CSS Grid Magazine → album layout", blurb:"Magazine-style grid and typography.", href:"https://codepen.io/Mike-MacDonagh/pen/raOZZYL", repo:null, tags:["html","css","design","music"] },
+  { title:"Vinyl Record Spinner", thumb: "/assets/img/thumbs/fcc-rwd-5.1.png", subtitle:"Ferris Wheel → animation", blurb:"CSS animations, transforms, rotating vinyl.", href:"https://codepen.io/Mike-MacDonagh/pen/JoYmJmo", repo:null, tags:["html","css","art","animation","music"] },
+  { title:"Jack-o’-Lantern (Flicker)", thumb: "/assets/img/thumbs/fcc-rwd-5.2.png", subtitle:"Penguin → CSS art", blurb:"CSS transforms and glow effects.", href:"https://codepen.io/Mike-MacDonagh/pen/myeQwqe", repo:null, tags:["html","css","art","animation"] },
 
   /* === JavaScript Algorithms & Data Structures (built only) === */
   { title:"Palindrome Checker", subtitle:"JS challenge", blurb:"Normalize text via regex and check reverse equality; a11y result.", href:"https://codepen.io/Mike-MacDonagh/pen/qEbZBaR", repo:null, tags:["js","tool","regex"] },
@@ -138,12 +132,12 @@ const ALL_PROJECTS = [
   { title:"Roman Numeral Converter", subtitle:"Converter utility", blurb:"Value/symbol map loop; clear invalid/low/high handling; imperial theme.", href:"https://codepen.io/Mike-MacDonagh/pen/ZYQeZBm", repo:null, tags:["js","tool","math"] },
   { title:"Retro Date Utility", subtitle:"Date Formatter", blurb:"ISO, UNIX, weekday, locale formats; terminal-style boot/flicker.", href:"https://codepen.io/Mike-MacDonagh/pen/RNraPar", repo:null, tags:["js","tool","ui"] },
   { title:"HABS Roster Cards", subtitle:"Football Team Cards → Hockey", blurb:"Player cards with filters, captain badge, CDN images and fallbacks.", href:"https://codepen.io/Mike-MacDonagh/pen/RNrRjvQ", repo:null, tags:["js","ui","sports"] },
-  { title:"Mixtape Playlist Maker", subtitle:"To-Do App → tracks", blurb:"Add, edit, delete with localStorage; search filter; Spotify-style skin.", href:"https://codepen.io/Mike-MacDonagh/pen/pvgNprM", repo:null, tags:["js","ui","music","tool"] },
-  { title:"Decimal → Binary Converter", subtitle:"Number Translator", blurb:"Recursive converter; input sanitization; call-stack animation demo.", href:"https://codepen.io/Mike-MacDonagh/pen/LEGWaPr", repo:null, tags:["js","tool","math"] },
-  { title:"Comment Moderation Terminal", subtitle:"Spam Filter → Troll Detector", blurb:"Regex-based toxicity scoring and highlight; CRT console theme.", href:"https://codepen.io/Mike-MacDonagh/pen/ogbWBPV", repo:null, tags:["js","tool","regex","ui"] },
-  { title:"Mixtape Sorter", subtitle:"Number Sorter → strings", blurb:"Bubble, Selection, Insertion on real tracks via localeCompare.", href:"https://codepen.io/Mike-MacDonagh/pen/XJXgdPX", repo:null, tags:["js","tool","music"] },
-  { title:"D&D Dice Lab", subtitle:"Statistics Calculator → dice", blurb:"Parse 3d6 / 1d20+5; mean, median, mode, range, variance, SD; crit/DC rates.", href:"https://codepen.io/Mike-MacDonagh/pen/PwZjgjZ", repo:null, tags:["js","tool","math","game"] },
-  { title:"Budget Tracker", subtitle:"Spreadsheet → finance app", blurb:"Regex formula engine with range expansion and precedence; A–J x 30 grid; seeded Income/Expenses/Summary; localStorage.", href:"https://codepen.io/Mike-MacDonagh/pen/LEGzPxY", repo:null, tags:["js","tool","finance","regex","ui"] },
+  { title:"Mixtape Playlist Maker", thumb: "/assets/img/thumbs/fcc-rwd-2.4.png", subtitle:"To-Do App → tracks", blurb:"Add, edit, delete with localStorage; search filter; Spotify-style skin.", href:"https://codepen.io/Mike-MacDonagh/pen/pvgNprM", repo:null, tags:["js","ui","music","tool"] },
+  { title:"Decimal → Binary Converter", thumb: "/assets/img/thumbs/fcc-rwd-3.1.png", subtitle:"Number Translator", blurb:"Recursive converter; input sanitization; call-stack animation demo.", href:"https://codepen.io/Mike-MacDonagh/pen/LEGWaPr", repo:null, tags:["js","tool","math"] },
+  { title:"Comment Moderation Terminal", thumb: "/assets/img/thumbs/fcc-rwd-1.5.png", subtitle:"Spam Filter → Troll Detector", blurb:"Regex-based toxicity scoring and highlight; CRT console theme.", href:"https://codepen.io/Mike-MacDonagh/pen/ogbWBPV", repo:null, tags:["js","tool","regex","ui"] },
+  { title:"Mixtape Sorter", thumb: "/assets/img/thumbs/fcc-rwd-3.2.png", subtitle:"Number Sorter → strings", blurb:"Bubble, Selection, Insertion on real tracks via localeCompare.", href:"https://codepen.io/Mike-MacDonagh/pen/XJXgdPX", repo:null, tags:["js","tool","music"] },
+  { title:"D&D Dice Lab", thumb: "/assets/img/thumbs/fcc-rwd-3.3.png", subtitle:"Statistics Calculator → dice", blurb:"Parse 3d6 / 1d20+5; mean, median, mode, range, variance, SD; crit/DC rates.", href:"https://codepen.io/Mike-MacDonagh/pen/PwZjgjZ", repo:null, tags:["js","tool","math","game"] },
+  { title:"Budget Tracker", thumb: "/assets/img/thumbs/fcc-rwd-3.4.png", subtitle:"Spreadsheet → finance app", blurb:"Regex formula engine with range expansion and precedence; A–J x 30 grid; seeded Income/Expenses/Summary; localStorage.", href:"https://codepen.io/Mike-MacDonagh/pen/LEGzPxY", repo:null, tags:["js","tool","finance","regex","ui"] },
 ];
 
 /* Safety net: strip any stray 'codepen' or 'fcc' tags if they ever appear */
