@@ -32,11 +32,10 @@ const TAG_LABELS = {
 
 /* ===========================================================
    Thumbnails
-   For now, use the site logo as the thumbnail everywhere
-   unless a project-specific image is provided.
-   You can still override per project via THUMB_PROJECT or `thumb` on the item.
+   For now, use the site logo everywhere unless a project overrides it.
+   You can still set per-project images via THUMB_PROJECT or `thumb` on the item.
    =========================================================== */
-const DEFAULT_THUMB = "/assets/images/logo.png";
+const DEFAULT_THUMB = "https://michaelmacdonagh.net/assets/images/logo.png";
 const THUMB_PROJECT = {};
 
 const slugify = (s) =>
@@ -49,10 +48,12 @@ function pickThumb(project) {
   const slug = slugify(project.title);
   if (THUMB_PROJECT[slug]) return THUMB_PROJECT[slug];
   if (project.thumb) return project.thumb;
-  return DEFAULT_THUMB; // global fallback for now
+  return DEFAULT_THUMB;
 }
 
-const projects = [
+/* TIP: Keep adding new items to the end of this array.
+   We automatically show "latest" first via a reversed copy below. */
+const ALL_PROJECTS = [
   /* === Responsive Web Design (20) === */
   { title:"Personal Portfolio Webpage", subtitle:"Responsive Web Design - Final", blurb:"Pulled everything together: grid, responsive, sticky nav, glow effects.", href:"https://codepen.io/Mike-MacDonagh/pen/bNVOrxK", repo:null, tags:["html","css","ui"] },
   { title:"What Kind of Metal Head Are You?", subtitle:"Survey Form", blurb:"Semantic form structure, accessible labels, validation.", href:"https://codepen.io/Mike-MacDonagh/pen/ByoZwao", repo:null, tags:["html","css","ui"] },
@@ -96,7 +97,12 @@ const projects = [
 ];
 
 /* Safety net: strip any stray 'codepen' or 'fcc' tags if they ever appear */
-projects.forEach(p => p.tags = (p.tags || []).filter(t => t !== "codepen" && t !== "fcc"));
+ALL_PROJECTS.forEach(p => p.tags = (p.tags || []).filter(t => t !== "codepen" && t !== "fcc"));
+
+/* === Latest-first ordering ===
+   We assume the newest projects are added last in ALL_PROJECTS.
+   To show latest first everywhere, we work on a reversed copy. */
+const PROJECTS = [...ALL_PROJECTS].reverse();
 
 /* ====== Projects page: filters + show-more ====== */
 const INITIAL_VISIBLE = 4;
@@ -210,8 +216,8 @@ function renderLimited(list) {
 
 function filterByTag(tag) {
   const t = (tag || "all").toLowerCase();
-  if (t === "codepen" || t === "fcc") return [...projects]; // legacy guard
-  return t === "all" ? [...projects] : projects.filter(p => p.tags.includes(t));
+  if (t === "codepen" || t === "fcc") return [...PROJECTS]; // legacy guard
+  return t === "all" ? [...PROJECTS] : PROJECTS.filter(p => p.tags.includes(t));
 }
 
 function setActiveButton(btn, group) {
@@ -286,13 +292,13 @@ function initialTagFromURL() {
   }
 })();
 
-/* ---- Home page: render 4-project preview if #home-projects exists ---- */
+/* ---- Home page: render 4-project preview (latest first) if #home-projects exists ---- */
 (function renderHomePreview() {
   const homeGrid = document.getElementById("home-projects");
   if (!homeGrid) return; // not on home page
 
-  // Take the first 4 as listed (curate by ordering the 'projects' array)
-  const preview = projects.slice(0, 4);
+  // Latest-first list already computed in PROJECTS
+  const preview = PROJECTS.slice(0, 4);
   const frag = document.createDocumentFragment();
   preview.forEach((p) => frag.appendChild(makeCard(p)));
   homeGrid.innerHTML = "";
