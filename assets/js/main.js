@@ -1,16 +1,22 @@
 /* /assets/js/main.js */
 
-/* ---- Year in footer */
+/* ----------------------------------------
+   Year in footer
+---------------------------------------- */
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-/* ---- Thumb fallback + picker (FIX) */
-const DEFAULT_THUMB = "/assets/images/logo.png"; // fallback image
+/* ----------------------------------------
+   Thumb picker (no default/fallback)
+---------------------------------------- */
 function pickThumb(p) {
-  return (p && p.thumb && String(p.thumb).trim()) ? p.thumb : DEFAULT_THUMB;
+  const t = p && p.thumb ? String(p.thumb).trim() : "";
+  return t || null; // return null if no explicit thumb set
 }
 
-/* ===== Tag labels (single source of truth) ===== */
+/* ----------------------------------------
+   Tag labels (single source of truth)
+---------------------------------------- */
 const TAG_LABELS = {
   js: "JS",
   html: "HTML",
@@ -34,8 +40,8 @@ const TAG_LABELS = {
   health: "Health",
   food: "Food",
   cyberpunk: "Cyberpunk",
-  animation: "Animation",       // added so filter exists
-  accessibility: "Accessibility" // added so filter exists
+  animation: "Animation",
+  accessibility: "Accessibility"
 };
 
 /* TIP: add new items to the END; we reverse below to show latest first. */
@@ -88,7 +94,9 @@ ALL_PROJECTS.forEach(p => p.tags = (p.tags || []).filter(t => t !== "codepen" &&
 /* === Latest-first ordering === */
 const PROJECTS = [...ALL_PROJECTS].reverse();
 
-/* ====== Projects page: filters + show-more ====== */
+/* ----------------------------------------
+   Projects page: filters + show-more
+---------------------------------------- */
 const INITIAL_VISIBLE = 4;
 const STEP_VISIBLE = 4;
 
@@ -144,15 +152,18 @@ function makeCard(p) {
   col.innerHTML = `
     <article class="card h-100">
       <div class="ratio ratio-16x9">
-        <img
-          src="${thumb}"
-          alt="${alt}"
-          loading="lazy"
-          width="640"
-          height="360"
-          class="card-img-top object-fit-cover"
-          onerror="this.onerror=null;this.src='${DEFAULT_THUMB}';"
-        />
+        ${
+          thumb
+            ? `<img
+                 src="${thumb}"
+                 alt="${alt}"
+                 loading="lazy"
+                 width="640"
+                 height="360"
+                 class="card-img-top object-fit-cover"
+               />`
+            : `<div class="no-thumb-placeholder"></div>`
+        }
       </div>
       <div class="card-body d-flex flex-column">
         <div class="d-flex flex-wrap gap-1 mb-2">
@@ -226,7 +237,9 @@ function initialTagFromURL() {
   return hash || null;
 }
 
-/* ---- Boot (works safely on any page) ---- */
+/* ----------------------------------------
+   Boot (safe on any page)
+---------------------------------------- */
 (function initProjects() {
   // tiny CSS helpers (safe to inject)
   const css = `
@@ -235,6 +248,8 @@ function initialTagFromURL() {
     .ratio > * { position: absolute; inset: 0; }
     .object-fit-cover { object-fit: cover; width: 100%; height: 100%; }
     .badge-accent { background: #ffd84a; color: #111; }
+    .no-thumb-placeholder { background: var(--bs-secondary-bg, #f1f3f5); width: 100%; height: 100%; }
+    .tag.is-active { outline: 2px solid currentColor; }
   `;
   const s = document.createElement("style");
   s.appendChild(document.createTextNode(css));
@@ -276,7 +291,10 @@ function initialTagFromURL() {
   }
 })();
 
-/* ---- Home page: render 4-project preview (latest first) if #home-projects exists ---- */
+/* ----------------------------------------
+   Home page: render 4-project preview
+   (latest first) if #home-projects exists
+---------------------------------------- */
 (function renderHomePreview() {
   const homeGrid = document.getElementById("home-projects");
   if (!homeGrid) return; // not on home page
