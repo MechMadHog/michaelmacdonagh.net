@@ -126,7 +126,7 @@ const projects = [
 /* Safety net: strip any stray 'codepen' or 'fcc' tags if they ever appear */
 projects.forEach(p => p.tags = (p.tags || []).filter(t => t !== "codepen" && t !== "fcc"));
 
-/* ====== Show-more config ====== */
+/* ====== Projects page: filters + show-more ====== */
 const INITIAL_VISIBLE = 4;
 const STEP_VISIBLE = 4;
 
@@ -210,7 +210,7 @@ function makeCard(p) {
 }
 
 function renderLimited(list) {
-  if (!grid) return;
+  if (!grid) return; // not on Projects page
   grid.innerHTML = "";
   const frag = document.createDocumentFragment();
   const slice = list.slice(0, visibleCount);
@@ -264,7 +264,7 @@ function initialTagFromURL() {
   return hash || null;
 }
 
-/* ---- Boot filters + show-more ---- */
+/* ---- Boot (works safely on any page) ---- */
 (function initProjects() {
   // tiny CSS helpers (safe to inject)
   const css = `
@@ -278,36 +278,51 @@ function initialTagFromURL() {
   s.appendChild(document.createTextNode(css));
   document.head.appendChild(s);
 
+  // If we're on the Projects page, filtersEl exists
   const tagButtons = buildFilterButtons();
+  if (tagButtons.length) {
+    const initial = initialTagFromURL() || "all";
+    const btnToActivate =
+      tagButtons.find(b => (b.dataset.tag || "").toLowerCase() === initial) || tagButtons[0];
 
-  const initial = initialTagFromURL() || "all";
-  const btnToActivate =
-    tagButtons.find(b => (b.dataset.tag || "").toLowerCase() === initial) || tagButtons[0];
+    if (btnToActivate) setActiveButton(btnToActivate, tagButtons);
+    applyFilter(initial);
 
-  if (btnToActivate) setActiveButton(btnToActivate, tagButtons);
-  applyFilter(initial);
-
-  // Wire button clicks + keyboard
-  tagButtons.forEach((btn) => {
-    const activate = () => {
-      setActiveButton(btn, tagButtons);
-      applyFilter(btn.dataset.tag);
-      const u = new URL(window.location.href);
-      if ((btn.dataset.tag || "all") === "all") u.searchParams.delete("tag");
-      else u.searchParams.set("tag", btn.dataset.tag);
-      history.replaceState({}, "", u.toString());
-    };
-    btn.addEventListener("click", activate);
-    btn.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activate(); }
+    // Wire button clicks + keyboard
+    tagButtons.forEach((btn) => {
+      const activate = () => {
+        setActiveButton(btn, tagButtons);
+        applyFilter(btn.dataset.tag);
+        const u = new URL(window.location.href);
+        if ((btn.dataset.tag || "all") === "all") u.searchParams.delete("tag");
+        else u.searchParams.set("tag", btn.dataset.tag);
+        history.replaceState({}, "", u.toString());
+      };
+      btn.addEventListener("click", activate);
+      btn.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activate(); }
+      });
     });
-  });
 
-  // Show more
-  if (showMoreBtn) {
-    showMoreBtn.addEventListener("click", () => {
-      visibleCount += STEP_VISIBLE;
-      renderLimited(currentFiltered);
-    });
+    // Show more
+    if (showMoreBtn) {
+      showMoreBtn.addEventListener("click", () => {
+        visibleCount += STEP_VISIBLE;
+        renderLimited(currentFiltered);
+      });
+    }
   }
+})();
+
+/* ---- Home page: render 4-project preview if #home-projects exists ---- */
+(function renderHomePreview() {
+  const homeGrid = document.getElementById("home-projects");
+  if (!homeGrid) return; // not on home page
+
+  // Take the first 4 as listed (curate by ordering the 'projects' array)
+  const preview = projects.slice(0, 4);
+  const frag = document.createDocumentFragment();
+  preview.forEach((p) => frag.appendChild(makeCard(p)));
+  homeGrid.innerHTML = "";
+  homeGrid.appendChild(frag);
 })();

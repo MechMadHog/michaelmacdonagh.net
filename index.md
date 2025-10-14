@@ -99,25 +99,17 @@ title: Home
   </div>
 </section>
 
-<!-- PROJECTS GALLERY (dynamic with tag filters) -->
+<!-- PROJECTS GALLERY (Home preview: 4 items) -->
 <section class="py-5">
   <div class="container">
     <h2 class="h3 text-center mb-3">Projects</h2>
 
-      <!-- Tag filters -->
-      <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" aria-label="Project filters">
-        <button class="btn btn-sm btn-outline-secondary is-active" data-tag="all">All</button>
-        <button class="btn btn-sm btn-outline-secondary" data-tag="html">HTML</button>
-        <button class="btn btn-sm btn-outline-secondary" data-tag="css">CSS</button>
-        <button class="btn btn-sm btn-outline-secondary" data-tag="js">JS</button>
-        <button class="btn btn-sm btn-outline-secondary" data-tag="design">Design</button>
-        <button class="btn btn-sm btn-outline-secondary" data-tag="fcc">FreeCodeCamp</button>
-        <button class="btn btn-sm btn-outline-secondary" data-tag="codepen">CodePen</button>
-      </div>
+    <!-- 4 cards injected by /assets/js/main.js -->
+    <div id="home-projects" class="row g-4"></div>
 
-      <!-- Cards injected by /assets/js/main.js -->
-      <div id="projects" class="row g-4"></div>
-
+    <div class="text-center mt-3">
+      <a class="btn btn-outline-primary" href="{{ '/projects/' | relative_url }}">See more</a>
+    </div>
   </div>
 </section>
 
