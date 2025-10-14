@@ -32,18 +32,12 @@ const TAG_LABELS = {
 
 /* ===========================================================
    Thumbnails
-   Put PNGs/WebPs at: /assets/img/thumbs/
-   Recommended: 1280x720 (16:9). Use kebab-case filenames.
-   You can set a per-project image with `thumb: "/assets/img/thumbs/slug.png"`
-   or by adding a mapping in THUMB_PROJECT below.
+   For now, use the site logo as the thumbnail everywhere
+   unless a project-specific image is provided.
+   You can still override per project via THUMB_PROJECT or `thumb` on the item.
    =========================================================== */
-const THUMB_BASE = "/assets/img/thumbs";
-const THUMB_TAGS = Object.fromEntries(
-  Object.keys(TAG_LABELS).map(k => [k, `${THUMB_BASE}/${k}.webp`])
-);
-const THUMB_PROJECT = {
-  // Example: "macs-wrap-shack": "/assets/img/thumbs/macs-wrap-shack.png",
-};
+const DEFAULT_THUMB = "/assets/images/logo.png";
+const THUMB_PROJECT = {};
 
 const slugify = (s) =>
   s.toLowerCase().trim()
@@ -51,35 +45,13 @@ const slugify = (s) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 
-function svgFallback(label = "Project") {
-  const text = encodeURIComponent(label.toUpperCase());
-  const svg =
-    `<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'>
-      <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
-        <stop offset='0%' stop-color='#1f1f1f'/><stop offset='100%' stop-color='#2a2a2a'/>
-      </linearGradient></defs>
-      <rect width='640' height='360' fill='url(#g)'/>
-      <g fill='none' stroke='#3df' stroke-width='2' opacity='0.3'>
-        <rect x='12' y='12' width='616' height='336' rx='18'/>
-      </g>
-      <text x='50%' y='52%' font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, monospace'
-            font-size='44' fill='#cfe9ff' text-anchor='middle'>${text}</text>
-    </svg>`;
-  return `data:image/svg+xml;charset=utf-8,${svg}`;
-}
-
 function pickThumb(project) {
   const slug = slugify(project.title);
   if (THUMB_PROJECT[slug]) return THUMB_PROJECT[slug];
   if (project.thumb) return project.thumb;
-  for (const t of project.tags || []) {
-    if (THUMB_TAGS[t]) return THUMB_TAGS[t];
-  }
-  const label = (project.tags && project.tags[0]) || "Project";
-  return svgFallback(label);
+  return DEFAULT_THUMB; // global fallback for now
 }
 
-/* ---- Project data (no 'codepen' or 'fcc' tags) */
 const projects = [
   /* === Responsive Web Design (20) === */
   { title:"Personal Portfolio Webpage", subtitle:"Responsive Web Design - Final", blurb:"Pulled everything together: grid, responsive, sticky nav, glow effects.", href:"https://codepen.io/Mike-MacDonagh/pen/bNVOrxK", repo:null, tags:["html","css","ui"] },
@@ -189,7 +161,7 @@ function makeCard(p) {
           width="640"
           height="360"
           class="card-img-top object-fit-cover"
-          onerror="this.onerror=null;this.src='${svgFallback((p.tags && p.tags[0]) || "Project")}';"
+          onerror="this.onerror=null;this.src='${DEFAULT_THUMB}';"
         />
       </div>
       <div class="card-body d-flex flex-column">
