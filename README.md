@@ -1,36 +1,52 @@
-# My Professional Site
+# 🌐 MichaelMacDonagh.net
 
-This is the source code for my professional website, [michaelmacdonagh.net](https://michaelmacdonagh.net), built using:
+This is the source code for my professional website — [michaelmacdonagh.net](https://michaelmacdonagh.net)
 
-- **Jekyll** (a static site generator)
-- **GitHub Pages** (for hosting)
-- **Markdown** (for writing content)
-- **custom** theme (minimal, CV-friendly design)
+Built with:
+
+- **Jekyll** (static site generator)
+- **GitHub Pages** (hosting)
+- **Markdown** (content)
+- **Custom theme** (minimal, CV-focused design)
 
 ---
 
-## 🧠 What’s Here
+## 🧠 What’s Inside
 
-- Professional portfolio of projects
-- CV / Resume
-- Skills and services overview
-- Contact information
-- Clean, minimal styling — built for recruiters and clients
+A complete professional hub showcasing my work and background:
+
+- **🏗️ Projects:** 37 portfolio projects with live [CodePen](https://codepen.io/Mike-MacDonagh) demos and write-ups.  
+- **🎓 Certifications:** All current and in-progress [FreeCodeCamp](https://www.freecodecamp.org/mechmadhog) certifications, plus formal education.  
+- **🧰 Resources:** Full list of my tools, software, and hardware setup.  
+- **📝 Blog:** Working Jekyll blog — first post published and live.  
+- **📄 CV / Resume:** Up-to-date downloadable CV in PDF format.  
+- **📬 Contact:** Functional contact form connected and tested.
+
+---
+
+## ⚙️ Tech Overview
+
+- **Language:** HTML / CSS / Markdown  
+- **Framework:** Jekyll  
+- **Hosting:** GitHub Pages  
+- **Version Control:** Git / GitHub  
+- **Forms:** Jekyll-forms + Netlify backend (or static form handler)  
+- **Design:** Responsive, minimal, recruiter-friendly
 
 ---
 
 ## 🚀 Run Locally
 
-To view or edit this site locally:
+To view or edit the site locally:
 
 ```bash
 # 1. Clone the repository
 git clone https://github.com/MechMadHog/MichaelMacDonagh.net.git
 cd MichaelMacDonagh.net
 
-# 2. Install Jekyll (if you haven’t already)
+# 2. Install Jekyll (if not already installed)
 gem install bundler jekyll
 
-# 3. Serve the site locally
+# 3. Install dependencies and serve
 bundle install
 bundle exec jekyll serve
