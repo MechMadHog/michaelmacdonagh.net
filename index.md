@@ -65,23 +65,6 @@ title: Home
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-start">
-              <h3 class="h5 mb-2">Junior Power Apps Developer</h3>
-              <span class="badge text-bg-light">Dec 2019 – Present</span>
-            </div>
-            <div class="text-muted small mb-2">EirEvo (formerly Evros Technology Group)</div>
-            <ul class="mb-0">
-              <li>Internal application support for SharePoint, Teams & line-of-business tools.</li>
-              <li>Built/maintained documentation (user guides, environment setup, SOPs).</li>
-              <li>Backlog management via DevOps & Autotask; triage bugs & enhancements.</li>
-              <li>Facilitated standups, knowledge-shares; trained/configured support AI agents.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start">
               <h3 class="h5 mb-2">Freelance Developer & Digital Consultant</h3>
               <span class="badge text-bg-light">2015 – Present</span>
             </div>
@@ -91,6 +74,23 @@ title: Home
               <li>Theme/dev work in HTML/CSS/JS; WordPress migrations & maintenance.</li>
               <li>Process & tooling advice; light UX, SEO enhancements, analytics reporting.</li>
               <li>Docs & handovers so clients can self-serve confidently.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start">
+              <h3 class="h5 mb-2">Junior Power Apps Developer</h3>
+              <span class="badge text-bg-light">Dec 2019 – Sept 2025</span>
+            </div>
+            <div class="text-muted small mb-2">EirEvo (formerly Evros Technology Group)</div>
+            <ul class="mb-0">
+              <li>Internal application support for SharePoint, Teams & line-of-business tools.</li>
+              <li>Built/maintained documentation (user guides, environment setup, SOPs).</li>
+              <li>Backlog management via DevOps & Autotask; triage bugs & enhancements.</li>
+              <li>Facilitated standups, knowledge-shares; trained/configured support AI agents.</li>
             </ul>
           </div>
         </div>
