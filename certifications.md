@@ -21,13 +21,19 @@ permalink: /certifications/
                   <strong>Responsive Web Design</strong>
                   <span class="badge text-bg-light ms-2">Completed</span>
                   <a class="btn btn-sm btn-primary ms-2" href="https://www.freecodecamp.org/certification/mechmadhog/responsive-web-design" target="_blank" rel="noopener">View Certificate</a>
-                  <div class="small text-muted mt-1">Projects: Tribute, Survey, Product, Technical Docs, Personal Portfolio.</div>
+                  <div class="small text-muted mt-1">Projects: Survey, Tribute Page, Technical Docs, Product Landing Page, Personal Portfolio.</div>
+                </li>
+                <li class="mb-2">
+                  <strong>JavaScript Algorithms &amp; Data Structures</strong>
+                  <span class="badge text-bg-light ms-2">Completed</span>
+                  <a class="btn btn-sm btn-primary ms-2" href="https://www.freecodecamp.org/certification/mechmadhog/javascript-algorithms-and-data-structures-v8" target="_blank" rel="noopener">View Certificate</a>
+                  <div class="small text-muted mt-1">Projects: Checker, Converter, Validator, Register, Fetch &amp; Search.</div>
                 </li>
                 <li class="mb-0">
-                  <strong>JavaScript Algorithms &amp; Data Structures</strong>
+                  <strong>Front End Libraries</strong>
                   <span class="badge badge-accent ms-2">In Progress</span>
                   <div class="small text-muted mt-1">
-                    Latest: <a href="https://codepen.io/Mike-MacDonagh/pen/qEOvBap" target="_blank" rel="noopener">Pyramid Generator (Retro CRT)</a> — loops, strings, DOM, controls.
+                    <!-- Latest: <a href="https://codepen.io/Mike-MacDonagh/pen/qEOvBap" target="_blank" rel="noopener">Pyramid Generator (Retro CRT)</a> — loops, strings, DOM, controls. -->
                   </div>
                 </li>
               </ol>
