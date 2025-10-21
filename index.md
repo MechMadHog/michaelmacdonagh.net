@@ -29,15 +29,16 @@ title: Home
       </div>
       <div class="col-12 col-md-4">
         <div class="small text-uppercase text-muted">Experience</div>
-        <div class="fw-semibold">10+ years across support & web</div>
+        <div class="fw-semibold">10+ years in web · support</div>
       </div>
       <div class="col-12 col-md-4">
         <div class="small text-uppercase text-muted">Focus</div>
-        <div class="fw-semibold">Support Ops · Docs · Light Dev · AI</div>
+        <div class="fw-semibold">Front-End · UI · Docs · Support Ops · AI</div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- WHAT I DO -->
 <section class="py-5">
