@@ -47,46 +47,416 @@ const TAG_LABELS = {
 /* TIP: add new items to the END; we reverse below to show latest first. */
 const ALL_PROJECTS = [
   /* === Responsive Web Design (20) === */
-  { title:"Personal Portfolio Webpage", thumb: "/assets/images/thumbs/fcc-rwd-5.png", subtitle:"Responsive Web Design - Final", blurb:"Pulled everything together: grid, responsive, sticky nav, glow effects.", href:"https://codepen.io/Mike-MacDonagh/pen/bNVOrxK", repo:null, tags:["html","css","ui"] },
-  { title:"What Kind of Metal Head Are You?", thumb: "/assets/images/thumbs/fcc-rwd-1.png", subtitle:"Survey Form", blurb:"Semantic form structure, accessible labels, validation.", href:"https://codepen.io/Mike-MacDonagh/pen/ByoZwao", repo:null, tags:["html","css","ui"] },
-  { title:"Stoic Philosophers Photo App", thumb: "/assets/images/thumbs/fcc-rwd-1.1.png", subtitle:"Cat Photo App → themed", blurb:"Styled image app; groundwork for personal theming.", href:"https://codepen.io/Mike-MacDonagh/pen/yyYMrMM", repo:null, tags:["html","css","ui"] },
-  { title:"Mac’s Wrap Shack", thumb: "/assets/images/thumbs/fcc-rwd-1.2.png", subtitle:"Café Menu → Burrito Bar", blurb:"Structured a realistic menu with clean CSS styling.", href:"https://codepen.io/Mike-MacDonagh/pen/raOybGY", repo:null, tags:["html","css","ui","food"] },
-  { title:"Colored Markers Set", thumb: "/assets/images/thumbs/fcc-rwd-1.3.png", subtitle:"Colored Markers → expanded", blurb:"Gradients, shadows, CSS styling basics.", href:"https://codepen.io/Mike-MacDonagh/pen/EaVmymK", repo:null, tags:["html","css","art"] },
-  { title:"Replicant Registration", thumb: "/assets/images/thumbs/fcc-rwd-1.4.png", subtitle:"Registration Form → Blade Runner", blurb:"Thematic forms with consistent brand and accessibility.", href:"https://codepen.io/Mike-MacDonagh/pen/azvwyQq", repo:null, tags:["html","css","ui","cyberpunk"] },
-  { title:"Rodney Mullen – The Godfather of Skate", thumb: "/assets/images/thumbs/fcc-rwd-2.png", subtitle:"Tribute Page", blurb:"Strong typographic rhythm, imagery, and hierarchy.", href:"https://codepen.io/Mike-MacDonagh/pen/JoYWqdV", repo:null, tags:["html","css","design","skate"] },
-  { title:"Mondrian Grid", thumb: "/assets/images/thumbs/fcc-rwd-2.1.png", subtitle:"Painting → CSS Grid", blurb:"Minimalist grid composition in pure CSS.", href:"https://codepen.io/Mike-MacDonagh/pen/pvjwYVY", repo:null, tags:["html","css","art"] },
-  { title:"Skateboarding Photo Gallery", thumb: "/assets/images/thumbs/fcc-rwd-2.2.png", subtitle:"Flex Gallery", blurb:"Flexbox gallery with responsive scaling.", href:"https://codepen.io/Mike-MacDonagh/pen/RNWZrBe", repo:null, tags:["html","css","ui","skate"] },
-  { title:"My CV in HTML/CSS", thumb: "/assets/images/thumbs/fcc-rwd-2.3.png", subtitle:"Nutrition Label → CV", blurb:"Typography, layout, and resume structure in code.", href:"https://codepen.io/Mike-MacDonagh/pen/EaVvWwZ", repo:null, tags:["html","css","ui"] },
-  { title:"Hunter’s Diagnostic Checklist", thumb: "/assets/images/thumbs/fcc-rwd-2.4.png", subtitle:"Accessibility Quiz → themed", blurb:"Accessibility patterns and form controls.", href:"https://codepen.io/Mike-MacDonagh/pen/EaVvWwZ", repo:null, tags:["html","css","ui","accessibility"] },
-  { title:"Yolked / Bear-Mode Docs", thumb: "/assets/images/thumbs/fcc-rwd-3.png", subtitle:"Technical Documentation", blurb:"Multi-column docs layout, sticky sidebar nav.", href:"https://codepen.io/Mike-MacDonagh/pen/EaVRjgM", repo:null, tags:["html","css","ui","docs"] },
-  { title:"Calories In vs Out (Guide)", thumb: "/assets/images/thumbs/fcc-rwd-3.1.png", subtitle:"Balance Sheet → themed", blurb:"Data layout using pseudo-selectors and clear hierarchy.", href:"https://codepen.io/Mike-MacDonagh/pen/YPyEjwb", repo:null, tags:["html","css","ui","health"] },
-  { title:"The Dented Helmet (Boba Fett)", thumb: "/assets/images/thumbs/fcc-rwd-3.2.png", subtitle:"Cat Painting → CSS art", blurb:"Shapes built with CSS; intermediate design work.", href:"https://codepen.io/Mike-MacDonagh/pen/EaVQNQg", repo:null, tags:["html","css","art","starwars"] },
-  { title:"Star Wars Dejarik Holo-Chess", thumb: "/assets/images/thumbs/fcc-rwd-3.3.png", subtitle:"Piano → themed CSS layout", blurb:"Advanced grid layout with creative theming.", href:"https://codepen.io/Mike-MacDonagh/pen/VYvxzeq", repo:null, tags:["html","css","ui","starwars"] },
-  { title:"Plumbus Landing Page", thumb: "/assets/images/thumbs/fcc-rwd-4.png", subtitle:"Product Landing Page", blurb:"Hero, pricing, forms, embedded video.", href:"https://codepen.io/Mike-MacDonagh/pen/xbwayEj", repo:null, tags:["html","css","ui","parody"] },
-  { title:"Go With The Flow (Desert Scene)", thumb: "/assets/images/thumbs/fcc-rwd-4.1.png", subtitle:"City Skyline → CSS scene", blurb:"Layering, backgrounds, gradients.", href:"https://codepen.io/Mike-MacDonagh/pen/KwdxVLM", repo:null, tags:["html","css","art"] },
-  { title:"QOTSA Magazine Spread", thumb: "/assets/images/thumbs/fcc-rwd-4.2.png", subtitle:"CSS Grid Magazine → album layout", blurb:"Magazine-style grid and typography.", href:"https://codepen.io/Mike-MacDonagh/pen/raOZZYL", repo:null, tags:["html","css","design","music"] },
-  { title:"Vinyl Record Spinner", thumb: "/assets/images/thumbs/fcc-rwd-5.1.png", subtitle:"Ferris Wheel → animation", blurb:"CSS animations, transforms, rotating vinyl.", href:"https://codepen.io/Mike-MacDonagh/pen/JoYmJmo", repo:null, tags:["html","css","art","animation","music"] },
-  { title:"Jack-o’-Lantern (Flicker)", thumb: "/assets/images/thumbs/fcc-rwd-5.2.png", subtitle:"Penguin → CSS art", blurb:"CSS transforms and glow effects.", href:"https://codepen.io/Mike-MacDonagh/pen/myeQwqe", repo:null, tags:["html","css","art","animation"] },
+  { 
+    title: "Stoic Philosophers Photo App",
+    thumb: "/assets/images/thumbs/fcc-rwd-1.1.png",
+    subtitle: "Cat Photo App → Themed photo gallery",
+    blurb: "Figure/figcaption, object-fit, responsive images, BEM-ish class structure.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/yyYMrMM",
+    repo: null,
+    tags: ["gallery","ui","layout"]
+  },
+  { 
+    title: "Mac’s Wrap Shack",
+    thumb: "/assets/images/thumbs/fcc-rwd-1.2.png",
+    subtitle: "Café Menu → Burrito bar menu",
+    blurb: "Definition lists, typographic hierarchy, price alignment, utility spacing.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/raOybGY",
+    repo: null,
+    tags: ["menu","ui","food"]
+  },
+  { 
+    title: "Colored Markers Set",
+    thumb: "/assets/images/thumbs/fcc-rwd-1.3.png",
+    subtitle: "Colored Markers → Expanded CSS set",
+    blurb: "Gradients, box-shadows, border-radius, pseudo-elements for accents.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/EaVmymK",
+    repo: null,
+    tags: ["css-art","visual","animation"]
+  },
+  { 
+    title: "Replicant Registration",
+    thumb: "/assets/images/thumbs/fcc-rwd-1.4.png",
+    subtitle: "Registration Form → Blade Runner reskin",
+    blurb: "Accessible form patterns, grouped inputs, theming tokens, focus states.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/azvwyQq",
+    repo: null,
+    tags: ["form","ui","cyberpunk"]
+  },
+  { 
+    title: "What Kind of Metal Head Are You?",
+    thumb: "/assets/images/thumbs/fcc-rwd-1.png",
+    subtitle: "Survey Form → Branded personality form",
+    blurb: "Semantic HTML, accessible labels, validation patterns, required fields.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/ByoZwao",
+    repo: null,
+    tags: ["form","ui","accessibility"]
+  },
+  { 
+    title: "Mondrian Grid",
+    thumb: "/assets/images/thumbs/fcc-rwd-2.1.png",
+    subtitle: "Painting → CSS Grid composition",
+    blurb: "Named grid areas, fractional units, gap control, minimal palette.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/pvjwYVY",
+    repo: null,
+    tags: ["css-art","grid","visual"]
+  },
+  { 
+    title: "Skateboarding Photo Gallery",
+    thumb: "/assets/images/thumbs/fcc-rwd-2.2.png",
+    subtitle: "Flex Gallery → Responsive skate set",
+    blurb: "Flex-wrap, aspect-ratio, hover states, responsive columns.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/RNWZrBe",
+    repo: null,
+    tags: ["gallery","ui","skate"]
+  },
+  { 
+    title: "My CV in HTML/CSS",
+    thumb: "/assets/images/thumbs/fcc-rwd-2.3.png",
+    subtitle: "Nutrition Label → CV layout",
+    blurb: "Print-friendly CSS, columns, semantic sections, icon list patterns.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/EaVvWwZ",
+    repo: null,
+    tags: ["resume","layout","typography"]
+  },
+  { 
+    title: "Hunter’s Diagnostic Checklist",
+    thumb: "/assets/images/thumbs/fcc-rwd-2.4.png",
+    subtitle: "Accessibility Quiz → Themed checklist",
+    blurb: "ARIA, keyboard order, input grouping, validation messaging.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/EaVvWwZ",
+    repo: null,
+    tags: ["accessibility","form","ui"]
+  },
+  { 
+    title: "Rodney Mullen – The Godfather of Skate",
+    thumb: "/assets/images/thumbs/fcc-rwd-2.png",
+    subtitle: "Tribute Page → Skate legend profile",
+    blurb: "Typographic rhythm, responsive layout, media blocks, anchors.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/JoYWqdV",
+    repo: null,
+    tags: ["tribute","design","skate"]
+  },
+  { 
+    title: "Calories In vs Out (Guide)",
+    thumb: "/assets/images/thumbs/fcc-rwd-3.1.png",
+    subtitle: "Balance Sheet → Themed guide",
+    blurb: "Pseudo-selectors, callouts, definition patterns, data lists.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/YPyEjwb",
+    repo: null,
+    tags: ["guide","health","layout"]
+  },
+  { 
+    title: "The Dented Helmet (Boba Fett)",
+    thumb: "/assets/images/thumbs/fcc-rwd-3.2.png",
+    subtitle: "Cat Painting → CSS helmet art",
+    blurb: "Pure CSS shapes, transforms, layering, composition.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/EaVQNQg",
+    repo: null,
+    tags: ["css-art","visual","star-wars"]
+  },
+  { 
+    title: "Star Wars Dejarik Holo-Chess",
+    thumb: "/assets/images/thumbs/fcc-rwd-3.3.png",
+    subtitle: "Piano → Themed grid board",
+    blurb: "Advanced CSS Grid, custom properties, layout algorithms.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/VYvxzeq",
+    repo: null,
+    tags: ["css-art","grid","star-wars"]
+  },
+  { 
+    title: "Yolked / Bear-Mode Docs",
+    thumb: "/assets/images/thumbs/fcc-rwd-3.png",
+    subtitle: "Technical Documentation → Fitness docs",
+    blurb: "Sticky sidebar nav, in-page anchors, code blocks, scroll-margin.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/EaVRjgM",
+    repo: null,
+    tags: ["docs","ui","layout"]
+  },
+  { 
+    title: "Go With The Flow (Desert Scene)",
+    thumb: "/assets/images/thumbs/fcc-rwd-4.1.png",
+    subtitle: "City Skyline → CSS desert scene",
+    blurb: "Layered backgrounds, gradients, keyframe flicker.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/KwdxVLM",
+    repo: null,
+    tags: ["css-art","visual","animation"]
+  },
+  { 
+    title: "QOTSA Magazine Spread",
+    thumb: "/assets/images/thumbs/fcc-rwd-4.2.png",
+    subtitle: "CSS Grid Magazine → Album layout",
+    blurb: "Editorial grid, baseline-ish rhythm, image crops, display type.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/raOZZYL",
+    repo: null,
+    tags: ["design","grid","music"]
+  },
+  { 
+    title: "Plumbus Landing Page",
+    thumb: "/assets/images/thumbs/fcc-rwd-4.png",
+    subtitle: "Product Landing Page → Parody product site",
+    blurb: "Hero layout, pricing table, embedded video, form handling (HTML).",
+    href: "https://codepen.io/Mike-MacDonagh/pen/xbwayEj",
+    repo: null,
+    tags: ["landing-page","marketing","ui"]
+  },
+  { 
+    title: "Vinyl Record Spinner",
+    thumb: "/assets/images/thumbs/fcc-rwd-5.1.png",
+    subtitle: "Ferris Wheel → CSS record animation",
+    blurb: "Transform rotate, animation timing, compositing for smoothness.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/JoYmJmo",
+    repo: null,
+    tags: ["animation","css-art","music"]
+  },
+  { 
+    title: "Jack-o’-Lantern (Flicker)",
+    thumb: "/assets/images/thumbs/fcc-rwd-5.2.png",
+    subtitle: "Penguin → CSS pumpkin art",
+    blurb: "Keyframes, glow layering, CSS filters, transform-origin.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/myeQwqe",
+    repo: null,
+    tags: ["css-art","animation","visual"]
+  },
+  { 
+    title: "Personal Portfolio Webpage",
+    thumb: "/assets/images/thumbs/fcc-rwd-5.png",
+    subtitle: "Personal Portfolio Page → Final portfolio build",
+    blurb: "CSS Grid, Flexbox, sticky nav, responsive media queries, utility classes.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/bNVOrxK",
+    repo: null,
+    tags: ["portfolio","ui","layout"]
+  },
 
-  /* === JavaScript Algorithms & Data Structures (built only) === */
-  { title:"Palindrome Checker", thumb: "/assets/images/thumbs/fcc-jsads-1.png", subtitle:"JS challenge", blurb:"Normalize text via regex and check reverse equality; a11y result.", href:"https://codepen.io/Mike-MacDonagh/pen/qEbZBaR", repo:null, tags:["js","tool","regex"] },
-  { title:"Retro CRT Pyramid Console", thumb: "/assets/images/thumbs/fcc-jsads-1.1.png", subtitle:"Pyramid Generator (JS 1.1)", blurb:"Loops, strings, DOM buttons, pre spacing, height slider, char input, inverted toggle (CRT vibe).", href:"https://codepen.io/Mike-MacDonagh/pen/qEOvBap", repo:null, tags:["js","ui","retro"] },
-  { title:"Handwritten Copybook Gradebook", thumb: "/assets/images/thumbs/fcc-jsads-1.2.png", subtitle:"Gradebook App", blurb:"Parse text to scores; conditional grading; themed copybook UI.", href:"https://codepen.io/Mike-MacDonagh/pen/wBKZGym", repo:null, tags:["js","ui","tool","education"] },
-  { title:"Echoes Beyond the Rift", thumb: "/assets/images/thumbs/fcc-jsads-1.3.png", subtitle:"Role-Playing Game", blurb:"State management, locations array, 4-button grid UI, simple modal.", href:"https://codepen.io/Mike-MacDonagh/pen/jEbgZmy", repo:null, tags:["js","game","ui"] },
-  { title:"Lightbulb Switch", thumb: "/assets/images/thumbs/fcc-jsads-1.4.png", subtitle:"Random Background Changer → SVG bulb", blurb:"Switch logic with class toggling; visual on/off effect.", href:"https://codepen.io/Mike-MacDonagh/pen/XJXrMGp", repo:null, tags:["js","ui"] },
-  { title:"Health App Tracker", thumb: "/assets/images/thumbs/fcc-jsads-1.5.png", subtitle:"Calorie Counter", blurb:"Regex input cleaning; live totals; hydration; exercise add-back; fast toggle; TDEE targets.", href:"https://codepen.io/Mike-MacDonagh/pen/RNrwKgP", repo:null, tags:["js","tool","regex","health"] },
-  { title:"Rock Paper Scissors", thumb: "/assets/images/thumbs/fcc-jsads-1.6.png", subtitle:"Best of 5 Click Duel", blurb:"Round logic, helpers, DOM updates, score state and reset.", href:"https://codepen.io/Mike-MacDonagh/pen/bNENBBZ", repo:null, tags:["js","game"] },
-  { title:"JJ & Derek Mixtape Player", thumb: "/assets/images/thumbs/fcc-jsads-1.7.png", subtitle:"Music Player", blurb:"5 original tracks via CDN; preloading; CRT neon skin.", href:"https://codepen.io/Mike-MacDonagh/pen/dPGGjRZ", repo:null, tags:["js","ui","music"] },
-  { title:"Roman Numeral Converter", thumb: "/assets/images/thumbs/fcc-jsads-2.png", subtitle:"Converter utility", blurb:"Value/symbol map loop; clear invalid/low/high handling; imperial theme.", href:"https://codepen.io/Mike-MacDonagh/pen/ZYQeZBm", repo:null, tags:["js","tool","math"] },
-  { title:"Retro Date Utility", thumb: "/assets/images/thumbs/fcc-jsads-2.1.png", subtitle:"Date Formatter", blurb:"ISO, UNIX, weekday, locale formats; terminal-style boot/flicker.", href:"https://codepen.io/Mike-MacDonagh/pen/RNraPar", repo:null, tags:["js","tool","ui"] },
-  { title:"HABS Roster Cards", thumb: "/assets/images/thumbs/fcc-jsads-2.2.png", subtitle:"Football Team Cards → Hockey", blurb:"Player cards with filters, captain badge, CDN images and fallbacks.", href:"https://codepen.io/Mike-MacDonagh/pen/RNrRjvQ", repo:null, tags:["js","ui","sports"] },
-  { title:"Mixtape Playlist Maker", thumb: "/assets/images/thumbs/fcc-jsads-2.3.png", subtitle:"To-Do App → tracks", blurb:"Add, edit, delete with localStorage; search filter; Spotify-style skin.", href:"https://codepen.io/Mike-MacDonagh/pen/pvgNprM", repo:null, tags:["js","ui","music","tool"] },
-  { title:"Decimal → Binary Converter", thumb: "/assets/images/thumbs/fcc-jsads-2.4.png", subtitle:"Number Translator", blurb:"Recursive converter; input sanitization; call-stack animation demo.", href:"https://codepen.io/Mike-MacDonagh/pen/LEGWaPr", repo:null, tags:["js","tool","math"] },
-  { title:"Comment Moderation Terminal", thumb: "/assets/images/thumbs/fcc-jsads-3.1.png", subtitle:"Spam Filter → Troll Detector", blurb:"Regex-based toxicity scoring and highlight; CRT console theme.", href:"https://codepen.io/Mike-MacDonagh/pen/ogbWBPV", repo:null, tags:["js","tool","regex","ui"] },
-  { title:"Mixtape Sorter", thumb: "/assets/images/thumbs/fcc-jsads-3.2.png", subtitle:"Number Sorter → strings", blurb:"Bubble, Selection, Insertion on real tracks via localeCompare.", href:"https://codepen.io/Mike-MacDonagh/pen/XJXgdPX", repo:null, tags:["js","tool","music"] },
-  { title:"D&D Dice Lab", thumb: "/assets/images/thumbs/fcc-jsads-3.3.png", subtitle:"Statistics Calculator → dice", blurb:"Parse 3d6 / 1d20+5; mean, median, mode, range, variance, SD; crit/DC rates.", href:"https://codepen.io/Mike-MacDonagh/pen/PwZjgjZ", repo:null, tags:["js","tool","math","game"] },
-  { title:"Budget Tracker", thumb: "/assets/images/thumbs/fcc-jsads-3.4.png", subtitle:"Spreadsheet → finance app", blurb:"Regex formula engine with range expansion and precedence; A–J x 30 grid; seeded Income/Expenses/Summary; localStorage.", href:"https://codepen.io/Mike-MacDonagh/pen/LEGzPxY", repo:null, tags:["js","tool","finance","regex","ui"] },
+  /* === JavaScript Algorithms & Data Structures (In Progress) === */
+  { 
+    title: "CRT Pyramid Console",
+    thumb: "/assets/images/thumbs/fcc-jsads-1.1.png",
+    subtitle: "Pyramid Generator → Retro console",
+    blurb: "Loops, string building, <pre> spacing, inputs (range/text), toggles.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/qEOvBap",
+    repo: null,
+    tags: ["generator","ui","retro"]
+  },
+  { 
+    title: "Handwritten Copybook Gradebook",
+    thumb: "/assets/images/thumbs/fcc-jsads-1.2.png",
+    subtitle: "Gradebook App → Text parsing to grades",
+    blurb: "Split/map, conditional logic, running totals, DOM rendering.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/wBKZGym",
+    repo: null,
+    tags: ["education","tool","parser"]
+  },
+  { 
+    title: "Echoes Beyond the Rift",
+    thumb: "/assets/images/thumbs/fcc-jsads-1.3.png",
+    subtitle: "Role-Playing Game → Themed JS RPG",
+    blurb: "Finite state, locations array, RNG events, modal, UI grid.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/jEbgZmy",
+    repo: null,
+    tags: ["game","state","ui"]
+  },
+  { 
+    title: "Lightbulb Switch",
+    thumb: "/assets/images/thumbs/fcc-jsads-1.4.png",
+    subtitle: "Random Background → SVG bulb toggle",
+    blurb: "Class toggle, switch/case, DOM style updates, event listeners.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/XJXrMGp",
+    repo: null,
+    tags: ["ui","interaction","dom"]
+  },
+  { 
+    title: "Health App Tracker",
+    thumb: "/assets/images/thumbs/fcc-jsads-1.5.png",
+    subtitle: "Calorie Counter → Expanded tracker",
+    blurb: "Regex sanitize, NodeList loops, computed totals, TDEE targets.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/RNrwKgP",
+    repo: null,
+    tags: ["health","calculator","regex"]
+  },
+  { 
+    title: "Philosophy Duel",
+    thumb: "/assets/images/thumbs/fcc-jsads-1.6.png",
+    subtitle: "Rock–Paper–Scissors → Best-of-5 duel",
+    blurb: "RNG, comparison helpers, score state, reset flow.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/bNENBBZ",
+    repo: null,
+    tags: ["game","logic","state"]
+  },
+  { 
+    title: "JJ & Derek Mixtape Player",
+    thumb: "/assets/images/thumbs/fcc-jsads-1.7.png",
+    subtitle: "Music Player → Custom tracks + UI",
+    blurb: "Audio API, preloading metadata, playlist UI, skin/theming.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/dPGGjRZ",
+    repo: null,
+    tags: ["music-app","ui","media"]
+  },
+  { 
+    title: "Palindrome Checker",
+    thumb: "/assets/images/thumbs/fcc-jsads-1.png",
+    subtitle: "Palindrome Checker → Base validator",
+    blurb: "Regex normalization, string reverse, DOM updates, a11y live region.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/qEbZBaR",
+    repo: null,
+    tags: ["validator","regex","dom"]
+  },
+  { 
+    title: "CRT Date Utility",
+    thumb: "/assets/images/thumbs/fcc-jsads-2.1.png",
+    subtitle: "Date Formatter → Terminal-style tool",
+    blurb: "Intl APIs, UNIX/ISO formats, live updates, typewriter effect.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/RNraPar",
+    repo: null,
+    tags: ["utility","datetime","ui"]
+  },
+  { 
+    title: "HABS Roster Cards",
+    thumb: "/assets/images/thumbs/fcc-jsads-2.2.png",
+    subtitle: "Football Team Cards → Hockey roster",
+    blurb: "Card templates, filters, CDN images w/ fallbacks, badges.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/RNrRjvQ",
+    repo: null,
+    tags: ["cards","sports","ui"]
+  },
+  { 
+    title: "Mixtape Maker",
+    thumb: "/assets/images/thumbs/fcc-jsads-2.3.png",
+    subtitle: "To-Do App → Playlist builder",
+    blurb: "CRUD, localStorage, search filter, map/join templating.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/pvgNprM",
+    repo: null,
+    tags: ["crud","music-app","storage"]
+  },
+  { 
+    title: "Decimal → Binary Converter",
+    thumb: "/assets/images/thumbs/fcc-jsads-2.4.png",
+    subtitle: "Decimal to Binary → Futuristic translator",
+    blurb: "Recursion, input sanitary checks, call-stack demo animation.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/LEGWaPr",
+    repo: null,
+    tags: ["converter","recursion","ui"]
+  },
+  { 
+    title: "RomaNumeral Converter",
+    thumb: "/assets/images/thumbs/fcc-jsads-2.png",
+    subtitle: "Roman Numeral Converter → Imperial reskin",
+    blurb: "Value/symbol map, loop + subtraction rules, error messaging.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/ZYQeZBm",
+    repo: null,
+    tags: ["converter","algorithm","mapping"]
+  },
+  { 
+    title: "Comment Moderation Terminal",
+    thumb: "/assets/images/thumbs/fcc-jsads-3.1.png",
+    subtitle: "Spam Filter → Regex troll detector",
+    blurb: "Regex categories, scoring, highlights, heat mapping.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/ogbWBPV",
+    repo: null,
+    tags: ["moderation","regex","tool"]
+  },
+  { 
+    title: "Mixtape Sorter",
+    thumb: "/assets/images/thumbs/fcc-jsads-3.2.png",
+    subtitle: "Number Sorter → Track sorting",
+    blurb: "Bubble/Selection/Insertion, localeCompare, swap loops.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/XJXgdPX",
+    repo: null,
+    tags: ["sorting","algorithm","music-app"]
+  },
+  { 
+    title: "D&D Dice Lab",
+    thumb: "/assets/images/thumbs/fcc-jsads-3.3.png",
+    subtitle: "Statistics Calculator → Dice engine",
+    blurb: "Dice parsing (XdY+Z), mean/median/mode, variance/SD, DC/crit.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/PwZjgjZ",
+    repo: null,
+    tags: ["calculator","math","game"]
+  },
+  { 
+    title: "Budget Tracker",
+    thumb: "/assets/images/thumbs/fcc-jsads-3.4.png",
+    subtitle: "Spreadsheet → Finance grid app",
+    blurb: "Regex formula engine, range expansion, operator precedence, A–J×30, localStorage.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/LEGzPxY",
+    repo: null,
+    tags: ["spreadsheet","finance","regex"]
+  },
+  { 
+    title: "Telephone Number Validator",
+    thumb: "/assets/images/thumbs/fcc-jsads-3.png",
+    subtitle: "Telephone Validator → Regex formats",
+    blurb: "Pattern matching US formats, error states, event handling, reset flow.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/zxrPrEE",
+    repo: null,
+    tags: ["validator","regex","form"]
+  },
+
+  { 
+    title: "Vans Storefront",
+    thumb: "/assets/images/thumbs/fcc-jsads-4.1.png",
+    subtitle: "Shopping Cart → Product grid + totals",
+    blurb: "DOM delegation, subtotal/tax/total, image CDN, fullscreen zoom, :has() collapse.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/yyePoMO",
+    repo: null,
+    tags: ["shopping-cart","ecommerce","ui"]
+  },
+  { 
+    title: "Mouse Maze",
+    thumb: "/assets/images/thumbs/fcc-jsads-4.2.png",
+    subtitle: "Platformer Game → Emoji canvas engine",
+    blurb: "Canvas, AABB collisions, portals, multi-room map, HUD, mobile D-pad.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/myVpmxJ",
+    repo: null,
+    tags: ["game","canvas","engine"]
+  },
+  { 
+    title: "Slot Machine",
+    thumb: "/assets/images/thumbs/fcc-jsads-4.3.png",
+    subtitle: "Dice Game → Slot Machine",
+    blurb: "Math.random, face rendering, scoring rules, stateful credits, modular functions.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/zxrpXaZ",
+    repo: null,
+    tags: ["game","randomness","state"]
+  },
+  { 
+    title: "Cash Register",
+    thumb: "/assets/images/thumbs/fcc-jsads-4.png",
+    subtitle: "Cash Register → Penny-safe change maker",
+    blurb: "Greedy algorithm, cents math, drawer map, OPEN/CLOSED/INSUFFICIENT states.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/dPGJEWa",
+    repo: null,
+    tags: ["algorithm","finance","calculator"]
+  },
+  { 
+    title: "Neon Index - Cyberpunk Media Fetch",
+    thumb: "/assets/images/thumbs/fcc-jsads-5.1.png",
+    subtitle: "Authors Page → Wikipedia media index",
+    blurb: "REST fetch, async/await, filters, shuffle, load-more, modular rendering.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/jEWZbRQ",
+    repo: null,
+    tags: ["api","fetch-app","catalog"]
+  },
+  { 
+    title: "fCC Projects Checklist",
+    thumb: "/assets/images/thumbs/fcc-jsads-5.2.png",
+    subtitle: "Forum Leaderboard → Latest Projects table",
+    blurb: "Async/await, nested JSON destructuring, map/join templating, relative time.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/QwyQgXZ",
+    repo: null,
+    tags: ["leader-board","api","table"]
+  },
+  { 
+    title: "Pokémon API Search",
+    thumb: "/assets/images/thumbs/fcc-jsads-5.png",
+    subtitle: "RPG Creature Search App → Pokémon API Search",
+    blurb: "fetch + async/await, JSON parsing, dynamic DOM, cleared types per query.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/ZYQrJmW",
+    repo: null,
+    tags: ["api","fetch-app","search"]
+  },
 ];
+
 
 /* Safety net: strip any stray 'codepen' or 'fcc' tags if they ever appear */
 ALL_PROJECTS.forEach(p => p.tags = (p.tags || []).filter(t => t !== "codepen" && t !== "fcc"));
