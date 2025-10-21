@@ -460,3 +460,21 @@ section[style*="var(--bg-elev)"] .text-muted { color: #6b7078 !important; }
 .site-footer .footer-cell.left small a:hover {
   color: var(--purple-700) !important;
 }
+
+/* Custom hamburger + open/close animation */
+.navbar-toggler { border: 0; padding: .25rem .4rem; line-height: 1; }
+.hamburger {
+  display: inline-block; position: relative;
+  width: 24px; height: 2px; background: currentColor; transition: transform .2s ease;
+}
+.hamburger::before, .hamburger::after {
+  content: ""; position: absolute; left: 0; width: 24px; height: 2px;
+  background: currentColor; transition: transform .2s ease, top .2s ease, opacity .2s ease;
+}
+.hamburger::before { top: -7px; }
+.hamburger::after  { top:  7px; }
+
+/* Animate to "X" when expanded */
+.navbar-toggler[aria-expanded="true"] .hamburger { background: transparent; }
+.navbar-toggler[aria-expanded="true"] .hamburger::before { top: 0; transform: rotate(45deg); }
+.navbar-toggler[aria-expanded="true"] .hamburger::after  { top: 0; transform: rotate(-45deg); }

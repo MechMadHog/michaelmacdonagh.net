@@ -5,9 +5,12 @@
       <span class="brand-text fw-semibold">{{ site.title }}</span>
     </a>
 
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+    <!-- Custom hamburger (visible < lg) -->
+    <button class="navbar-toggler d-lg-none" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navMenu"
       aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="visually-hidden">Menu</span>
+      <span class="hamburger" aria-hidden="true"></span>
     </button>
 
     <div id="navMenu" class="collapse d-lg-flex">
@@ -22,3 +25,4 @@
     </div>
   </nav>
 </header>
+
