@@ -30,7 +30,7 @@ permalink: /resources/
       <div class="col-12 col-lg-6">
         <article class="card h-100">
           <div class="card-body">
-            <h3 class="h6 mb-1">Arch Linux · Laptop</h3>
+            <h3 class="h6 mb-1">Omarchy (Arch Linux) · Laptop</h3>
             <div class="small text-muted mb-2">Lightweight dev machine and travel setup.</div>
             <ul class="mb-0">
               <li><strong>Why:</strong> fast, minimal, predictable updates; great for CLIs and Node.</li>
