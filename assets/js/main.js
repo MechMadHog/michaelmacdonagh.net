@@ -7,7 +7,7 @@ const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /* ----------------------------------------
-   Thumb picker (no default/fallback)
+   Thumb picker
 ---------------------------------------- */
 function pickThumb(p) {
   const t = p && p.thumb ? String(p.thumb).trim() : "";
@@ -15,7 +15,7 @@ function pickThumb(p) {
 }
 
 /* ----------------------------------------
-   Tag labels (single source of truth)
+   Tag labels
 ---------------------------------------- */
 const TAG_LABELS = {
   "accessibility": "Accessibility",
@@ -83,7 +83,13 @@ const TAG_LABELS = {
   "ui": "UI",
   "utility": "Utility",
   "validator": "Validator",
-  "visual": "Visual"
+  "visual": "Visual",
+  "react": "React",
+  "jquery": "jQuery",
+  "bootstrap": "Bootstrap",
+  "timer": "Timer",
+  "editor": "Editor",
+  "audio": "Audio"
 };
 
 
@@ -498,6 +504,54 @@ const ALL_PROJECTS = [
     repo: null,
     tags: ["api","fetch-app","search"]
   },
+
+  /* === Front End Development Libraries (5) === */
+  { 
+    title: "Random (Simpsons) Quote Machine",
+    thumb: "/assets/images/thumbs/fcc-fel-1.png",
+    subtitle: "Random Quote Machine → Simpsons-themed app",
+    blurb: "React 17 app with local state, quote/author render, bright Simpsons UI and cartoon styling.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/KwVjwzy",
+    repo: null,
+    tags: ["react","randomness","ui"]
+  },
+  { 
+    title: "Markdown Previewer",
+    thumb: "/assets/images/thumbs/fcc-fel-2.png",
+    subtitle: "Markdown Previewer → Live GitHub-flavored editor",
+    blurb: "React app using Marked library with split-view layout, GFM + line breaks, accessible theme.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/KwVOPrL",
+    repo: null,
+    tags: ["react","tool","editor"]
+  },
+  { 
+    title: "Drum Machine",
+    thumb: "/assets/images/thumbs/fcc-fel-3.png",
+    subtitle: "Drum Machine → Interactive arcade soundboard",
+    blurb: "React 17 app with keyboard triggers, real-time playback, grid layout, and tactile button feedback.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/EaKYVOX",
+    repo: null,
+    tags: ["react","audio","interaction"]
+  },
+  { 
+    title: "JavaScript Calculator",
+    thumb: "/assets/images/thumbs/fcc-fel-4.png",
+    subtitle: "JavaScript Calculator → jQuery + Bootstrap UI",
+    blurb: "Chained operation logic, AC/CE keys, keyboard input, Bootstrap styling, and FCC compliance.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/YPqKyRj",
+    repo: null,
+    tags: ["calculator","jquery","bootstrap"]
+  },
+  { 
+    title: "25 + 5 Pomodoro Clock",
+    thumb: "/assets/images/thumbs/fcc-fel-5.png",
+    subtitle: "25 + 5 Clock → Focus timer with Redux-style state",
+    blurb: "State machine timer with pause/resume, audio alert, animated ring, full a11y + keyboard support.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/MYygaZe",
+    repo: null,
+    tags: ["timer","react","state"]
+  },
+
 ];
 
 
