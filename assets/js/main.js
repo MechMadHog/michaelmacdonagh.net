@@ -89,7 +89,13 @@ const TAG_LABELS = {
   "bootstrap": "Bootstrap",
   "timer": "Timer",
   "editor": "Editor",
-  "audio": "Audio"
+  "audio": "Audio",
+  "editor": "Editor",
+  "audio": "Audio",
+  "d3": "D3.js",
+  "data-viz": "Data Visualization",
+  "chart": "Chart",
+  "map": "Map"
 };
 
 
