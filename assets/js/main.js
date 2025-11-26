@@ -552,7 +552,54 @@ const ALL_PROJECTS = [
     tags: ["timer","react","state"]
   },
 
+  /* === Data Visualization with D3 (5) === */
+  { 
+    title: "Global GDP Bar Chart",
+    thumb: "/assets/images/thumbs/fcc-d3dv-1.png",
+    subtitle: "US GDP Bar-Chart → D3 SVG bars",
+    blurb: "External JSON fetch, scaled x/y axes, SVG <rect> bars, hover tooltip, and FCC hooks (#title, #tooltip, #x-axis, #y-axis).",
+    href: "https://codepen.io/Mike-MacDonagh/pen/qEZqvLP",
+    repo: null,
+    tags: ["d3","data-viz","chart"]
+  },
+  { 
+    title: "Cycling Doping Scatterplot",
+    thumb: "/assets/images/thumbs/fcc-d3dv-2.png",
+    subtitle: "Doping Scatterplot → Year vs time",
+    blurb: "D3 scales for paired data, colored categories, legend and gridlines, interactive tooltip, and FCC-compliant circle/tooltip IDs.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/EaKmgwN",
+    repo: null,
+    tags: ["d3","data-viz","chart","sports"]
+  },
+  { 
+    title: "Global Temperature Heat Map",
+    thumb: "/assets/images/thumbs/fcc-d3dv-3.png",
+    subtitle: "Surface Temperature Heat Map → Variance grid",
+    blurb: "Color-mapped month/year grid, custom cool-to-warm scale, dense SVG cells with hover highlight, and full FCC legend/axis tests.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/MYymvdj",
+    repo: null,
+    tags: ["d3","data-viz","visual"]
+  },
+  { 
+    title: "US Education Choropleth",
+    thumb: "/assets/images/thumbs/fcc-d3dv-4.png",
+    subtitle: "US Education Choropleth → County map",
+    blurb: "TopoJSON-driven US county map, education percentage color gradient, legend, hover tooltip with county + attainment, FCC mapping IDs.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/QwNvOBB",
+    repo: null,
+    tags: ["d3","data-viz","map"]
+  },
+  { 
+    title: "Video Game Sales Treemap",
+    thumb: "/assets/images/thumbs/fcc-d3dv-5.png",
+    subtitle: "Game Sales Tree Map → Hierarchical layout",
+    blurb: "Hierarchical treemap sized by sales, category color coding, hover tooltips, and FCC legend/data-* bindings for all tiles.",
+    href: "https://codepen.io/Mike-MacDonagh/pen/vEGZjxZ",
+    repo: null,
+    tags: ["d3","data-viz","visual"]
+  }
 ];
+
 
 
 /* Safety net: strip any stray 'codepen' or 'fcc' tags if they ever appear */
