@@ -29,8 +29,20 @@ permalink: /certifications/
                   <a class="btn btn-sm btn-primary ms-2" href="https://www.freecodecamp.org/certification/mechmadhog/javascript-algorithms-and-data-structures-v8" target="_blank" rel="noopener">View Certificate</a>
                   <div class="small text-muted mt-1">Projects: Checker, Converter, Validator, Register, Fetch &amp; Search.</div>
                 </li>
+                <li class="mb-2">
+                  <strong>Front-End Libraries</strong>
+                  <span class="badge text-bg-light ms-2">Completed</span>
+                  <a class="btn btn-sm btn-primary ms-2" href="https://www.freecodecamp.org/certification/mechmadhog/front-end-development-libraries" target="_blank" rel="noopener">View Certificate</a>
+                  <div class="small text-muted mt-1">Projects: Quote Machine, Markdown Previewer, Drum Machine, Calculator, Pomadoro timer.</div>
+                </li>
+                <li class="mb-2">
+                  <strong>Data Visualization</strong>
+                  <span class="badge text-bg-light ms-2">Completed</span>
+                  <a class="btn btn-sm btn-primary ms-2" href="https://www.freecodecamp.org/certification/mechmadhog/data-visualization" target="_blank" rel="noopener">View Certificate</a>
+                  <div class="small text-muted mt-1">Projects: Bar Chart, Scatterplot Graph, Heat Map, Choropleth Map, Treemap Diagram.</div>
+                </li>
                 <li class="mb-0">
-                  <strong>Front End Libraries</strong>
+                  <strong>Relational Database</strong>
                   <span class="badge badge-accent ms-2">In Progress</span>
                   <div class="small text-muted mt-1">
                     <!-- Latest: <a href="https://codepen.io/Mike-MacDonagh/pen/qEOvBap" target="_blank" rel="noopener">Pyramid Generator (Retro CRT)</a> — loops, strings, DOM, controls. -->
