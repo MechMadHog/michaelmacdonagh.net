@@ -41,6 +41,12 @@ permalink: /certifications/
                   <a class="btn btn-sm btn-primary ms-2" href="https://www.freecodecamp.org/certification/mechmadhog/data-visualization" target="_blank" rel="noopener">View Certificate</a>
                   <div class="small text-muted mt-1">Projects: Bar Chart, Scatterplot Graph, Heat Map, Choropleth Map, Treemap Diagram.</div>
                 </li>
+                <li class="mb-2">
+                  <strong>Back End Development and APIs</strong>
+                  <span class="badge text-bg-light ms-2">Completed</span>
+                  <a class="btn btn-sm btn-primary ms-2" href="https://www.freecodecamp.org/certification/mechmadhog/back-end-development-and-apis" target="_blank" rel="noopener">View Certificate</a>
+                  <div class="small text-muted mt-1">Projects: Timestamp, Request Header Parser, URL Shortener, Exercise Tracker, File Metadata.</div>
+                </li>
                 <li class="mb-0">
                   <strong>Relational Database</strong>
                   <span class="badge badge-accent ms-2">In Progress</span>
