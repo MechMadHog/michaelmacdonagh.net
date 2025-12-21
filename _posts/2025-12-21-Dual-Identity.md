@@ -4,7 +4,7 @@ title: "Dual Identity: Why I Maintain Two Websites"
 description: "Why separating my professional presence from my personal work is a deliberate systems decision, not a branding exercise."
 categories: [Technology, Identity, Craft]
 tags: [web-development, systems-thinking, diy, identity, portfolio]
-featured: true
+featured: false
 image: /assets/images/blog/dual-identity.png
 ---
 

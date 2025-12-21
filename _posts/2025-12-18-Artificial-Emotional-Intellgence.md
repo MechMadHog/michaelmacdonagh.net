@@ -4,7 +4,7 @@ title: "AI vs AEI: When Emotional Safety Replaces Intelligence"
 description: "An examination of Artificial Emotional Intelligence, how tone management and offence avoidance erode clarity and trust, and why emotional regulation is a design failure in non emotional systems."
 categories: [Systems, AI, Technology]
 tags: [ai, aei, system-design, incentives, trust, language, clarity]
-featured: true
+featured: false
 image: /assets/images/blog/ai-vs-aei.png
 ---
 

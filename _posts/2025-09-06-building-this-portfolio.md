@@ -4,7 +4,7 @@ title: "How I Built This Portfolio: structure, theme, and sanity"
 description: "Why I moved off WordPress, my two-site strategy, the light theme with purple/icy accents, and what this blog will cover."
 categories: [Meta, Portfolio]
 tags: [jekyll, design, workflow, css, javascript]
-featured: true
+featured: false
 image: /assets/images/blog/building-portfolio-hero.png
 ---
 
