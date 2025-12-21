@@ -5,6 +5,7 @@ description: "Why separating my professional presence from my personal work is a
 categories: [Technology, Identity, Craft]
 tags: [web-development, systems-thinking, diy, identity, portfolio]
 featured: true
+image: /assets/images/blog/dual-identity.png
 ---
 
 ## Dual Identity
