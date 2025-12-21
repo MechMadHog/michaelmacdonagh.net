@@ -20,7 +20,7 @@ image: /assets/images/blog/building-portfolio-hero.png
 - **This site**: formal, minimal, case-study friendly.
 - **Personal site**: experiments, notes-to-self, and more opinionated posts.
 
-## Choosing the color scheme
+## Choosing the colour scheme
 
 - Base: **white + greys** for a professional tone.
 - Primary: **purple** (#6b4ad8) with **icy blue** accents for state/hover.
