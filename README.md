@@ -1,52 +1,66 @@
 # 🌐 MichaelMacDonagh.net
 
-This is the source code for my professional website — [michaelmacdonagh.net](https://michaelmacdonagh.net)
+Source code for my professional website:  
+👉 **https://michaelmacdonagh.net**
 
-Built with:
+A static, CV-focused site built for clarity, maintainability, and long-term use.
 
-- **Jekyll** (static site generator)
-- **GitHub Pages** (hosting)
-- **Markdown** (content)
-- **Custom theme** (minimal, CV-focused design)
+**Built with:**
 
----
-
-## 🧠 What’s Inside
-
-A complete professional hub showcasing my work and background:
-
-- **🏗️ Projects:** 37 portfolio projects with live [CodePen](https://codepen.io/Mike-MacDonagh) demos and write-ups.  
-- **🎓 Certifications:** All current and in-progress [FreeCodeCamp](https://www.freecodecamp.org/mechmadhog) certifications, plus formal education.  
-- **🧰 Resources:** Full list of my tools, software, and hardware setup.  
-- **📝 Blog:** Working Jekyll blog — first post published and live.  
-- **📄 CV / Resume:** Up-to-date downloadable CV in PDF format.  
-- **📬 Contact:** Functional contact form connected and tested.
+- **Jekyll** – static site generation  
+- **GitHub Pages** – hosting  
+- **Markdown** – content authoring  
+- **Custom theme** – minimal, recruiter-friendly design  
 
 ---
 
-## ⚙️ Tech Overview
+## 🧠 Site Contents
 
-- **Language:** HTML / CSS / Markdown  
+A complete professional hub covering work, skills, and background:
+
+- **🏗️ Projects**  
+  37 portfolio projects with live [CodePen](https://codepen.io/Mike-MacDonagh) demos and written breakdowns.
+
+- **🎓 Certifications**  
+  All completed and in-progress [FreeCodeCamp](https://www.freecodecamp.org/mechmadhog) certifications, plus formal education.
+
+- **🧰 Resources**  
+  Documented tools, software, and hardware stack.
+
+- **📝 Blog**  
+  Active Jekyll blog. First post published and live.
+
+- **📄 CV / Résumé**  
+  Up-to-date downloadable PDF.
+
+- **📬 Contact**  
+  Functional, tested contact form.
+
+---
+
+## ⚙️ Technical Overview
+
+- **Languages:** HTML, CSS, Markdown  
 - **Framework:** Jekyll  
 - **Hosting:** GitHub Pages  
 - **Version Control:** Git / GitHub  
-- **Forms:** Jekyll-forms + Netlify backend (or static form handler)  
-- **Design:** Responsive, minimal, recruiter-friendly
+- **Forms:** Jekyll-forms with Netlify backend (or static handler)  
+- **Design Goals:** Responsive, minimal, recruiter-oriented  
 
 ---
 
 ## 🚀 Run Locally
 
-To view or edit the site locally:
+To view or modify the site locally:
 
 ```bash
-# 1. Clone the repository
+# Clone the repository
 git clone https://github.com/MechMadHog/MichaelMacDonagh.net.git
 cd MichaelMacDonagh.net
 
-# 2. Install Jekyll (if not already installed)
+# Install Jekyll (if needed)
 gem install bundler jekyll
 
-# 3. Install dependencies and serve
+# Install dependencies and serve locally
 bundle install
 bundle exec jekyll serve
