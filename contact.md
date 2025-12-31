@@ -16,11 +16,11 @@ permalink: /contact/
           <p class="mb-2 fw-semibold text-center">Two sites. Two purposes.</p>
           <ul class="list-unstyled mb-0 small">
             <li class="mb-1">
-              <strong>michaelmacdonagh.net</strong> · formal portfolio — CV, certifications, project write-ups.
+              <strong>michaelmacdonagh.net</strong> · formal site
             </li>
             <li>
-              <a href="https://mechmadhog.com/" class="text-decoration-none">mechmadhog.com</a>
-              · informal site (coming soon) — experiments, artwork, comedy and blogging my interests &amp; adventures.
+              <a href="https://mechmadhog.com/"  target="_blank" rel="noopener" class="text-decoration-none">mechmadhog.com</a>
+              · informal site
             </li>
           </ul>
         </div>
