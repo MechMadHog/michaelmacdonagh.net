@@ -44,83 +44,124 @@ permalink: /resources/
         </article>
       </div>
     </div>
-    <!-- =========================
-         DEVELOPMENT
-         ========================= -->
-    <h2 class="h5 text-uppercase text-muted mt-5 mb-3">Development</h2>
-    <div class="row g-4">
-      <div class="col-12 col-lg-6">
-        <article class="card h-100">
-          <div class="card-body">
-            <h3 class="h6 mb-1">Core Tools</h3>
-            <div class="small text-muted mb-2">Daily stack for web work and small utilities.</div>
-            <ul class="mb-2">
-              <li><strong>Docker</strong> — containerized services for clean local testing.</li>
-              <li><strong>VS Code</strong> — fast editor; extensions for Git, ESLint, Prettier, Markdown.</li>
-              <li><strong>Git</strong> — version control; GitHub for hosting & issues.</li>
-              <li><strong>Node.js</strong> — scripts, tooling, simple servers.</li>
-            </ul>
-            <div class="d-flex flex-wrap gap-1">
-              <span class="badge text-bg-light">Docker</span>
-              <span class="badge text-bg-light">VS Code</span>
-              <span class="badge text-bg-light">Git</span>
-              <span class="badge text-bg-light">Node</span>
-            </div>
-          </div>
-        </article>
+<!-- =========================
+     DEVELOPMENT
+     ========================= -->
+<h2 class="h5 text-uppercase text-muted mt-5 mb-3">Development</h2>
+<div class="row g-4">
+  <div class="col-12 col-lg-6">
+    <article class="card h-100">
+      <div class="card-body">
+        <h3 class="h6 mb-1">Core Tools</h3>
+        <div class="small text-muted mb-2">
+          Linux-first tooling for web development, automation, and AI-assisted workflows.
+        </div>
+        <ul class="mb-2">
+          <li><strong>VS Codium</strong> — lightweight, telemetry-free editor for daily work.</li>
+          <li><strong>Node.js</strong> — scripts, tooling, APIs, and lightweight services.</li>
+          <li><strong>Docker</strong> — containerized environments for reproducible builds and testing.</li>
+          <li><strong>Shell (Bash/Zsh)</strong> — automation, system control, and glue logic.</li>
+          <li><strong>Git</strong> — version control; GitHub for hosting, issues, and CI.</li>
+        </ul>
+        <div class="d-flex flex-wrap gap-1">
+          <span class="badge text-bg-light">VS Codium</span>
+          <span class="badge text-bg-light">Node</span>
+          <span class="badge text-bg-light">Docker</span>
+          <span class="badge text-bg-light">Shell</span>
+          <span class="badge text-bg-light">Git</span>
+        </div>
       </div>
-      <div class="col-12 col-lg-6">
-        <article class="card h-100">
-          <div class="card-body">
-            <h3 class="h6 mb-1">Languages & Frameworks</h3>
-            <div class="small text-muted mb-2">Lean front-end stack; expanding as I learn.</div>
-            <ul class="mb-2">
-              <li><strong>HTML · CSS · JavaScript</strong> — fundamentals first.</li>
-              <li><strong>Bootstrap 5</strong> — quick, accessible layout and components.</li>
-              <li><strong>Jekyll</strong> — this site: fast, file-based, Git-friendly (no CMS bloat).</li>
-            </ul>
-            <div class="d-flex flex-wrap gap-1">
-              <span class="badge text-bg-light">HTML</span>
-              <span class="badge text-bg-light">CSS</span>
-              <span class="badge text-bg-light">JavaScript</span>
-              <span class="badge text-bg-light">Bootstrap 5</span>
-              <span class="badge text-bg-light">Jekyll</span>
-            </div>
-          </div>
-        </article>
+    </article>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <article class="card h-100">
+      <div class="card-body">
+        <h3 class="h6 mb-1">Languages, Frameworks & Practices</h3>
+        <div class="small text-muted mb-2">
+          Fundamentals-first stack with an emphasis on testing, security, and maintainability.
+        </div>
+        <ul class="mb-2">
+          <li><strong>HTML · CSS · JavaScript</strong> — core web fundamentals.</li>
+          <li><strong>Bootstrap 5</strong> — accessible, rapid layout and components.</li>
+          <li><strong>Helmet.js</strong> — security headers and hardening for Node apps.</li>
+          <li><strong>Chai</strong> — assertion library for unit and integration testing.</li>
+          <li><strong>Jekyll</strong> — static, file-based sites (Git-native, no CMS overhead).</li>
+        </ul>
+        <div class="d-flex flex-wrap gap-1">
+          <span class="badge text-bg-light">HTML</span>
+          <span class="badge text-bg-light">CSS</span>
+          <span class="badge text-bg-light">JavaScript</span>
+          <span class="badge text-bg-light">Bootstrap 5</span>
+          <span class="badge text-bg-light">Helmet.js</span>
+          <span class="badge text-bg-light">Chai</span>
+          <span class="badge text-bg-light">Jekyll</span>
+        </div>
       </div>
-    </div>
-    <!-- =========================
-         DESIGN & HARDWARE
-         ========================= -->
-    <h2 class="h5 text-uppercase text-muted mt-5 mb-3">Design & UI</h2>
-    <div class="row g-4">
-      <div class="col-12 col-lg-6">
-        <article class="card h-100">
-          <div class="card-body">
-            <h3 class="h6 mb-1">Software</h3>
-            <div class="small text-muted mb-2">From quick edits to production assets.</div>
-            <ul class="mb-0">
-              <li><strong>Paint.NET</strong> — fast raster edits and exports.</li>
-              <li><strong>Adobe Photoshop</strong> — retouching, advanced compositing.</li>
-              <li><strong>Adobe Illustrator</strong> — vector logos, icon grids, SVGs.</li>
-              <li><strong>Blender</strong> — 3D scenes, renders, and simple motion tests.</li>
-            </ul>
-          </div>
-        </article>
+    </article>
+  </div>
+</div>
+
+<!-- =========================
+     AI & KNOWLEDGE SYSTEMS
+     ========================= -->
+<h2 class="h5 text-uppercase text-muted mt-5 mb-3">AI & Knowledge Systems</h2>
+<div class="row g-4">
+  <div class="col-12 col-lg-12">
+    <article class="card h-100">
+      <div class="card-body">
+        <h3 class="h6 mb-1">Walter & AI Tooling</h3>
+        <div class="small text-muted mb-2">
+          Personal AI stack for thinking, research, and local-first experimentation.
+        </div>
+        <ul class="mb-0">
+          <li><strong>Obsidian</strong> — markdown-based knowledge vault and thinking system.</li>
+          <li><strong>LM Studio</strong> — local LLM inference and offline experimentation.</li>
+          <li><strong>MCPs</strong> — structured AI integrations (e.g. Neo4j, graph-based context).</li>
+          <li><strong>ChatGPT</strong> — cloud-based reasoning and collaboration (near-term).</li>
+        </ul>
       </div>
-      <div class="col-12 col-lg-6">
-        <article class="card h-100">
-          <div class="card-body">
-            <h3 class="h6 mb-1">Hardware</h3>
-            <div class="small text-muted mb-2">Sketching and precision work.</div>
-            <ul class="mb-0">
-              <li><strong>Huion Kamvas Pro 13</strong> — pen display for illustration and vector tracing.</li>
-            </ul>
-          </div>
-        </article>
+    </article>
+  </div>
+</div>
+
+<!-- =========================
+     DESIGN & UI
+     ========================= -->
+<h2 class="h5 text-uppercase text-muted mt-5 mb-3">Design & UI</h2>
+<div class="row g-4">
+  <div class="col-12 col-lg-6">
+    <article class="card h-100">
+      <div class="card-body">
+        <h3 class="h6 mb-1">Raster & Illustration</h3>
+        <div class="small text-muted mb-2">
+          Linux-native tools for drawing, painting, and image work.
+        </div>
+        <ul class="mb-0">
+          <li><strong>Pinta</strong> — lightweight edits and quick fixes.</li>
+          <li><strong>Paint.NET</strong> — fast raster work (legacy / Windows).</li>
+          <li><strong>Krita</strong> — digital drawing and painting.</li>
+          <li><strong>GIMP</strong> — full-featured image editing (Photoshop replacement).</li>
+        </ul>
       </div>
-    </div>
+    </article>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <article class="card h-100">
+      <div class="card-body">
+        <h3 class="h6 mb-1">Vector & Hardware</h3>
+        <div class="small text-muted mb-2">
+          Logos, SVGs, and precision input.
+        </div>
+        <ul class="mb-0">
+          <li><strong>Inkscape</strong> — vector graphics, logos, icon systems, SVGs.</li>
+          <li><strong>Huion Kamvas Pro 13</strong> — pen display for illustration, tracing, and UI work.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</div>
     <!-- =========================
          LEARNING & REFERENCES (optional starter)
          ========================= -->
