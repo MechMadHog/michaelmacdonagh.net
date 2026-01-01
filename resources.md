@@ -18,11 +18,13 @@ permalink: /resources/
       <div class="col-12 col-lg-6">
         <article class="card h-100">
           <div class="card-body">
-            <h3 class="h6 mb-1">Windows 10 · Desktop</h3>
-            <div class="small text-muted mb-2">Daily driver for design, Docker builds, and testing.</div>
+            <h3 class="h6 mb-1">Omarchy (Arch Linux) · Desktop</h3>
+            <div class="small text-muted mb-2">
+              Primary Linux workstation for development, automation, and daily use.
+            </div>
             <ul class="mb-0">
-              <li><strong>Why:</strong> broad app support, good GPU tooling, reliable with Adobe/Blender.</li>
-              <li><strong>Notes:</strong> WSL2 available if/when I want a Linux shell locally.</li>
+              <li><strong>Why:</strong> fast, minimal, predictable rolling updates; excellent for CLI-heavy workflows.</li>
+              <li><strong>Notes:</strong> mirrors + AUR keep tooling current; main environment for deep Linux proficiency.</li>
             </ul>
           </div>
         </article>
@@ -30,11 +32,13 @@ permalink: /resources/
       <div class="col-12 col-lg-6">
         <article class="card h-100">
           <div class="card-body">
-            <h3 class="h6 mb-1">Omarchy (Arch Linux) · Laptop</h3>
-            <div class="small text-muted mb-2">Lightweight dev machine and travel setup.</div>
+            <h3 class="h6 mb-1">Windows 10 · Laptop</h3>
+            <div class="small text-muted mb-2">
+              Transitional setup while migrating fully to a Linux-only workflow.
+            </div>
             <ul class="mb-0">
-              <li><strong>Why:</strong> fast, minimal, predictable updates; great for CLIs and Node.</li>
-              <li><strong>Notes:</strong> mirrors + AUR keep tooling current; ideal for learning deeper Linux.</li>
+              <li><strong>Why:</strong> temporary compatibility layer for legacy tools and edge-case software.</li>
+              <li><strong>Notes:</strong> WSL2 bridges the gap; end goal is 100% Linux across all machines.</li>
             </ul>
           </div>
         </article>
