@@ -19,7 +19,7 @@ A static, CV-focused site built for clarity, maintainability, and long-term use.
 A complete professional hub covering work, skills, and background:
 
 - **🏗️ Projects**  
-  37 portfolio projects with live [CodePen](https://codepen.io/Mike-MacDonagh) demos and written breakdowns.
+  >50 portfolio projects with live [CodePen](https://codepen.io/Mike-MacDonagh) demos and written breakdowns.
 
 - **🎓 Certifications**  
   All completed and in-progress [FreeCodeCamp](https://www.freecodecamp.org/mechmadhog) certifications, plus formal education.
