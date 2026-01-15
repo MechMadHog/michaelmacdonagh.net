@@ -1,6 +1,6 @@
 # 🌐 MichaelMacDonagh.net
 
-Source code for my professional website:  
+This is the source code for my portfolio website:  
 👉 **https://michaelmacdonagh.net**
 
 A static, CV-focused site built for clarity, maintainability, and long-term use.
@@ -30,7 +30,7 @@ A complete professional hub covering work, skills, and background:
 - **📝 Blog**  
   Active Jekyll blog. First post published and live.
 
-- **📄 CV / Résumé**  
+- **📄 CV / Resumé**  
   Up-to-date downloadable PDF.
 
 - **📬 Contact**  
