@@ -3,7 +3,7 @@
 This is the source code for my portfolio website:  
 👉 **https://michaelmacdonagh.net**
 
-A static, CV-focused site built for clarity, maintainability, and long-term use.
+A static, CV-focused professional site built for clarity, maintainability, and long-term use.
 
 **Built with:**
 
