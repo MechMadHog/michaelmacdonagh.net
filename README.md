@@ -28,7 +28,7 @@ A complete professional hub covering work, skills, and background:
   Documented tools, software, and hardware stack.
 
 - **📝 Blog**  
-  Active Jekyll blog. First post published and live.
+  Active Jekyll blog. First post published and live. Posts are on professional topics only.
 
 - **📄 CV / Resumé**  
   Up-to-date downloadable PDF.
