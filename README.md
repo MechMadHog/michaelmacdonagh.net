@@ -1,66 +1,56 @@
-# 🌐 MichaelMacDonagh.net
+# michaelmacdonagh.net
 
-Source code for my professional website:  
-👉 **https://michaelmacdonagh.net**
+This is my **formal site**.
 
-A static, CV-focused site built for clarity, maintainability, and long-term use.
+It exists to present finished work, skills, and background clearly and without distraction.
+It is the place I would send a recruiter, a client, or anyone who needs a clean view of what I can do.
 
-**Built with:**
-
-- **Jekyll** – static site generation  
-- **GitHub Pages** – hosting  
-- **Markdown** – content authoring  
-- **Custom theme** – minimal, recruiter-friendly design  
+This site is intentionally restrained.
 
 ---
 
-## 🧠 Site Contents
+## What This Site Is
 
-A complete professional hub covering work, skills, and background:
+- A professional portfolio
+- A record of completed and verifiable work
+- A place for things that are finished enough to stand over
 
-- **🏗️ Projects**  
-  37 portfolio projects with live [CodePen](https://codepen.io/Mike-MacDonagh) demos and written breakdowns.
-
-- **🎓 Certifications**  
-  All completed and in-progress [FreeCodeCamp](https://www.freecodecamp.org/mechmadhog) certifications, plus formal education.
-
-- **🧰 Resources**  
-  Documented tools, software, and hardware stack.
-
-- **📝 Blog**  
-  Active Jekyll blog. First post published and live.
-
-- **📄 CV / Résumé**  
-  Up-to-date downloadable PDF.
-
-- **📬 Contact**  
-  Functional, tested contact form.
+Content here is curated.
+If something appears on this site, it has earned its place.
 
 ---
 
-## ⚙️ Technical Overview
+## What This Site Is Not
 
-- **Languages:** HTML, CSS, Markdown  
-- **Framework:** Jekyll  
-- **Hosting:** GitHub Pages  
-- **Version Control:** Git / GitHub  
-- **Forms:** Jekyll-forms with Netlify backend (or static handler)  
-- **Design Goals:** Responsive, minimal, recruiter-oriented  
+- A personal blog
+- A playground for experiments
+- A running log of thoughts or ideas
+
+Those live elsewhere.
+
+For personal work, experiments, and writing in progress, see:
+👉 [mechmadhog.com](https://mechmadhog.com)
 
 ---
 
-## 🚀 Run Locally
+## Standard
 
-To view or modify the site locally:
+This site prioritises:
+- clarity
+- maintainability
+- low noise
+- long-term stability
 
-```bash
-# Clone the repository
-git clone https://github.com/MechMadHog/MichaelMacDonagh.net.git
-cd MichaelMacDonagh.net
+It is built conservatively on purpose.
+The goal is not novelty.
+The goal is reliability.
 
-# Install Jekyll (if needed)
-gem install bundler jekyll
+---
 
-# Install dependencies and serve locally
-bundle install
-bundle exec jekyll serve
+## Technical Notes
+
+The site is built as a static project using Jekyll and GitHub Pages.
+Content is written in Markdown.
+Dependencies are kept minimal.
+
+The structure is simple so the site can be maintained for years without friction.
