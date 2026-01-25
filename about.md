@@ -56,7 +56,7 @@ permalink: /about/
 
   <h2>Teaching and Community</h2>
   <p>
-    Alongside my own work, I volunteer as a <strong>CoderDojo mentor</strong>, teaching young people programming and digital skills.
+    Alongside my own work, I volunteered for several years as a <strong>CoderDojo mentor</strong>, teaching young people programming and digital skills.
   </p>
   <p>
     I was awarded a <strong>Special Purpose Certificate in Civic Engagement</strong> from <strong>ATU</strong> for this work.
