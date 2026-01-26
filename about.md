@@ -29,50 +29,117 @@ permalink: /about/
 </div>
 
 <section class="about-body">
-  <h2>Background</h2>
+  <h2>What I Actually Do</h2>
   <p>
-    My work spans small business websites, internal tools, and enterprise applications built on the Microsoft Power Platform.
-    This has given me both creative range and experience working inside real technical and organisational constraints.
+    I design and build small to medium digital systems, ranging from static websites to internal tools and automation workflows.
+    My work includes front-end development, UI design, content systems, and lightweight back-end integrations.
   </p>
   <p>
-    I began in design and digital media, then moved into development through hands-on project work.
-    Over time, I shifted away from marketing-driven platforms and low-code tools toward modern web development and open technologies.
-  </p>
-  <p>
-    To formalise that shift, I committed to completing the freeCodeCamp full-stack curriculum.
-    This includes seven web-focused certifications and roughly 1,800 hours of project-based learning.
+    I have built and maintained WordPress sites for small businesses, internal tools for support and operations teams, and enterprise apps using the Microsoft Power Platform.
+    In recent years, my focus has shifted toward static, inspectable systems using modern web tooling.
   </p>
 
-  <h2>Current Direction</h2>
+  <h2>How I Work</h2>
   <p>
-    My current focus is on systems that behave well under real use and remain understandable when they need to be changed.
+    I work iteratively and ship often.
+    Most projects start small, are pushed until something breaks, then rebuilt around what proved useful.
   </p>
   <ul>
-    <li>Modern front-end development and static architectures</li>
-    <li>Local-first and low-dependency workflows</li>
-    <li>Automation and tooling that reduce cognitive load</li>
-    <li>Building systems that can be inspected, maintained, and extended</li>
+    <li>HTML, CSS, JavaScript for core interfaces</li>
+    <li>Jekyll and GitHub Pages for static delivery</li>
+    <li>Git for versioning and change tracking</li>
+    <li>Docker and shell tooling for reproducible environments</li>
+    <li>Automation and AI tools for workflow support</li>
   </ul>
+
+  <h2>Current Focus</h2>
+  <p>
+    My current work centres on building systems that are easy to understand, cheap to maintain, and resilient under real use.
+  </p>
+  <ul>
+    <li>Local-first tooling and offline workflows</li>
+    <li>Static architectures with minimal dependencies</li>
+    <li>Automation and small utilities that reduce friction</li>
+    <li>AI-assisted research and knowledge systems</li>
+  </ul>
+
+  <h2>Full-Stack Transition</h2>
+  <p>
+    Since August, I have been working daily toward becoming a full-stack developer,
+    with a stronger focus on open-source tools, static architectures, and local-first systems.
+  </p>
+  <p>
+    This work is structured around the freeCodeCamp curriculum and supported by continuous
+    project builds, public repositories, and live demos.
+  </p>
+  <p>
+    The shift is intentional. I am moving away from closed platforms and low-code environments
+    toward systems I can inspect, extend, and maintain directly.
+  </p>
+
+  <h2>Working with AI</h2>
+  <p>
+    I began using AI tools in my workflows in 2023.
+    This was encouraged by my former manager as part of improving research, automation,
+    and development efficiency.
+  </p>
+  <p>
+    Today, AI is treated as a support layer rather than a replacement for technical skill.
+    I use it to accelerate exploration, documentation, and problem analysis.
+  </p>
 
   <h2>Teaching and Community</h2>
   <p>
-    Alongside my own work, I volunteered for several years as a <strong>CoderDojo mentor</strong>, teaching young people programming and digital skills.
-  </p>
-  <p>
-    I was awarded a <strong>Special Purpose Certificate in Civic Engagement</strong> from <strong>ATU</strong> for this work.
+    I have volunteered as a <strong>CoderDojo mentor</strong>, teaching young people programming and digital skills.
+    This work was recognised with a <strong>Special Purpose Certificate in Civic Engagement</strong> from <strong>ATU</strong>.
   </p>
 
-  <h2>Professional Approach</h2>
+  <h2>Professional Context</h2>
   <p>
-    I work across the full lifecycle of a project, from problem definition and design through to implementation, testing, and iteration.
-    Clear communication and practical problem-solving are central to how I work.
+    I have worked across freelance, client, and corporate environments.
+    This includes long-term contracts, internal tooling, and public-facing systems.
   </p>
+  <p>
+    I am comfortable owning a project end to end, from initial problem definition and design through to delivery, documentation, and iteration.
+  </p>
+
+  <h2>Professional References</h2>
+  <p>
+    The following quotes are from colleagues and managers I have worked with.
+    They are included as evidence of how I operate in team and delivery environments.
+  </p>
+
+  <div class="testimonials">
+    <blockquote>
+      “Michael consistently impressed with his technical expertise and collaborative approach.
+      Adaptable, reliable, and an excellent problem-solver.”
+      <footer>Joe Carlyle, Director of Consultancy & Technology, Eir Business</footer>
+    </blockquote>
+
+    <blockquote>
+      “He delivers clean, efficient, and user-friendly code.
+      A great team player you can rely on.”
+      <footer>Paul O’Sullivan, DBA, Eir Evo</footer>
+    </blockquote>
+
+    <blockquote>
+      “An extremely hard worker with an impressive ability to get up to speed on new technologies.”
+      <footer>Marc Murray, UX Designer</footer>
+    </blockquote>
+
+    <blockquote>
+      “Dedicated, focused, committed. A rare quality to find.”
+      <footer>Tom Griffith, Business Development | Digital Implementation</footer>
+    </blockquote>
+  </div>
 
   <h2>About This Site</h2>
   <p>
     This site is my formal portfolio.
-    It is intentionally curated and restrained.
-    For personal projects, experiments, and informal writing, visit
+    It contains work that is finished, documented, and intended to be read.
+  </p>
+  <p>
+    For experiments, personal writing, and projects in progress, visit
     <a href="https://mechmadhog.com">mechmadhog.com</a>.
   </p>
 </section>
