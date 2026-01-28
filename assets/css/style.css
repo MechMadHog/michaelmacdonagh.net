@@ -236,7 +236,7 @@ a:focus-visible {
 }
 
 /* -------------------------
-   Sections
+   Sections (used in index.md)
    ------------------------- */
 section[style*="var(--bg)"] {
   color: var(--ink);
@@ -405,14 +405,16 @@ footer.bg-light, footer.fixed-bottom {
   margin-bottom: 1.25rem;
 }
 
-.about-hero__media {
+.about-hero__media,
+.about-hero-media {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* Portrait image (600w x 900h) */
-.about-hero__photo {
+.about-hero__photo,
+.about-hero-photo {
   width: 100%;
   max-width: 220px;
   height: auto;
@@ -428,24 +430,34 @@ footer.bg-light, footer.fixed-bottom {
     0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.about-hero__title {
+.about-hero__title,
+.about-hero-title {
   margin: 0;
 }
 
-.about-hero__subtitle {
+.about-hero__subtitle,
+.about-hero-subtitle {
   margin: .5rem 0 0 0;
   color: var(--muted);
   max-width: 60ch;
 }
 
-.about-hero__meta {
+/* Optional content wrapper (helps truncation + flex/grid issues) */
+.about-hero__content,
+.about-hero-content {
+  min-width: 0;
+}
+
+.about-hero__meta,
+.about-hero-meta {
   margin-top: .9rem;
   display: flex;
   flex-wrap: wrap;
   gap: .6rem;
 }
 
-.about-hero__link {
+.about-hero__link,
+.about-hero-link {
   display: inline-flex;
   align-items: center;
   padding: .45rem .75rem;
@@ -456,17 +468,20 @@ footer.bg-light, footer.fixed-bottom {
   text-decoration: none;
 }
 
-.about-hero__link:hover {
+.about-hero__link:hover,
+.about-hero-link:hover {
   border-color: var(--ice);
   background: #f3f8ff;
   text-decoration: none;
 }
 
-.about-hero__link:focus-visible {
+.about-hero__link:focus-visible,
+.about-hero-link:focus-visible {
   outline: 2px solid var(--ice);
   outline-offset: 2px;
 }
 
+/* About body gets the same "card" language as the rest of the site */
 .about-body {
   max-width: 980px;
   margin: 0 auto;
@@ -524,16 +539,19 @@ footer.bg-light, footer.fixed-bottom {
     text-align: center;
   }
 
-  .about-hero__photo {
+  .about-hero__photo,
+  .about-hero-photo {
     max-width: 180px;
   }
 
-  .about-hero__subtitle {
+  .about-hero__subtitle,
+  .about-hero-subtitle {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .about-hero__meta {
+  .about-hero__meta,
+  .about-hero-meta {
     justify-content: center;
   }
 
