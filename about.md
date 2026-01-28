@@ -8,7 +8,7 @@ permalink: /about/
   <div class="about-hero__media">
     <img
       class="about-hero__photo"
-      src="/assets/images/mike-suit.jpg"
+      src="/assets/images/Formal-Mike.png"
       alt="Portrait of Mike MacDonagh"
       loading="lazy"
       decoding="async"
