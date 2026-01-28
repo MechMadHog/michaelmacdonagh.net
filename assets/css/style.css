@@ -335,13 +335,13 @@ footer.bg-light, footer.fixed-bottom {
 }
 
 /* =========================================================
-   About page
+   About page 
    ========================================================= */
 
 .about-hero {
   display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 1.25rem;
+  grid-template-columns: minmax(140px, 220px) 1fr;
+  gap: 1.5rem;
   align-items: center;
   padding: 1.25rem;
   background: linear-gradient(180deg, rgba(159,212,255,.10), rgba(107,74,216,.05)), var(--paper);
@@ -351,19 +351,28 @@ footer.bg-light, footer.fixed-bottom {
   margin-bottom: 1.75rem;
 }
 
+/* Center the image in its column */
 .about-hero__media {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
+/* Portrait-friendly image treatment (600w x 900h) */
 .about-hero__photo {
-  width: 168px;
-  height: 168px;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
-  border-radius: 999px;
-  border: 2px solid rgba(107,74,216,.20);
-  box-shadow: 0 16px 32px rgba(21,27,38,.10);
+
+  border-radius: 14px; /* rounded corners instead of a circle */
+  border: 1px solid var(--line);
   background: var(--panel);
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .about-hero__title {
@@ -416,6 +425,10 @@ footer.bg-light, footer.fixed-bottom {
     text-align: center;
   }
 
+  .about-hero__photo {
+    max-width: 180px;
+  }
+
   .about-hero__subtitle {
     margin-left: auto;
     margin-right: auto;
@@ -425,4 +438,3 @@ footer.bg-light, footer.fixed-bottom {
     justify-content: center;
   }
 }
-
