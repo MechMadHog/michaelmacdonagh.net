@@ -8,11 +8,23 @@ permalink: /about/
   <div class="about-hero">
     <div class="about-hero-media">
       <img
-        class="about-hero-photo"
         src="/assets/images/formal-mike.png"
         alt="Portrait of Mike MacDonagh"
         loading="lazy"
         decoding="async"
+        style="
+          display: block;
+          max-width: 220px;
+          width: 100%;
+          height: auto;
+          aspect-ratio: 2 / 3;
+          object-fit: cover;
+          margin: 0 auto;
+          border-radius: 14px;
+          border: 1px solid #e6e8ee;
+          background: #f6f8fb;
+          box-shadow: 0 8px 24px rgba(0,0,0,.12), 0 2px 6px rgba(0,0,0,.08);
+        "
       />
     </div>
     <div class="about-hero-content">
