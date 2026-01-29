@@ -33,11 +33,6 @@ permalink: /about/
         I am Mike MacDonagh, a designer and developer with a background in Creative Digital Media,
         focused on building clear, maintainable digital systems.
       </p>
-      <div class="about-hero-meta">
-        <a class="about-hero-link" href="/projects/">Projects</a>
-        <a class="about-hero-link" href="/contact/">Contact</a>
-        <a class="about-hero-link" href="#references">References</a>
-      </div>
     </div>
   </div>
 
