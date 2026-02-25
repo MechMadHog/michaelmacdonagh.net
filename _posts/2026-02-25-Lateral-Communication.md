@@ -8,126 +8,131 @@ featured: true
 image: /assets/images/blog/lateral-thinking-communication.png
 ---
 
-Here’s a tighter version in your tone... more direct, less corporate polish, still suitable for the formal site.
+
+# Lateral Thinking... and Deliberate Communication
+
+There is a consistent pattern in how I think.
+
+My brain defaults to systems.
+
+Not because I lack social awareness... but because I look for structure first.
+
+I notice contradictions quickly.
+I remember what people say.
+I track inconsistencies in language and behaviour.
+
+That makes certain environments uncomfortable.
+
+It also makes me very effective at solving real problems.
 
 ---
 
-# Lateral Thinking... and the Communication Gap
+## Pattern Recognition, Not Naivety
 
-I am better with systems than with people.
+I do not “miss” sarcasm.
 
-That is not self-pity. It is a pattern.
+If anything, I learned to use humour early... often as a defence mechanism. Precision wrapped in levity. It disarms tension while still landing the point.
 
-I take language literally. If someone says something, I assume they mean it. If a rule exists, I assume it applies. If a problem is presented, I focus on the constraint, not the politics around it.
+What I struggle with is not humour.
 
-Apparently that is naïve.
+It is tolerated contradiction.
 
----
+If someone says one thing and later says the opposite, I will notice.
+If someone shifts principles depending on convenience, I will register it.
+If language is used to obscure rather than clarify, it stands out immediately.
 
-## Literal by Default
+Around consistent people, this is neutral.
+Around pathological thinkers, it becomes friction.
 
-I don’t instinctively read subtext.
-
-Sarcasm can fly over my head.
-Vagueness irritates me.
-Strategic ambiguity feels inefficient.
-
-I also struggle with lying. Not morally heroic... just structurally awkward. If something is true, I want to say it. If something is broken, I want to identify it. If something needs changing, I want to state the adjustment clearly.
-
-In some environments that reads as blunt.
-
-In technical environments it reads as clarity.
+Because they optimise for advantage.
+I optimise for coherence.
 
 ---
 
-## Why This Works
+## Manual Overrides
 
-Because I ignore a lot of social noise, I also ignore unnecessary rules.
+This is not accidental.
 
-Many people follow processes that don’t actually apply. They preserve assumptions because “that’s how it’s done”. They optimise for approval rather than outcome.
+I have deliberately studied psychology, philosophy, and social dynamics to recalibrate my defaults.
 
-I optimise for outcome.
+My instinct is to assume words matter.
+Reality shows that many people use words tactically.
 
-When I look at a problem, I ask:
+So I built a manual interrupt.
 
-* What is the actual constraint?
-* Which rules are real?
-* Which rules are inherited?
-* What would solve this directly?
+When I detect inconsistency, I do not immediately react.
+When I notice subtext, I analyse it rather than dismiss it.
+When emotion is driving the exchange, I factor that into the model.
 
-That is where lateral thinking shows up.
-
-Not as creativity for its own sake... but as rule removal.
-
-Strip away what doesn’t matter.
-Solve what does.
+This is learned behaviour.
+Not instinct.
 
 ---
 
-## Where It Causes Friction
+## Why This Produces Lateral Thinking
 
-People are not machines.
+Because I care about internal consistency, I question assumptions quickly.
 
-They signal.
-They soften.
-They test.
-They imply.
-They say one thing and mean another.
+When presented with a problem, I ask:
 
-If I assume literal intent in a non-literal environment, I misread the room.
+* Is this constraint real?
+* Is this rule situational?
+* Who benefits from this structure?
+* What happens if we remove it?
 
-That can create tension.
-Or distance.
-Or confusion.
+Many “rules” are social artefacts.
+They persist because they are rarely examined.
 
-This is not something to glorify. It is a calibration issue.
+If you are comfortable challenging inherited constraints, solutions appear faster.
 
----
+Lateral thinking, for me, is disciplined irreverence.
 
-## The Reframe
-
-I don’t want to become less direct.
-
-I want to become more aware.
-
-The same brain that deconstructs technical systems can deconstruct social systems. Communication has patterns. Status has structure. Group dynamics follow predictable loops.
-
-They are just less documented.
-
-If I treat communication like a system instead of a mystery, it becomes learnable.
-
-That is the shift.
-
-Not abandoning directness.
-Refining it.
+Not rebellion for its own sake.
+But refusal to follow structure that does not apply.
 
 ---
 
-## Integration
+## Speech as Commitment
 
-This is not a weakness I need to hide.
-It is not a superpower I need to defend.
+I am deliberate with language.
 
-It is a trade-off.
+If I say something, I mean it.
+If I commit, I follow through.
+If I give my word, it holds.
 
-Lateral thinking makes me strong at:
+I do not need an NDA to keep a secret.
+I do not need surveillance to stay loyal.
+Scruples are not conditional.
 
-* Problem solving
-* Systems design
-* Identifying unnecessary constraints
-* Cutting through noise
+That consistency can appear rigid in fluid environments.
 
-It makes me weaker at:
+But it is also stable.
 
-* Reading implication
-* Navigating emotional signalling
-* Playing social chess
+People may adapt their stance to suit the room.
+I prefer alignment between speech and action.
 
-The objective is not personality replacement.
+---
 
-It is range expansion.
+## The Trade-Off
 
-Keep the clarity.
-Add calibration.
+High pattern recognition has a cost.
 
-That is the current iteration.
+You see hypocrisy faster.
+You remember contradictions.
+You become less tolerant of performative behaviour.
+
+That can create distance.
+
+But it also creates clarity.
+
+The objective is not to become softer or more vague.
+It is to apply the same precision to social calibration that I apply to technical systems.
+
+Keep the integrity.
+Increase the range.
+
+That is the refinement process.
+
+Not personality replacement.
+
+Iteration.
