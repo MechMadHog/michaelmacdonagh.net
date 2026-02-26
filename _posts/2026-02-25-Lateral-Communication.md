@@ -12,7 +12,7 @@ image: /assets/images/blog/lateral-thinking-communication.png
 
 I’ve always defaulted to systems.
 
-As a kid, I rebuilt things instead of playing with them.
+As a child, I rebuilt things instead of playing with them.
 As an adult, I do the same with ideas.
 
 When someone speaks, I don’t just hear the sentence.
