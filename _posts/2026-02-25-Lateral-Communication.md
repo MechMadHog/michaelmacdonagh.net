@@ -8,131 +8,144 @@ featured: true
 image: /assets/images/blog/lateral-thinking-communication.png
 ---
 
+# Lateral Thinking... and Deliberate Speech
 
-# Lateral Thinking... and Deliberate Communication
+I’ve always defaulted to systems.
 
-There is a consistent pattern in how I think.
+As a kid, I rebuilt things instead of playing with them.
+As an adult, I do the same with ideas.
 
-My brain defaults to systems.
+When someone speaks, I don’t just hear the sentence.
+I map it.
+I store it.
+I cross-reference it later.
 
-Not because I lack social awareness... but because I look for structure first.
-
-I notice contradictions quickly.
-I remember what people say.
-I track inconsistencies in language and behaviour.
-
-That makes certain environments uncomfortable.
-
-It also makes me very effective at solving real problems.
+That has consequences.
 
 ---
 
-## Pattern Recognition, Not Naivety
+## I Remember What People Say
 
-I do not “miss” sarcasm.
+If you contradict yourself, I will notice.
 
-If anything, I learned to use humour early... often as a defence mechanism. Precision wrapped in levity. It disarms tension while still landing the point.
+Not because I’m trying to catch you out.
+Because my brain flags inconsistency automatically.
 
-What I struggle with is not humour.
+If someone says they value loyalty, then behaves opportunistically, that registers.
+If someone criticises behaviour they themselves display, that registers.
+If someone reframes history mid-conversation, that registers too.
 
-It is tolerated contradiction.
+Around principled people, this is calm.
+Around pathological or politically fluid people, it becomes friction.
 
-If someone says one thing and later says the opposite, I will notice.
-If someone shifts principles depending on convenience, I will register it.
-If language is used to obscure rather than clarify, it stands out immediately.
+Because they adapt language to survive the moment.
 
-Around consistent people, this is neutral.
-Around pathological thinkers, it becomes friction.
-
-Because they optimise for advantage.
-I optimise for coherence.
+I adapt language to stay consistent over time.
 
 ---
 
-## Manual Overrides
+## Humour Was Never the Problem
 
-This is not accidental.
+Sarcasm doesn’t go over my head.
 
-I have deliberately studied psychology, philosophy, and social dynamics to recalibrate my defaults.
+If anything, I mastered humour early.
+It was efficient.
+It lets you say something sharp without escalating tension.
+It buys space.
 
-My instinct is to assume words matter.
-Reality shows that many people use words tactically.
+What I don’t tolerate well is deliberate ambiguity.
 
-So I built a manual interrupt.
+I don’t like when language is used to obscure intent.
+I don’t like when clarity is sacrificed for optics.
+I don’t like when meaning becomes negotiable.
 
-When I detect inconsistency, I do not immediately react.
-When I notice subtext, I analyse it rather than dismiss it.
-When emotion is driving the exchange, I factor that into the model.
-
-This is learned behaviour.
-Not instinct.
-
----
-
-## Why This Produces Lateral Thinking
-
-Because I care about internal consistency, I question assumptions quickly.
-
-When presented with a problem, I ask:
-
-* Is this constraint real?
-* Is this rule situational?
-* Who benefits from this structure?
-* What happens if we remove it?
-
-Many “rules” are social artefacts.
-They persist because they are rarely examined.
-
-If you are comfortable challenging inherited constraints, solutions appear faster.
-
-Lateral thinking, for me, is disciplined irreverence.
-
-Not rebellion for its own sake.
-But refusal to follow structure that does not apply.
+That doesn’t make me socially unaware.
+It makes me structurally intolerant of incoherence.
 
 ---
 
-## Speech as Commitment
+## The Manual Override
 
-I am deliberate with language.
+This didn’t stay automatic.
 
-If I say something, I mean it.
-If I commit, I follow through.
-If I give my word, it holds.
+I’ve studied psychology.
+I’ve studied philosophy.
+I’ve studied social dynamics.
 
-I do not need an NDA to keep a secret.
-I do not need surveillance to stay loyal.
-Scruples are not conditional.
+Not out of insecurity... but because I realised most people are not operating on the same baseline assumptions I am.
 
-That consistency can appear rigid in fluid environments.
+My instinct is:
+Words matter.
+Commitments matter.
+Loyalty matters.
 
-But it is also stable.
+Reality is more fluid.
 
-People may adapt their stance to suit the room.
-I prefer alignment between speech and action.
+So I built a conscious interrupt.
+
+Before reacting to contradiction, I pause.
+Before calling out inconsistency, I assess context.
+Before assuming bad faith, I evaluate incentives.
+
+That override is deliberate.
+
+---
+
+## Why This Makes Me a Strong Problem Solver
+
+The same mechanism that tracks contradictions also questions constraints.
+
+When someone says, “That’s just how it’s done,” I don’t accept it automatically.
+When a rule is presented, I test it.
+When a system is inefficient, I dismantle it.
+
+Because I’m not attached to inherited structure.
+
+Lateral thinking, for me, is not creative chaos.
+
+It is disciplined pruning.
+
+Remove what doesn’t apply.
+Expose what actually matters.
+Solve that.
+
+---
+
+## Integrity as Default
+
+I am consistent with my speech.
+
+If I give my word, it stands.
+If I am loyal, it is not situational.
+If I know something confidential, it stays that way.
+
+I don’t need paperwork to behave properly.
+
+That can make me slower to pivot socially.
+But it also makes me predictable in the right way.
+
+You know where you stand with me.
 
 ---
 
 ## The Trade-Off
 
-High pattern recognition has a cost.
+Seeing patterns early means seeing hypocrisy early.
 
-You see hypocrisy faster.
-You remember contradictions.
-You become less tolerant of performative behaviour.
+Remembering everything means not being able to unsee contradictions.
+Holding principles means feeling friction in environments built on convenience.
 
-That can create distance.
+That is the cost.
 
-But it also creates clarity.
+The goal is not to dilute that.
 
-The objective is not to become softer or more vague.
-It is to apply the same precision to social calibration that I apply to technical systems.
+The goal is to expand range.
 
 Keep the integrity.
-Increase the range.
+Keep the clarity.
+Add calibration.
 
-That is the refinement process.
+Not a personality change.
 
-Not personality replacement.
+An upgrade.
 
-Iteration.
