@@ -10,86 +10,138 @@ image: /assets/images/blog/dual-identity.png
 
 ## Dual Identity
 
-At first glance, maintaining two personal websites can look a bit excessive.  
-In practice, it's a systems decision I’ve arrived at deliberately.
+Maintaining two personal websites can look excessive.
+It isn’t.
+It’s a systems decision.
+I treat my online presence the same way I treat software:
 
-As a web developer, I tend to think in terms of structure and intent. I treat my online presence the same way I treat software architecture. Different surfaces exist for different reasons, and when those reasons get mixed together, clarity usually suffers. When they are separated, each part tends to work better.
+> different surfaces, different purposes
 
-This isn’t about personas or performance.  
+When those get mixed, clarity drops.  
+When they’re separated, everything works better.
+
+This isn’t about personas.
 It’s about **separation of concerns**.
 
 ---
 
 ## Separation of Concerns, Applied to Identity
 
-In development, we don’t put everything in one file.
+In development, we don’t put everything in one place.
 
 We separate:
-- stable interfaces from experimental code
-- public APIs from internal tooling
-- production systems from sandboxes
 
-Applying that same logic to how I present my work online feels natural to me.
+- stable interfaces from experimental code  
+- public APIs from internal tooling  
+- production from sandbox  
 
+Applying that same logic to identity is straightforward.
 I maintain two sites because they solve two different problems.
 
-- **michaelmacdonagh.net**  
-  This is my professional surface.  
-  It’s designed for employers, collaborators, and clients.  
-  The focus here is clarity, judgement, and trust.
+---
 
-- **mechmadhog.com**  
-  This is my experimental space.  
-  It’s where ideas are tested, language is sharpened, and thinking happens out loud.  
-  It isn’t optimised for hiring funnels, and it doesn’t need to be.
+### **michaelmacdonagh.net**
 
-Trying to force both of these into a single site would mean compromising one or the other. I’d rather let each do its job properly.
+Professional surface.
+
+- clear  
+- structured  
+- predictable  
+
+Built for:
+
+- employers  
+- collaborators  
+- clients  
+
+It answers one question:
+
+> Can this person be trusted with real work?
+
+---
+
+### **mechmadhog.com**
+
+Experimental surface.
+
+- rougher  
+- more opinionated  
+- thinking in public  
+
+Built for:
+
+- exploration  
+- iteration  
+- actual thinking  
+
+It answers a different question:
+
+> How does this person think?
+
+---
+
+Trying to force both into one site breaks both.
+
+You either dilute the professional side  
+or constrain the personal one.
+
+I’d rather not compromise either.
 
 ---
 
 ## Trust and Truth Are Not the Same Thing
 
-A professional site answers a fairly straightforward question:
+A professional site is about trust.
+A personal site is closer to truth.
 
-Can I trust this person to work on important things?
+They overlap, but they’re not identical.
+When one surface tries to do both, something flattens:
 
-A personal or maker site answers a different one:
+- the professional voice loses clarity  
+- the personal voice loses range  
 
-How does this person actually think?
+Separating them removes that tension.
 
-Neither is more “real” than the other.  
-They’re just built for different audiences.
-
-When one site tries to answer both questions at once, something usually gets flattened. Either the professional voice becomes diluted, or the personal voice gets constrained. Keeping them separate allows both to be honest, without having to constantly self-edit.
+No constant self-editing.  
+No mixed signals.
 
 ---
 
-## DIY Means Owning the Whole Stack
+## DIY Means Owning the Stack
 
-I tend to favour:
-- static sites
-- markdown-first workflows
-- version control
-- minimal platforms
-- long-term ownership
+I prefer:
 
-Running two sites fits comfortably within that way of working.
+- static sites  
+- markdown-first workflows  
+- version control  
+- minimal platforms  
 
-Domains are cheap. Hosting is trivial. Once things are automated, the overhead is minimal.  
-The cost is negligible. The control isn’t.
+Running two sites fits that model.
 
-If you’re already comfortable designing, deploying, refactoring, and maintaining your own digital infrastructure, then it makes sense to extend that thinking to identity as well. There’s no real reason everything has to live in a single container.
+Domains are cheap.  
+Hosting is trivial.  
+Automation handles the rest.
 
-This doesn’t feel like fragmentation to me.  
-It feels like ownership.
+The overhead is low.
+The control is high.
+
+If you can build and maintain your own systems, there’s no reason to force everything into one container.
+
+This isn’t fragmentation.
+It’s ownership.
 
 ---
 
 ## Professional Presence Is an Interface
 
-I don’t see a CV site as a biography.  
-I see it as an interface.
+I don’t treat a CV site as a biography.
+I treat it as an interface.
+That doesn’t make it artificial.  
+It makes it functional.
 
-That doesn’t make it artificial. It just makes it fit for purpose.
+The personal site isn’t less professional.  
+It’s just solving a different problem.
 
-In the same way, a personal site isn’t unprofessional. It simply isn’t designed to answer hiring questions. Treating these as distinct surfaces feels less like a conflict and more like a sign of clarity.
+Two surfaces.
+Clear intent.
+No conflict.
