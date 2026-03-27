@@ -8,20 +8,21 @@ featured: true
 image: /assets/images/blog/kaizen-6-months.png
 ---
 
-> Six months ago I decided to run an experiment:  
+> Six months ago I ran an experiment:  
 > **What happens if I show up every day, even when I don’t feel like it?**
 
-This post is the first checkpoint of that experiment.
+This is the first checkpoint.
 
 Not a victory lap.  
-Not a motivational speech.  
-Just a clear look at what actually happened.
+Not motivation.
+
+Just results.
 
 ---
 
 ## The numbers
 
-Here is what six months of daily work produced:
+Six months of daily work produced:
 
 - **5 freeCodeCamp certifications**
   - Responsive Web Design  
@@ -33,39 +34,43 @@ Here is what six months of daily work produced:
 - **55 freeCodeCamp projects**
 
 - **3 personal sites**
-  - A formal portfolio: <https://michaelmacdonagh.net>  
-  - A personal lab: <https://mechmadhog.com>  
-  - One external portfolio piece  
+  - <https://michaelmacdonagh.net>  
+  - <https://mechmadhog.com>  
+  - one external portfolio piece  
 
-- **3 additional personal projects** built outside FCC  
+- **3 additional personal projects**
 
-All of the FCC work is live here:  
+All FCC work is here:  
 👉 <https://codepen.io/Mike-MacDonagh>
 
-This wasn’t a bootcamp.  
-There was no deadline except the one I set for myself.
+No bootcamp.  
+No external deadlines.
+
+Just a rule: show up.
 
 ---
 
 ## What Kaizen actually meant
 
-“Kaizen” gets thrown around as a productivity slogan.  
-For me it meant something simpler:
+“Kaizen” gets used as a slogan.
+For me it meant:
 
 > **Do something today that keeps tomorrow possible.**
 
 Some days that was:
+
 - a full project  
 - a refactor  
 - writing documentation  
 
-Other days it was:
-- fixing one bug  
-- pushing one commit  
-- making sure nothing broke  
+Other days:
 
-What mattered was not the size.  
-What mattered was **continuity**.
+- fixing one bug  
+- one commit  
+- making sure nothing regressed  
+
+The size didn’t matter.
+**Continuity did.**
 
 Momentum is fragile.  
 Consistency protects it.
@@ -74,68 +79,70 @@ Consistency protects it.
 
 ## What changed under the hood
 
-During this six-month window I also:
+At the same time:
 
-- Bought a new development machine  
-- Started migrating my workflow to Linux  
-- Built out a full Obsidian vault system  
-- Began formalising an offline-first AI assistant called **Walter**
+- new development machine  
+- Linux migration  
+- Obsidian vault system  
+- early build of **Walter** (offline-first AI assistant)  
 
-Those weren’t side quests.  
-They were part of the same system:  
-**reduce friction so work keeps flowing.**
+Not side projects.
+Same system:
+
+> reduce friction so work continues
 
 ---
 
 ## The part no one sees
 
-Most of this work was not glamorous.
-
+Most of this wasn’t interesting.
 It was:
-- opening the editor when I was tired  
-- fixing things that weren’t broken yesterday  
-- continuing when progress was invisible  
 
-The skill I was really training was not JavaScript.  
-It was **showing up without negotiation**.
+- opening the editor when I didn’t want to  
+- fixing things that broke for no reason  
+- continuing when progress wasn’t visible  
+
+The real skill wasn’t JavaScript.
+It was:
+
+> showing up without negotiation
 
 ---
 
 ## Why six months mattered
 
-Six months was the original challenge.
+Six months isn’t impressive.
+It’s long enough for excuses to stop working.
+By that point:
 
-Not because it’s impressive.  
-Because it’s long enough for excuses to run out.
+- habits exist  
+- systems are in place  
+- momentum is real  
 
-By the end of six months:
-- habits form  
-- systems exist  
-- momentum becomes real  
+It becomes something you can point to:
 
-This is now something I can point to and say:
-> “This is what I do.”
+> This is what I do.
 
 ---
 
 ## The next target
 
-The next goal is simple:
+The goal doesn’t change.
+**Make it a full year.**
 
-**Turn this into a full year.**
-
-Not by going faster.  
-Not by burning out.  
-Just by continuing.
+No acceleration.  
+No burnout.
 
 Same rule.  
-Same experiment.  
 Longer horizon.
 
 ---
 
-If you’re following along or building something similar, you don’t need better tools.  
-You need fewer places to quit.
+If you’re building something similar:
+You don’t need better tools.
+You need fewer exit points.
 
-Six months down.  
-Let’s see what twelve does.
+---
+
+Six months done.
+Twelve is just a continuation.
