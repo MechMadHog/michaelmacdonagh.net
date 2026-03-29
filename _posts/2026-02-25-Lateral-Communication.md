@@ -11,13 +11,13 @@ image: /assets/images/blog/lateral-thinking-communication.png
 # Lateral Thinking... and Deliberate Speech
 
 I’ve always defaulted to systems.
-
-As a child, I rebuilt things instead of playing with them.
+As a child, I rebuilt things instead of playing with them.  
 As an adult, I do the same with ideas.
 
 When someone speaks, I don’t just hear the sentence.
-I map it.
-I store it.
+
+I map it.  
+I store it.  
 I cross-reference it later.
 
 That has consequences.
@@ -26,41 +26,35 @@ That has consequences.
 
 ## I Remember What People Say
 
-If you contradict yourself, I will notice.
+If you contradict yourself, I’ll notice.
 
-Not because I’m trying to catch you out.
-Because my brain flags inconsistency automatically.
+Not because I’m trying to catch you out.  
+Because inconsistency stands out immediately.
+- say you value loyalty, act opportunistically → noted  
+- criticise behaviour you display → noted  
+- rewrite what you said five minutes ago → noted  
 
-If someone says they value loyalty, then behaves opportunistically, that registers.
-If someone criticises behaviour they themselves display, that registers.
-If someone reframes history mid-conversation, that registers too.
+Around principled people, this is neutral.
+Around people who adapt language to the moment, it creates friction.
 
-Around principled people, this is calm.
-Around pathological or politically fluid people, it becomes friction.
-
-Because they adapt language to survive the moment.
-
-I adapt language to stay consistent over time.
+They optimise for the situation.  
+I optimise for consistency.
 
 ---
 
 ## Humour Was Never the Problem
 
 Sarcasm doesn’t go over my head.
+If anything, I learned humour early because it’s efficient.  
+You can say something sharp without escalating.
 
-If anything, I mastered humour early.
-It was efficient.
-It lets you say something sharp without escalating tension.
-It buys space.
+What I don’t tolerate well is ambiguity.
+- language used to hide intent  
+- clarity traded for optics  
+- meaning becoming negotiable  
 
-What I don’t tolerate well is deliberate ambiguity.
-
-I don’t like when language is used to obscure intent.
-I don’t like when clarity is sacrificed for optics.
-I don’t like when meaning becomes negotiable.
-
-That doesn’t make me socially unaware.
-It makes me structurally intolerant of incoherence.
+That’s not a social issue.
+It’s structural.
 
 ---
 
@@ -68,84 +62,86 @@ It makes me structurally intolerant of incoherence.
 
 This didn’t stay automatic.
 
-I’ve studied psychology.
-I’ve studied philosophy.
-I’ve studied social dynamics.
+I’ve studied:
+- psychology  
+- philosophy  
+- social dynamics  
 
-Not out of insecurity... but because I realised most people are not operating on the same baseline assumptions I am.
+Not to change how I think, but to understand how others operate.
+My default is:
+- words matter  
+- commitments matter  
+- loyalty matters  
 
-My instinct is:
-Words matter.
-Commitments matter.
-Loyalty matters.
+In practice, things are more fluid.
+So I added an interrupt:
 
-Reality is more fluid.
-
-So I built a conscious interrupt.
-
-Before reacting to contradiction, I pause.
-Before calling out inconsistency, I assess context.
-Before assuming bad faith, I evaluate incentives.
+- pause before reacting  
+- assess context before calling it out  
+- check incentives before assuming intent  
 
 That override is deliberate.
 
 ---
 
-## Why This Makes Me a Strong Problem Solver
+## Why This Helps With Problem Solving
 
-The same mechanism that tracks contradictions also questions constraints.
+The same mechanism that tracks contradictions questions constraints.
 
-When someone says, “That’s just how it’s done,” I don’t accept it automatically.
-When a rule is presented, I test it.
-When a system is inefficient, I dismantle it.
+- “That’s how it’s done” → tested  
+- rules → checked for relevance  
+- inefficient systems → broken down  
 
-Because I’m not attached to inherited structure.
+I’m not attached to inherited structure.
+Lateral thinking isn’t chaos.
+It’s:
 
-Lateral thinking, for me, is not creative chaos.
-
-It is disciplined pruning.
-
-Remove what doesn’t apply.
-Expose what actually matters.
-Solve that.
+> remove what doesn’t apply  
+> isolate what matters  
+> solve that
 
 ---
 
 ## Integrity as Default
 
-I am consistent with my speech.
+I’m consistent with what I say.
 
-If I give my word, it stands.
-If I am loyal, it is not situational.
-If I know something confidential, it stays that way.
+- if I give my word, it stands  
+- if I’m loyal, it isn’t situational  
+- if something is confidential, it stays that way  
 
-I don’t need paperwork to behave properly.
-
-That can make me slower to pivot socially.
-But it also makes me predictable in the right way.
-
-You know where you stand with me.
+No external enforcement needed.
+That can slow me down socially.
+But it makes things predictable in the right way.
 
 ---
 
 ## The Trade-Off
 
-Seeing patterns early means seeing hypocrisy early.
+You see patterns early.  
+You see contradictions early.
+You don’t get to unsee them.
 
-Remembering everything means not being able to unsee contradictions.
-Holding principles means feeling friction in environments built on convenience.
+That creates friction in environments built on:
+- convenience  
+- optics  
+- short-term alignment  
 
-That is the cost.
+That’s the cost.
 
-The goal is not to dilute that.
+---
 
-The goal is to expand range.
+## The Direction Forward
 
-Keep the integrity.
-Keep the clarity.
-Add calibration.
+The goal isn’t to dilute this.
+It’s to expand range.
+
+Keep:
+- integrity  
+- clarity  
+
+Add:
+- calibration  
 
 Not a personality change.
-
-An upgrade.
-
+Just an upgrade.
