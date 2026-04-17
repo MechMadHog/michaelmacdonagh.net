@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Night Light on Omarchy... and Why It Actually Matters"
-date: 2026-04-16
+title: "Configuring Night Light on Omarchy… and Why It Matters"
+description: "Setting up night light on Omarchy using wlsunset and systemd… and why it functions better as an environmental nudge than a complete solution."
 categories: [Systems, Linux, Lifestyle]
 tags: [Hyprland, Omarchy, Sleep, Setup]
----------------------------------------
+---
 
 ## The Problem
 
