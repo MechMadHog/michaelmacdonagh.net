@@ -6,50 +6,50 @@ categories: [Systems, Linux, Lifestyle]
 tags: [Hyprland, Omarchy, Sleep, Setup]
 ---
 
-## The Problem
+# The Problem
 
 If nothing in your day has a hard stop… your night doesn’t either.
+There’s no cutoff point.
+No “we’re done now”.
 
-- No closing time.
-- No external constraint.
-- Just “one more thing”.
+Just:
+> one more thing
 
-That drifts, not dramatically… just enough to notice over time.
+And that turns into two… then five… then suddenly it’s 4am.
+Not dramatic. Just slow drift.
 
 ---
 
 ## The Idea
 
 Night light isn’t a fix.
-It’s a lever.
+It’s just a nudge.
 
-Less blue light → slightly less stimulation → slightly easier to stop.
+Less blue light → less stimulation → slightly easier to stop.
 
-That’s it, not magic… just friction in the right direction.
+That’s it.
+Not some biohack… just making the screen a bit less addictive.
 
 ---
 
 ## The Setup (Omarchy / Hyprland)
 
-This was more awkward than expected.
-
+This was more annoying than it should have been.
 Tried the obvious:
-* `wlsunset` in `hyprland.conf`
-* didn’t start reliably
-* `exec-once` only runs on session start (not reload)
+- `wlsunset` in `hyprland.conf`
+- didn’t work properly
+- `exec-once` only runs at startup, not reload
 
-So it looked broken… when it just wasn’t being triggered.
-
-Then solar mode decided Ireland was experiencing **midnight sun**…
-so it stayed in full daylight.
-Useful.
+So it looked broken… it just wasn’t being triggered.
+Then solar mode decided Ireland was basically the Arctic circle…
+so it never switched at all.
 
 ---
 
-## The Actual Fix
+## The Fix
 
-Skip Hyprland config.
-Use a systemd user service.
+Stopped trying to be clever with Hyprland.
+Used a systemd user service instead.
 
 ```ini
 # ~/.config/systemd/user/wlsunset.service
@@ -74,62 +74,62 @@ Then:
 systemctl --user daemon-reload
 systemctl --user enable --now wlsunset.service
 ```
-
-No guessing. No timing issues.
+Done.
 
 ---
 
 ## What It Actually Does
 
 At 23:00:
-- the screen shifts warm
-- contrast drops slightly
-- everything feels a bit less “pulling”
+- screen goes warm
+- contrast drops a bit
+- everything feels… less engaging
 
-It’s subtle… but noticeable.
+That’s it.
+Subtle, but noticeable.
 
 ---
 
 ## What It Doesn’t Do
 
 It doesn’t:
-- enforce a bedtime
+- force you to go to bed
 - remove distractions
-- fix behaviour
+- fix your behaviour
 
-If you want to ignore it… you can.
+You can ignore it completely if you want.
 
 ---
 
-## Why It Still Matters
+## Why It Still Works
 
 It changes the environment.
 And environment is easier to control than behaviour.
 
 Instead of:
-> “I should stop”
+> I should stop
 
 it becomes:
-> “this is a worse place to keep going”
+> this isn’t as appealing to keep going
 
-Small difference… but it compounds.
+That matters more than it sounds.
 
 ---
 
 ## Where I Landed
 
 23:00 → warm screen
-later → wind down
+a bit later → wind down
 eventually → bed
 
-The exact timing matters less than having a **consistent trigger**.
+The exact timing doesn’t matter.
+The trigger does.
 
 ---
 
 ## Final Thought
 
 This isn’t a solution.
-It’s one piece of a system.
-
-But systems beat willpower… especially at the end of the day.
+It’s one small lever.
+But those are the things that actually work.
 Not a finished product... just documenting the Process.
