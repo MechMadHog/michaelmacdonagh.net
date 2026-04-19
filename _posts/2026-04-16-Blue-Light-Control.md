@@ -8,27 +8,26 @@ tags: [Hyprland, Omarchy, Sleep, Setup]
 
 # The Problem
 
-If nothing in your day has a hard stop… your night doesn’t either.
-There’s no cutoff point.
-No “we’re done now”.
+When nothing in your day has a hard stop… 
+Your night won’t either. There’s no cutoff point for any activity.
+On the internet there is no “we’re done now”.
+Anything can start whenever I click the next thing.
 
 Just:
 > one more thing
 
 And that turns into two… then five… then suddenly it’s 4am.
-Not dramatic. Just slow drift.
+No dramatic altering plan, just a slow drift into a messed up sleep cycle.
 
 ---
 
 ## The Idea
 
-Night light isn’t a fix.
-It’s just a nudge.
+Night light isn’t a simple fix, It’s just a nudge in the right direction.
 
 Less blue light → less stimulation → slightly easier to stop.
 
-That’s it.
-Not some biohack… just making the screen a bit less addictive.
+That’s it, not some biohack… just making the screen a bit less addictive.
 
 ---
 
@@ -48,8 +47,7 @@ so it never switched at all.
 
 ## The Fix
 
-Stopped trying to be clever with Hyprland.
-Used a systemd user service instead.
+I stopped trying to be clever with Hyprland and used a systemd user service instead.
 
 ```ini
 # ~/.config/systemd/user/wlsunset.service
@@ -74,7 +72,7 @@ Then:
 systemctl --user daemon-reload
 systemctl --user enable --now wlsunset.service
 ```
-Done.
+Finished.
 
 ---
 
@@ -103,14 +101,14 @@ You can ignore it completely if you want.
 
 ## Why It Still Works
 
-It changes the environment.
-And environment is easier to control than behaviour.
+It changes the environment, making me more aware that even though its late, I'm still awake.
+Changing my environment is easier to control than my behaviour.
 
 Instead of:
-> I should stop
+> Should I stop?
 
 it becomes:
-> this isn’t as appealing to keep going
+> This isn’t as appealing to keep going
 
 That matters more than it sounds.
 
@@ -129,7 +127,6 @@ The trigger does.
 
 ## Final Thought
 
-This isn’t a solution.
-It’s one small lever.
+This isn’t a solution, It’s a small lever.
 But those are the things that actually work.
-Not a finished product... just documenting the Process.
+Not a the whole solution... just a step in the Process.
