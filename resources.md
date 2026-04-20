@@ -57,11 +57,11 @@ permalink: /resources/
           Linux-first tooling for web development, automation, and AI-assisted workflows.
         </div>
         <ul class="mb-2">
-          <li><strong>VS Codium</strong> — lightweight, telemetry-free editor for daily work.</li>
-          <li><strong>Node.js</strong> — scripts, tooling, APIs, and lightweight services.</li>
-          <li><strong>Docker</strong> — containerized environments for reproducible builds and testing.</li>
-          <li><strong>Shell (Bash/Zsh)</strong> — automation, system control, and glue logic.</li>
-          <li><strong>Git</strong> — version control; GitHub for hosting, issues, and CI.</li>
+          <li><strong>VS Codium</strong>: lightweight, telemetry-free editor for daily work.</li>
+          <li><strong>Node.js</strong>: scripts, tooling, APIs, and lightweight services.</li>
+          <li><strong>Docker</strong>: containerized environments for reproducible builds and testing.</li>
+          <li><strong>Shell (Bash/Zsh)</strong>: automation, system control, and glue logic.</li>
+          <li><strong>Git</strong>: version control; GitHub for hosting, issues, and CI.</li>
         </ul>
         <div class="d-flex flex-wrap gap-1">
           <span class="badge text-bg-light">VS Codium</span>
@@ -82,11 +82,11 @@ permalink: /resources/
           Fundamentals-first stack with an emphasis on testing, security, and maintainability.
         </div>
         <ul class="mb-2">
-          <li><strong>HTML · CSS · JavaScript</strong> — core web fundamentals.</li>
-          <li><strong>Bootstrap 5</strong> — accessible, rapid layout and components.</li>
-          <li><strong>Helmet.js</strong> — security headers and hardening for Node apps.</li>
-          <li><strong>Chai</strong> — assertion library for unit and integration testing.</li>
-          <li><strong>Jekyll</strong> — static, file-based sites (Git-native, no CMS overhead).</li>
+          <li><strong>HTML · CSS · JavaScript</strong>: core web fundamentals.</li>
+          <li><strong>Bootstrap 5</strong>: accessible, rapid layout and components.</li>
+          <li><strong>Helmet.js</strong>: security headers and hardening for Node apps.</li>
+          <li><strong>Chai</strong>: assertion library for unit and integration testing.</li>
+          <li><strong>Jekyll</strong>: static, file-based sites (Git-native, no CMS overhead).</li>
         </ul>
         <div class="d-flex flex-wrap gap-1">
           <span class="badge text-bg-light">HTML</span>
@@ -115,10 +115,10 @@ permalink: /resources/
           Personal AI stack for thinking, research, and local-first experimentation.
         </div>
         <ul class="mb-0">
-          <li><strong>Obsidian</strong> — markdown-based knowledge vault and thinking system.</li>
-          <li><strong>LM Studio</strong> — local LLM inference and offline experimentation.</li>
-          <li><strong>MCPs</strong> — structured AI integrations (e.g. Neo4j, graph-based context).</li>
-          <li><strong>ChatGPT</strong> — cloud-based reasoning and collaboration (near-term).</li>
+          <li><strong>Obsidian</strong>: markdown-based knowledge vault and thinking system.</li>
+          <li><strong>LM Studio</strong>: local LLM inference and offline experimentation.</li>
+          <li><strong>MCPs</strong>: structured AI integrations (e.g. Neo4j, graph-based context).</li>
+          <li><strong>ChatGPT</strong>: cloud-based reasoning and collaboration (near-term).</li>
         </ul>
       </div>
     </article>
@@ -138,9 +138,9 @@ permalink: /resources/
             Practical Windows-based tools for quick edits, image work, and design tasks.
           </div>
           <ul class="mb-0">
-            <li><strong>Paint.NET</strong> — my favourite design tool for quick fixes and fast raster edits.</li>
-            <li><strong>Adobe Photoshop CS6</strong> — full image editing and composition.</li>
-            <li><strong>Adobe Illustrator CS6</strong> — vector graphics, logos, and clean design work.</li>
+            <li><strong>Paint.NET</strong>: my favourite design tool for quick fixes and fast raster edits.</li>
+            <li><strong>Adobe Photoshop CS6</strong>: full image editing and composition.</li>
+            <li><strong>Adobe Illustrator CS6</strong>: vector graphics, logos, and clean design work.</li>
           </ul>
         </div>
       </article>
@@ -153,7 +153,7 @@ permalink: /resources/
             Pen display setup for drawing, tracing, and hands-on design work.
           </div>
           <ul class="mb-0">
-            <li><strong>Huion Kamvas Pro 13 SE</strong> — pen display set up to work with my laptop.</li>
+            <li><strong>Huion Kamvas Pro 13 SE</strong>: pen display set up to work with my laptop.</li>
           </ul>
         </div>
       </article>
@@ -185,9 +185,9 @@ permalink: /resources/
           <div class="card-body">
             <p class="mb-2"><em>Inactive tools & platforms I’ve used extensively in the past. Listed for context.</em></p>
             <ul class="mb-0">
-              <li><strong>WordPress, PHP, MySQL, XAMPP</strong> — I’m no longer building sites with traditional CMS stacks; this portfolio uses Jekyll and static hosting for speed and simplicity.</li>
-              <li><strong>Microsoft Power Platform</strong> — Power Apps, Power Automate, Power BI, Copilot Studio / Azure AI Foundry, SharePoint (Classic & Modern). <span class="text-muted">Context:</span> used professionally at EirEvo (formerly Evros) for internal apps, automation, and support operations.</li>
-              <li><strong>Azure DevOps</strong> — backlog/boards, pipelines; experience from support & project work.</li>
+              <li><strong>WordPress, PHP, MySQL, XAMPP</strong>: I’m no longer building sites with traditional CMS stacks; this portfolio uses Jekyll and static hosting for speed and simplicity.</li>
+              <li><strong>Microsoft Power Platform</strong>: Power Apps, Power Automate, Power BI, Copilot Studio / Azure AI Foundry, SharePoint (Classic & Modern). <span class="text-muted">Context:</span> used professionally at EirEvo (formerly Evros) for internal apps, automation, and support operations.</li>
+              <li><strong>Azure DevOps</strong>: backlog/boards, pipelines; experience from support & project work.</li>
             </ul>
           </div>
         </article>
