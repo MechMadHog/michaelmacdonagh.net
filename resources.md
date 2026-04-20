@@ -8,7 +8,7 @@ permalink: /resources/
   <div class="container">
     <header class="mb-4">
       <h1 class="mb-1">Resources</h1>
-      <p class="text-muted mb-0">A curated list of tools, platforms, and gear I use or recommend. Notes are practical—what it is, why I use it, and any gotchas.</p>
+      <p class="text-muted mb-0">A curated list of tools, platforms, and gear I use or recommend. Notes are practical... What it is, why I use it, and any gotchas.</p>
     </header>
     <!-- =========================
      MY SETUP
