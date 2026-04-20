@@ -51,7 +51,7 @@ permalink: /certifications/
                   <strong>Relational Database</strong>
                   <span class="badge badge-accent ms-2">In Progress</span>
                   <div class="small text-muted mt-1">
-                    <!-- Latest: <a href="https://codepen.io/Mike-MacDonagh/pen/qEOvBap" target="_blank" rel="noopener">Pyramid Generator (Retro CRT)</a> — loops, strings, DOM, controls. -->
+                    <!-- Latest: <a href="https://codepen.io/Mike-MacDonagh/pen/qEOvBap" target="_blank" rel="noopener">Pyramid Generator (Retro CRT)</a> - loops, strings, DOM, controls. -->
                   </div>
                 </li>
               </ol>
@@ -64,7 +64,7 @@ permalink: /certifications/
             <div class="card-body">
               <h3 class="h5 mb-3">Microsoft</h3>
               <ul class="mb-0">
-                <li><strong>Power Platform Fundamentals</strong> (PL-900) — <span class="text-muted">Issued 2020</span></li>
+                <li><strong>Power Platform Fundamentals</strong> (PL-900) - <span class="text-muted">Issued 2020</span></li>
               </ul>
             </div>
           </article>
@@ -74,7 +74,7 @@ permalink: /certifications/
             <div class="card-body">
               <h3 class="h5 mb-3">Google</h3>
               <ul class="mb-0">
-                <li><strong>The Digital Marketing Online Training</strong> (Digital Garage) — <span class="text-muted">Issued 2017</span></li>
+                <li><strong>The Digital Marketing Online Training</strong> (Digital Garage) - <span class="text-muted">Issued 2017</span></li>
               </ul>
             </div>
           </article>
@@ -85,9 +85,9 @@ permalink: /certifications/
             <div class="card-body">
               <h3 class="h5 mb-3">Udemy</h3>
               <ul class="mb-0">
-                <li><strong>Office 365 Power Apps</strong> — <span class="text-muted">Issued 2020</span></li>
-                <li><strong>The Complete 2019 Full-Stack Web Developer Course</strong> — <span class="text-muted">Issued 2019</span></li>
-                <li><strong>WordPress Theme Development with Bootstrap 3</strong> — <span class="text-muted">Issued 2018</span></li>
+                <li><strong>Office 365 Power Apps</strong> - <span class="text-muted">Issued 2020</span></li>
+                <li><strong>The Complete 2019 Full-Stack Web Developer Course</strong> - <span class="text-muted">Issued 2019</span></li>
+                <li><strong>WordPress Theme Development with Bootstrap 3</strong> - <span class="text-muted">Issued 2018</span></li>
               </ul>
             </div>
           </article>
@@ -100,7 +100,7 @@ permalink: /certifications/
                 <img src="{{ '/assets/images/edu/atu.png' | relative_url }}" alt="" width="32" height="32">
                 <h3 class="h5 mb-0">Letterkenny Institute of Technology (ATU)</h3>
               </div>
-              <div class="small text-muted mb-2">Bachelor of Arts in Creative Digital Media — <em>2007–2010</em></div>
+              <div class="small text-muted mb-2">Bachelor of Arts in Creative Digital Media - <em>2007–2010</em></div>
               <div class="mb-2"><em>Activities:</em> LYIT RFC</div>
               <div class="mb-2"><em>Subjects covered:</em></div>
               <ul class="mb-2">
@@ -120,7 +120,7 @@ permalink: /certifications/
                 <img src="{{ '/assets/images/edu/stfinians.png' | relative_url }}" alt="" width="32" height="32">
                 <h3 class="h5 mb-0">St. Finians College, Mullingar</h3>
               </div>
-              <div class="small text-muted mb-2">Junior &amp; Leaving Certificate — <em>2002–2007</em></div>
+              <div class="small text-muted mb-2">Junior &amp; Leaving Certificate - <em>2002–2007</em></div>
               <div class="mb-2"><em>Activities:</em> Hurling, Basketball, Gaisce</div>
               <div class="mb-2"><em>Subjects:</em></div>
               <p class="mb-0">English, Irish, Maths, Physics, German, Accounting, Art, LCVP.</p>
