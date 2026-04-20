@@ -11,20 +11,20 @@ permalink: /resources/
       <p class="text-muted mb-0">A curated list of tools, platforms, and gear I use or recommend. Notes are practical—what it is, why I use it, and any gotchas.</p>
     </header>
     <!-- =========================
-         MY SETUP
-         ========================= -->
+     MY SETUP
+     ========================= -->
     <h2 class="h5 text-uppercase text-muted mt-4 mb-3">My Setup</h2>
     <div class="row g-4">
       <div class="col-12 col-lg-6">
         <article class="card h-100">
           <div class="card-body">
-            <h3 class="h6 mb-1">Omarchy (Arch Linux) · Desktop</h3>
+            <h3 class="h6 mb-1">Omarchy · Primary Machine</h3>
             <div class="small text-muted mb-2">
-              Primary Linux workstation for development, automation, and daily use.
+              My main environment for development, admin, and documentation.
             </div>
             <ul class="mb-0">
-              <li><strong>Why:</strong> fast, minimal, predictable rolling updates; excellent for CLI-heavy workflows.</li>
-              <li><strong>Notes:</strong> mirrors + AUR keep tooling current; main environment for deep Linux proficiency.</li>
+              <li><strong>Why:</strong> this is where I spend most of my time and do the bulk of my day-to-day work.</li>
+              <li><strong>Notes:</strong> primary Linux setup, CLI-heavy workflow, and the main machine I build from.</li>
             </ul>
           </div>
         </article>
@@ -32,13 +32,13 @@ permalink: /resources/
       <div class="col-12 col-lg-6">
         <article class="card h-100">
           <div class="card-body">
-            <h3 class="h6 mb-1">Windows 10 · Laptop</h3>
+            <h3 class="h6 mb-1">Windows 10 · Design Laptop</h3>
             <div class="small text-muted mb-2">
-              Transitional setup while migrating fully to a Linux-only workflow.
+              Dedicated design machine for image work, drawing, and legacy Adobe tools.
             </div>
             <ul class="mb-0">
-              <li><strong>Why:</strong> temporary compatibility layer for legacy tools and edge-case software.</li>
-              <li><strong>Notes:</strong> WSL2 bridges the gap; end goal is 100% Linux across all machines.</li>
+              <li><strong>Why:</strong> better fit for my current design workflow and tablet setup.</li>
+              <li><strong>Notes:</strong> stays on Windows 10 by design, not as a temporary transition step.</li>
             </ul>
           </div>
         </article>
@@ -128,40 +128,37 @@ permalink: /resources/
 <!-- =========================
      DESIGN & UI
      ========================= -->
-<h2 class="h5 text-uppercase text-muted mt-5 mb-3">Design & UI</h2>
-<div class="row g-4">
-  <div class="col-12 col-lg-6">
-    <article class="card h-100">
-      <div class="card-body">
-        <h3 class="h6 mb-1">Raster & Illustration</h3>
-        <div class="small text-muted mb-2">
-          Linux-native tools for drawing, painting, and image work.
+  <h2 class="h5 text-uppercase text-muted mt-5 mb-3">Design & UI</h2>
+  <div class="row g-4">
+    <div class="col-12 col-lg-6">
+      <article class="card h-100">
+        <div class="card-body">
+          <h3 class="h6 mb-1">Raster & Design Tools</h3>
+          <div class="small text-muted mb-2">
+            Practical Windows-based tools for quick edits, image work, and design tasks.
+          </div>
+          <ul class="mb-0">
+            <li><strong>Paint.NET</strong> — my favourite design tool for quick fixes and fast raster edits.</li>
+            <li><strong>Adobe Photoshop CS6</strong> — full image editing and composition.</li>
+            <li><strong>Adobe Illustrator CS6</strong> — vector graphics, logos, and clean design work.</li>
+          </ul>
         </div>
-        <ul class="mb-0">
-          <li><strong>Pinta</strong> — lightweight edits and quick fixes.</li>
-          <li><strong>Paint.NET</strong> — fast raster work (legacy / Windows).</li>
-          <li><strong>Krita</strong> — digital drawing and painting.</li>
-          <li><strong>GIMP</strong> — full-featured image editing (Photoshop replacement).</li>
-        </ul>
-      </div>
-    </article>
-  </div>
-
-  <div class="col-12 col-lg-6">
-    <article class="card h-100">
-      <div class="card-body">
-        <h3 class="h6 mb-1">Vector & Hardware</h3>
-        <div class="small text-muted mb-2">
-          Logos, SVGs, and precision input.
+      </article>
+    </div>
+    <div class="col-12 col-lg-6">
+      <article class="card h-100">
+        <div class="card-body">
+          <h3 class="h6 mb-1">Tablet & Hardware</h3>
+          <div class="small text-muted mb-2">
+            Pen display setup for drawing, tracing, and hands-on design work.
+          </div>
+          <ul class="mb-0">
+            <li><strong>Huion Kamvas Pro 13 SE</strong> — pen display set up to work with my laptop.</li>
+          </ul>
         </div>
-        <ul class="mb-0">
-          <li><strong>Inkscape</strong> — vector graphics, logos, icon systems, SVGs.</li>
-          <li><strong>Huion Kamvas Pro 13</strong> — pen display for illustration, tracing, and UI work.</li>
-        </ul>
-      </div>
-    </article>
+      </article>
+    </div>
   </div>
-</div>
     <!-- =========================
          LEARNING & REFERENCES (optional starter)
          ========================= -->
