@@ -4,6 +4,7 @@ title: "The Cost of Assupmtions: False Consensus Bias and Projection"
 description: "How projecting personal standards onto others, overestimating shared beliefs, and relying on stated intent leads to blind spots, misjudgment, and avoidable mistakes."
 categories: [Psychology, Thinking]
 tags: [bias, projection, false-consensus, decision-making, integrity]
+image: /assets/images/blog/Bias.png
 ---
 
 # Projection, False Consensus, and the Cost of Assuming Alignment
