@@ -4,7 +4,7 @@ title: "Kaizen: Six Months of Showing Up"
 description: "Six months of daily commits, five freeCodeCamp certifications, three sites, and what consistency actually produced."
 categories: [Meta, Learning]
 tags: [kaizen, freecodecamp, portfolio, consistency, systems]
-featured: true
+featured: false
 image: /assets/images/blog/kaizen-6-months.png
 ---
 

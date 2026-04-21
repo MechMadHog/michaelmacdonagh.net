@@ -4,7 +4,7 @@ title: "White-Hat Subterfuge"
 description: "Why radical honesty leaks value, how expectations are shaped through omission and framing, and the ethical line between manipulation and self-defence."
 categories: [Systems, Ethics, Career]
 tags: [communication, boundaries, economics, ethics, psychology]
-featured: true
+featured: false
 image: /assets/images/blog/white-hat-subterfuge.png
 ---
 

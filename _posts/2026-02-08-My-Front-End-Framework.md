@@ -4,7 +4,7 @@ title: "Why React Became My Front-End Framework of Choice"
 description: "How React’s component model mirrors the builder mindset I developed growing up with K’nex, and why that makes it my preferred way to design front-end systems."
 categories: [Frontend, Learning]
 tags: [react, components, architecture, frontend, mindset]
-featured: true
+featured: false
 image: /assets/images/blog/react-builder-mindset.png
 ---
 
