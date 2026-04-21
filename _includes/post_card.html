@@ -7,13 +7,35 @@
       {% for cat in include.post.categories %}
         <span class="badge text-bg-light">{{ cat }}</span>
       {% endfor %}
-      {% if include.post.featured %}<span class="badge badge-accent">Featured</span>{% endif %}
+      {% if include.post.featured %}
+        <span class="badge badge-accent">Featured</span>
+      {% endif %}
     </div>
-    <h3 class="h5 mb-1"><a class="text-decoration-none" href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
-    <div class="small text-muted mb-2">{{ include.post.date | date: "%B %d, %Y" }}</div>
-    <p class="mb-3">{{ include.post.excerpt | strip_html | truncate: 180 }}</p>
+
+    <h3 class="h5 mb-1">
+      <a class="text-decoration-none"
+         href="{{ include.post.url | relative_url }}"
+         target="_blank"
+         rel="noopener noreferrer">
+        {{ include.post.title }}
+      </a>
+    </h3>
+
+    <div class="small text-muted mb-2">
+      {{ include.post.date | date: "%B %d, %Y" }}
+    </div>
+
+    <p class="mb-3">
+      {{ include.post.excerpt | strip_html | truncate: 180 }}
+    </p>
+
     <div class="mt-auto">
-      <a class="btn btn-sm btn-primary" href="{{ include.post.url | relative_url }}">Read more</a>
+      <a class="btn btn-sm btn-primary"
+         href="{{ include.post.url | relative_url }}"
+         target="_blank"
+         rel="noopener noreferrer">
+        Read more
+      </a>
     </div>
   </div>
 </article>
