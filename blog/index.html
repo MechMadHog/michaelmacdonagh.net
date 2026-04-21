@@ -72,7 +72,7 @@ description: Notes on support ops, documentation, and building lightweight tools
 
           {% for page_number in (1..paginator.total_pages) %}
             {% if page_number == 1 %}
-              {% assign pagination_url = page.url %}
+              {% assign pagination_url = '/blog/' %}
             {% else %}
               {% assign pagination_url = site.paginate_path | replace: ':num', page_number %}
             {% endif %}
