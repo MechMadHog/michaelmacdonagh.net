@@ -115,19 +115,27 @@ title: Home
 </section>
 
 <!-- LATEST POSTS -->
-<section class="py-5 bg-light">
+<section class="py-5">
   <div class="container">
-    <h2 class="h3 text-center mb-4">Latest Writing</h2>
-    {% for post in site.posts limit:3 %}
-      <div class="mb-4 mx-auto" style="max-width: 880px;">
-        <h4 class="mb-1"><a href="{{ post.url | relative_url }}" class="text-decoration-none">{{ post.title }}</a></h4>
-        <div class="text-muted small mb-2">{{ post.date | date: "%B %d, %Y" }}</div>
-        <p class="mb-0">{{ post.excerpt }}</p>
-      </div>
-    {% endfor %}
-    <div class="text-center mt-3">
-      <a href="{{ '/blog' | relative_url }}" class="btn btn-outline-secondary">Read the Blog</a>
+    <div class="text-center mb-5">
+      <h2 class="h3 mb-2">Latest Writing</h2>
+      <p class="text-muted mb-0">Recent posts on systems, communication, problem-solving, and documentation.</p>
     </div>
+    {% assign recent_posts = site.posts | limit:3 %}
+    {% if recent_posts.size > 0 %}
+      <div class="row g-4 justify-content-center">
+        {% for post in recent_posts %}
+          <div class="col-12 col-md-6 col-lg-4">
+            {% include post_card.html post=post %}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="text-center mt-4">
+        <a class="btn btn-outline-primary px-4" href="{{ '/blog/' | relative_url }}">
+          Read the Blog
+        </a>
+      </div>
+    {% endif %}
   </div>
 </section>
 
