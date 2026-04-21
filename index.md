@@ -123,13 +123,22 @@ title: Home
     </div>
     {% assign recent_posts = site.posts | limit:3 %}
     {% if recent_posts.size > 0 %}
-      <div class="row g-4 justify-content-center">
-        {% for post in recent_posts %}
-          <div class="col-12 col-md-6 col-lg-4">
+      {% for post in recent_posts limit:1 %}
+        <div class="row justify-content-center mb-4">
+          <div class="col-12 col-lg-8">
             {% include post_card.html post=post %}
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
+      {% if recent_posts.size > 1 %}
+        <div class="row g-4 justify-content-center">
+          {% for post in recent_posts offset:1 limit:2 %}
+            <div class="col-12 col-md-6 col-lg-4">
+              {% include post_card.html post=post %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
       <div class="text-center mt-4">
         <a class="btn btn-outline-primary px-4" href="{{ '/blog/' | relative_url }}">
           Read the Blog
