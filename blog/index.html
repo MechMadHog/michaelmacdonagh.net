@@ -4,65 +4,65 @@ title: Blog
 description: Notes on support ops, documentation, and building lightweight tools.
 ---
 
-<section class="py-5">
+<section class="py-5 blog-index">
   <div class="container">
 
-    <!-- Optional replacement heading -->
-    <h1 class="h4 text-center mb-5">Selected Posts</h1>
+    <header class="text-center mb-5">
+      <h1 class="h4 mb-2">Recent Writing</h1>
+      <p class="text-muted mb-0">A selection of posts on systems, communication, support, and the way I think through problems.</p>
+    </header>
 
     {% assign featured_posts = site.posts | where_exp: "p", "p.featured == true" %}
     {% if featured_posts.size > 0 %}
-      <div class="mb-5 text-center">
-        <h2 class="h6 text-uppercase text-muted mb-4">Featured</h2>
+      <section class="mb-5">
+        <h2 class="h6 text-uppercase text-muted text-center section-label mb-4">Featured</h2>
 
         {% for post in featured_posts limit:1 %}
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6">
-              {% include post_card.html post=post %}
-            </div>
+          <div class="featured-main mb-4">
+            {% include post_card.html post=post %}
           </div>
         {% endfor %}
 
         {% if featured_posts.size > 1 %}
-          <div class="row g-4 mt-3 justify-content-center">
+          <div class="row g-4 justify-content-center featured-secondary">
             {% for post in featured_posts offset:1 limit:2 %}
-              <div class="col-12 col-md-4 col-lg-3">
+              <div class="col-12 col-md-6 col-lg-4">
                 {% include post_card.html post=post %}
               </div>
             {% endfor %}
           </div>
         {% endif %}
-      </div>
+      </section>
 
       <hr class="mb-5">
     {% endif %}
 
-    <h2 class="h6 text-uppercase text-muted mb-3">All posts</h2>
+    <section>
+      <h2 class="h6 text-uppercase text-muted section-label mb-3">All Posts</h2>
 
-    {% assign list_posts = paginator.posts | default: site.posts %}
-    {% assign list_posts = list_posts | where_exp: "p", "p.featured != true" %}
+      {% assign list_posts = paginator.posts | default: site.posts %}
+      {% assign list_posts = list_posts | where_exp: "p", "p.featured != true" %}
 
-    {% if list_posts.size > 0 %}
-      <div class="row g-4">
-        {% for post in list_posts limit:4 %}
-          <div class="col-12 col-md-6">
-            {% include post_card.html post=post %}
-          </div>
-        {% endfor %}
-      </div>
-    {% else %}
-      <div class="alert alert-secondary">No posts yet. First one coming soon.</div>
-    {% endif %}
+      {% if list_posts.size > 0 %}
+        <div class="row g-4">
+          {% for post in list_posts limit:4 %}
+            <div class="col-12 col-md-6">
+              {% include post_card.html post=post %}
+            </div>
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="alert alert-secondary">No posts yet. First one coming soon.</div>
+      {% endif %}
+    </section>
 
     {% if paginator and paginator.total_pages > 1 %}
-      <nav class="mt-4 d-flex justify-content-center" aria-label="Blog pagination">
-        <ul class="pagination">
+      <nav class="mt-5 d-flex justify-content-center" aria-label="Blog pagination">
+        <ul class="pagination mb-0">
 
           {% if paginator.previous_page %}
             <li class="page-item">
-              <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">
-                &laquo; Newer
-              </a>
+              <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Newer</a>
             </li>
           {% else %}
             <li class="page-item disabled">
@@ -70,18 +70,21 @@ description: Notes on support ops, documentation, and building lightweight tools
             </li>
           {% endif %}
 
-          {% for page in (1..paginator.total_pages) %}
-            {% assign url = paginator.page_path | replace: ':num', page %}
-            <li class="page-item {% if page == paginator.page %}active{% endif %}">
-              <a class="page-link" href="{{ url | relative_url }}">{{ page }}</a>
+          {% for page_number in (1..paginator.total_pages) %}
+            {% if page_number == 1 %}
+              {% assign pagination_url = page.url %}
+            {% else %}
+              {% assign pagination_url = site.paginate_path | replace: ':num', page_number %}
+            {% endif %}
+
+            <li class="page-item {% if page_number == paginator.page %}active{% endif %}">
+              <a class="page-link" href="{{ pagination_url | relative_url }}">{{ page_number }}</a>
             </li>
           {% endfor %}
 
           {% if paginator.next_page %}
             <li class="page-item">
-              <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">
-                Older &raquo;
-              </a>
+              <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Older &raquo;</a>
             </li>
           {% else %}
             <li class="page-item disabled">
