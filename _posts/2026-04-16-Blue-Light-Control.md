@@ -7,7 +7,7 @@ tags: [Hyprland, Omarchy, Sleep, Setup]
 image: /assets/images/blog/BlueLight.png
 ---
 
-# The Problem
+# The Problem with a Simple Solution
 
 When nothing in your day has a hard stop… 
 Your night won’t either. There’s no cutoff point for any activity.
