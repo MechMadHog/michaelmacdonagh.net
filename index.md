@@ -109,7 +109,7 @@ title: Home
     <div id="home-projects" class="row g-4"></div>
 
     <div class="text-center mt-3">
-      <a class="btn btn-outline-primary" href="{{ '/projects/' | relative_url }}">See more</a>
+      <a class="btn btn-outline-primary" href="{{ '/projects/' | relative_url }}">See More...</a>
     </div>
   </div>
 </section>
