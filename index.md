@@ -141,7 +141,7 @@ title: Home
       {% endif %}
       <div class="text-center mt-4">
         <a class="btn btn-outline-primary px-4" href="{{ '/blog/' | relative_url }}">
-          Read the Blog
+          Have Read Through Some of My Posts
         </a>
       </div>
     {% endif %}
