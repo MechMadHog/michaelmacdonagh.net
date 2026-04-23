@@ -4,7 +4,7 @@ title: "Lateral Thinking... and the Communication Gap"
 description: "Why my literal communication style creates friction socially but strength technically, and how lateral thinking emerges from ignoring rules that don’t actually apply."
 categories: [Mindset, Communication]
 tags: [lateral-thinking, communication, systems, problem-solving, self-development]
-featured: true
+featured: false
 image: /assets/images/blog/lateral-thinking-communication.png
 ---
 
