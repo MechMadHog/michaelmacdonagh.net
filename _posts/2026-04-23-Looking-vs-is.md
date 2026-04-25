@@ -33,7 +33,6 @@ But the system itself doesn’t hold.
 
 Presentation is easy to evaluate.  
 Functionality is not.
-
 So the system rewards what it can see:
 - confidence  
 - clarity  
@@ -55,21 +54,16 @@ So they’re often overlooked.
 
 > "Never take stock advice from a sushi chef"
 
-Expertise is domain-specific.  
-Outside that domain, confidence becomes indistinguishable from competence.
+Expertise is domain-specific, outside of that domain, 
+confidence becomes indistinguishable from competence.
 
-This is part of the same problem.  
-People don’t validate the source.  
-They validate the delivery.
+This is all a part of the same problem; people don’t validate their sources.  
+Only the delivery and if it sounds right, looks right, and is presented clearly… it gets accepted.
+Not because its correct... But because it passes a surface-level check.
 
-If it sounds right, looks right, and is presented clearly… it gets accepted.
-Not because it is correct... But because it passes a surface-level check.
-
-The same applies to arguments.  
-Evidence is optional.  
-Confidence is not.
-
-And in systems that prioritise visibility over validation, confidence is enough.
+The same applies to arguments, evidence is optional, never circumstantial.  
+But confidence is not and in systems that prioritise visibility over validation, 
+confidence can be enough.
 
 ---
 
