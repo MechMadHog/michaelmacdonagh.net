@@ -69,8 +69,7 @@ confidence can be enough.
 
 ## Why It Continues
 
-It doesn’t fail immediately.  
-It works… just enough to get by unnoticed by anyone not paying attention.
+It doesn’t fail immediately, so technically it  does work… just enough to get by unnoticed by anyone not paying attention.
 
 Enough to pass checks.  
 Enough to avoid scrutiny.  
@@ -83,32 +82,24 @@ Short-term results win… because they are visible.
 
 ## Tolerance Becomes Normal
 
-The issue isn’t that this behaviour exists.  
-It’s that it’s **tolerated**.  
-And once it’s tolerated, it becomes **expected**.
+The issue isn’t that this behaviour exists, it’s that it’s **tolerated**... and once it’s tolerated, it becomes **expected**.
 
-Systems drift toward what they reward.  
-If they reward surface-level signals, that’s what grows.
+Systems drift toward what is rewarded.  
+If they reward surface-level signals, that’s what becomes the standard.
 
 ---
 
 ## The Purpose of Bureaucracy
 
 Bureaucracy is often treated as inefficiency:
-
 - Layers of approval  
 - Endless processes  
 - Checks that slow things down  
 
-But that isn’t its purpose.
-
-It exists for validation.
-
-To ensure that what moves forward isn’t just acceptable at a glance…  
-but actually holds together in context.
+But that isn’t its purpose, its supposed to exist for validation.
+To ensure that what moves forward isn’t just acceptable at a glance… But actually holds together in context.
 
 To verify:
-
 - that decisions make sense beyond the surface  
 - that dependencies are understood  
 - that what represents the organisation actually holds together  
@@ -132,7 +123,6 @@ Like a car that’s more duct tape than machine.
 It still runs… until it’s expected to perform.
 
 The longer this continues:
-
 - complexity compounds  
 - dependencies stack  
 - fragility increases  
