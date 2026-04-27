@@ -136,31 +136,17 @@ This is starting to apply to everything.
 ## The Countermeasure
 
 The solution is not more validation of individual parts.  
-It’s validation of their relationships.
-
-Systems need to be tested as systems… not as a collection of components.
+It’s validation of their relationships; systems need to be tested as systems… not as a collection of components.
 
 What matters is not whether each piece is correct in isolation,  
-but whether they make sense together.
+but whether they make sense together. without proper vetting, no one has a complete picture of what is actually happening.
 
-Without proper vetting, no one has a complete picture of what is actually happening.
+Each part may appear valid on its own… But the system as a whole becomes increasingly opaque. This is where the long-term issues start.
+At the core, this is a failure of attention to detail.
 
-Each part may appear valid on its own…  
-but the system as a whole becomes increasingly opaque.
+Not in the obvious sense… But in how details connect, depend on each other, and their interaction over time. Ironically, attention to detail is one of the most commonly claimed strengths.
 
-That’s where the long-term issues begin.
-
-At its core, this is a failure of attention to detail.
-
-Not in the obvious sense…  
-but in how details connect, depend on each other, and interact over time.
-
-Ironically, attention to detail is one of the most commonly claimed strengths.
-
-But detail without context isn’t enough.
-
-It’s not the accuracy of the parts that matters most…  
-it’s whether anything actually lines up with reality.
+But detail without context isn’t enough, It’s not the accuracy of the parts that matters most… It’s whether anything actually lines up with reality.
 
 ---
 
