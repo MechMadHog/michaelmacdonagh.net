@@ -69,11 +69,10 @@ confidence can be enough.
 
 ## Why It Continues
 
-It doesn’t fail immediately, so technically it  does work… just enough to get by unnoticed by anyone not paying attention.
-
-Enough to pass checks.  
-Enough to avoid scrutiny.  
-Enough to be repeated.
+It doesn’t fail immediately, so technically it  does work… just enough to get by unnoticed by anyone not paying attention:
+- Enough to pass checks.  
+- Enough to avoid scrutiny.  
+- Enough to be repeated.
 
 There’s no immediate penalty for getting it wrong at a structural level, so there’s no pressure to fix it.  
 Short-term results win… because they are visible.
