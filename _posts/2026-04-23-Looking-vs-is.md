@@ -74,17 +74,15 @@ It doesn’t fail immediately, so technically it  does work… just enough to ge
 - Enough to avoid scrutiny.  
 - Enough to be repeated.
 
-There’s no immediate penalty for getting it wrong at a structural level, so there’s no pressure to fix it.  
-Short-term results win… because they are visible.
+There’s no immediate penalty for getting it wrong at a structural level, so there’s no pressure to fix it, so short-term results win… because they are whats visible.
 
 ---
 
 ## Tolerance Becomes Normal
 
-The issue isn’t that this behaviour exists, it’s that it’s **tolerated**... and once it’s tolerated, it becomes **expected**.
+The issue isn’t that this behaviour exists, it’s that it’s **tolerated**... and once it was ever tolerated, that is what becomes **expected**.
 
-Systems drift toward what is rewarded.  
-If they reward surface-level signals, that’s what becomes the standard.
+Systems drift toward what is rewarded, if they reward surface-level signals, that’s what becomes the standard.
 
 ---
 
