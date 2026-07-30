@@ -92,34 +92,18 @@ Rather than replacing traditional development skills, these technologies complem
 
 ## The Biggest Lesson
 
-The biggest lesson wasn't React.
+The biggest lesson wasn't React, GitHub or Jekyll. It was discovering how much consistent effort compounds over time.
+Most days didn't produce anything spectacular:
+- Some commits fixed a typo.
+- Some improved accessibility.
+- Some involved hours of debugging for only a few lines of code.
 
-Or GitHub.
-
-Or Jekyll.
-
-It was discovering how much consistent effort compounds over time.
-
-Most days didn't produce anything spectacular.
-
-Some commits fixed a typo.
-
-Some improved accessibility.
-
-Some involved hours of debugging for only a few lines of code.
-
-But progress doesn't usually come from one huge breakthrough.
-
-It comes from showing up again tomorrow.
+But progress doesn't usually come from one huge breakthrough, It comes from showing up again tomorrow.
 
 ---
 
 ## Looking Ahead
 
-Although the challenge has officially finished, the learning certainly hasn't.
+Although the challenge has officially finished, the learning certainly hasn't. I'm continuing to expand my knowledge of full-stack development while moving further into automation, AI, and modern development workflows.
 
-I'm continuing to expand my knowledge of full-stack development while moving further into automation, AI, and modern development workflows.
-
-The GitHub graph marks the end of one challenge.
-
-Hopefully, it's only the beginning of many more.
+The GitHub graph marks the end of one challenge, hopefully, it's only the beginning of many more.
