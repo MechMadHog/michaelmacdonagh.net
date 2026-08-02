@@ -5,7 +5,7 @@ description: "Twelve months of continuous learning, building, and improving—on
 categories: [Development]
 tags: [github, coding, web-development, learning, react, ai]
 featured: true
-image: /assets/images/blog/year-of-code.png
+image: /assets/images/blog/mmd-year-of-code.png
 ---
 
 FFrom **11 July 2025** I knew I was going to have to upskill, and that led to a simple challenge: **write code every day for one year.**
