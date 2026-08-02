@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Year of Code"
-description: "Twelve months of continuous learning, building, and improving—one commit at a time."
+description: "Twelve months of continuous learning, building, and improving-one commit at a time."
 categories: [Development]
 tags: [github, coding, web-development, learning, react, ai]
 featured: true
